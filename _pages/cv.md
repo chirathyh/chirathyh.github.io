@@ -14,8 +14,8 @@ I'm a genuine all rounding personality seeking to utilize acquired skills and in
 Academic & Professional Qualifications
 ======
 * University of Moratuwa (Sri Lanka)
-  B.Sc.(Hons.) Electronics & Telecommunication Engineering.   
-  Mar 2014 - Jan 2018
+B.Sc.(Hons.) Electronics & Telecommunication Engineering.   
+Mar 2014 - Jan 2018
   * CGPA -  3.53 / 4.2 ( Second Class Upper Division)
 * Chartered Institute of Management Accountants (CIMA – UK) 	  
   Aug 2012 – Nov 2014
