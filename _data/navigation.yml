@@ -4,7 +4,7 @@ main:
     url: /cv/
     
   - title: "Publications"
-    url: /publications/
+    url: "https://chirathyh.github.io/portfolio/"
 
 #  - title: "Talks"
 #    url: /talks/    
