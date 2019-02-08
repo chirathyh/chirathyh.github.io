@@ -1,10 +1,10 @@
 # main links links
 main:
   - title: "CV"
-    url: "https://chirathyh.github.io/cv/"
+    url: /cv/
     
   - title: "Publications"
-    url: "https://chirathyh.github.io/publications/"
+    url: /publications/
 
 #  - title: "Talks"
 #    url: /talks/    
@@ -16,7 +16,7 @@ main:
     url: "https://chirathyh.github.io/portfolio/"
         
   - title: "Blog Posts"
-    url: "https://chirathyh.github.io/_pages/year-archive/"
+    url: /year-archive/
     
   
     
