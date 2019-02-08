@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "Identifying the Optimum Region of the Human Sole to Extract the PPG Signal for Pulse Rate Estimation"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+excerpt: 'Photoplethysmography (PPG) can be identified as a non invasive technique which measures the blood volume changes in the blood vessels, through which key health indicators could be identified and used for abnormality detection. PPG has been integrated in numerous modern applications. This research is conducted in order to evaluate the possibility of applying PPG to the human sole and identifying the optimum regions of measurement. The research calculates the normalized cross correlation between the PPG extracted from the finger and different regions of the sole, and develops an algorithm for Pulse Rate estimation.'
+date: 2017-11-27
+venue: 'Proceedings of the 9th International Conference on Signal Processing Systems'
+paperurl: 'http://chirathyh.github.io/files/paper1.pdf'
+citation: 'Hettiarachchi, Chirath, Buddhishan Manamperi, and Dilshan Uthpala. "Identifying the Optimum Region of the Human Sole to Extract the PPG Signal for Pulse Rate Estimation." Proceedings of the 9th International Conference on Signal Processing Systems. ACM, 2017.'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+Photoplethysmography (PPG) can be identified as a non invasive technique which measures the blood volume changes in the blood vessels, through which key health indicators could be identified and used for abnormality detection. PPG has been integrated in numerous modern applications. This research is conducted in order to evaluate the possibility of applying PPG to the human sole and identifying the optimum regions of measurement. The research calculates the normalized cross correlation between the PPG extracted from the finger and different regions of the sole, and develops an algorithm for Pulse Rate estimation.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://chirathyh.github.io/files/paper1.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Hettiarachchi, Chirath, Buddhishan Manamperi, and Dilshan Uthpala. "Identifying the Optimum Region of the Human Sole to Extract the PPG Signal for Pulse Rate Estimation." Proceedings of the 9th International Conference on Signal Processing Systems. ACM, 2017.
