@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "CV"
-    url: /cv/
+    url: "https://chirathyh.github.io/cv/"
     
   - title: "Publications"
     url: "https://chirathyh.github.io/publications/"
