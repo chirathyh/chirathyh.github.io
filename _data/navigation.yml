@@ -13,7 +13,7 @@ main:
 #    url: /teaching/    
     
   - title: "Portfolio"
-    url: "https://chirathyh.github.io/portfolio/"
+    url: /portfolio/
         
   - title: "Blog Posts"
     url: /year-archive/
