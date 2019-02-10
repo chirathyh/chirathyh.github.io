@@ -1,5 +1,5 @@
 ---
-title: "Clardia - A Comprehensive Family Health Assistant"
+title: "Clardia - Prediction of Diabetes Using Non Invasive Photoplethysmography (PPG) Measurements & Physiological Characteristics."
 excerpt: "Photoplethysmography (PPG) can be identified as a non invasive, inexpensive, optic technique which measures the blood volume changes in blood vessels through which oxygen saturation, blood pressure, cardiac output could be measured. In recent researches it has been identified that PPG is a promising technique towards early screening of diseases as the PPG waveform possess significant information embedded within."
 collection: portfolio
 ---
