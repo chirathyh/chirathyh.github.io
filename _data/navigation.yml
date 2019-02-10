@@ -10,7 +10,7 @@ main:
 #    url: /talks/      
     
   - title: "Portfolio"
-    url: /talks/
+    url: /portfolio/
         
   - title: "Thoughts"
     url: /year-archive/
