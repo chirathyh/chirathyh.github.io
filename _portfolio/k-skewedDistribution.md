@@ -17,7 +17,7 @@ Lets identify a couple of methods which can be used to transform the actual dist
 
 ## 1. Box - Cox Transformations
 
-add pic here
+<img src='/images/skew1.png'>
 
 Box - Cox transformations relate to the different functions obtained by using different Lambda values of the function T(lambda) = (x^lambda - 1 ) / lambda
 In this approach we use the above equation to transform the data and thus should test whether the transformed distribution possess the normal characteristics we look for. Since we obtain a set of transformed distributions we need a method which would enable us to choose the best transform. This decision process can be carried out in couple of methods. Some of the methods are discussed towards the end of this article.
@@ -40,15 +40,15 @@ The following graphs relate to the distributions obtained from the Box-Cox trans
 
 We when we have applied the log transformation the distribution has obtained features of a normal distribution.
 
-add the pic here
+<img src='/images/skew2.png'>
 
 The following two graphs shows the instances where the Box-Cox transformation for selected values of the Lambda Parameter. The Lambda parameter is shown above each graph and in some cases the distributions have neared a normal distribution. The next important feature would be in selecting the best transformed distribution which is discussed in the following section.
 
-add the pic here
+<img src='/images/skew3.png'>
 
 The following graphs are related to the negative value ranges of the Lambda Parameter. In this scenario only lambda = - 0.9 obtains somewhat of normal distribution. it should be noted that there aren't any fixed ranges that we can try out, rather it would depend on the distribution of data which we are analyzing. 
 
-add the pic here
+<img src='/images/skew4.png'>
 
 ## Choosing the best Transform for the Distribution
 
@@ -56,7 +56,7 @@ We have identified Box-Cox Transforms and the Log Transforms above and we need t
 
 ## Skewness
 
-add pic
+<img src='/images/skew5.png'>
 
 The Skewness of a distribution would equal to zero if it is a normal distribution and positive or negative depending on positive skewed and negative skewed nature. Thus by considering the absolute value of skewness we can compare the normal behaviour of the distributions.
 
@@ -64,7 +64,7 @@ Resource - Skewness : https://en.wikipedia.org/wiki/Skewness
 
 ## Kurtosis
 
-add pic
+<img src='/images/skew6.png'>
 
 Kurtosis also can be used in a similar manner to differentiate between the distributions. Both these factors are directly linked to the Normal behaviour of the distribution. A thorough understanding on the
 kurtosis characteristic could be obtained by using the following link.
@@ -73,7 +73,7 @@ Resource - Kurtosis : http://www.itl.nist.gov/div898/handbook/eda/section3/eda35
 
 ## JB Test
 
-add pic
+<img src='/images/skew7.png'>
 
 Also in addition to the above identified methods the JB Test which takes both the skewness and kurtosis can be identified as a far superior method to differentiate between the derived distributions. The interpretation of the values of the JB Test can be understood by the following link.
 
