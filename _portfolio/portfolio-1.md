@@ -1,10 +1,15 @@
 ---
+<<<<<<< HEAD
 title: "Clardia - Prediction of Diabetes Using Non Invasive Photoplethysmography (PPG) Measurements & Physiological Characteristics."
 excerpt: "Photoplethysmography (PPG) can be identified as a non invasive, inexpensive, optic technique which measures the blood volume changes in blood vessels through which oxygen saturation, blood pressure, cardiac output could be measured. In recent researches it has been identified that PPG is a promising technique towards early screening of diseases as the PPG waveform possess significant information embedded within."
+=======
+title: "Portfolio item number 1"
+excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+>>>>>>> parent of a1e7b3e... Update portfolio-1.md
 collection: portfolio
 ---
-## Introduction
 
+<<<<<<< HEAD
 Photoplethysmography (PPG) can be identified as a non invasive, inexpensive, optic technique which measures the blood volume changes in blood vessels through which oxygen saturation, blood pressure, cardiac output could be measured. In recent researches it has been identified that PPG is a promising technique towards early screening of diseases as the PPG waveform possess significant information embedded within.
 
 Diabetes is a result of abnormally high levels of sugar in the blood, which results in many long term complications. The early detection of Diabetes is of utmost importance to reduce risks and proper health management. The research focuses on analyzing extracted PPG signals of users, their physiological & demographic characteristics using Machine Learning Techniques, in order to predict Diabetes.
@@ -33,3 +38,6 @@ The aim of this research is to develop a machine learning model capable of detec
 5. Suggest methods where the research can be applied practically with the use of general wearable devices embedded with PPG sensors.
 
 The research would be carried out using the dataset, A new, short-recorded photoplethysmogram dataset for blood pressure monitoring in China (Liang, Yongbo; Liu, Guiyong; Chen, Zhencheng; Elgendi, Mohamed (2018) published in the Nature Journal under a creative common license.
+=======
+This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+>>>>>>> parent of a1e7b3e... Update portfolio-1.md
