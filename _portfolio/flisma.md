@@ -1,8 +1,6 @@
 ---
 title: "Flisma - A Wearable Device to Predict Injuries Due to Throwing"
 excerpt: ""
-date: 2017-03-01
-permalink: /portfolio/2017/03/Flisma-1/
 collection: portfolio
 ---
 
