@@ -1,5 +1,7 @@
 ---
 title: "Clardia - A Comprehensive Family Health Assistant"
+date: 2017-01-01
 excerpt: ""
+permalink: /portfolio/2017/01/clardia-1/
 collection: portfolio
 ---
