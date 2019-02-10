@@ -21,9 +21,9 @@ The aim of this research is to develop a machine learning model capable of detec
 
 ## Objectives:
 
-● Identify appropriate features for the development of the model. (PPG, Physiological & demographic)
-● Identify suitable machine learning techniques in order to develop a model for the prediction of diabetes.
-● Validate the models using test data.
+* Identify appropriate features for the development of the model. (PPG, Physiological & demographic)
+* Identify suitable machine learning techniques in order to develop a model for the prediction of diabetes.
+* Validate the models using test data.
 
 ## Methodology
 1. Review existing literature related to biomedical signal processing and machine learning approaches towards diabetes prediction to identify possible features.
