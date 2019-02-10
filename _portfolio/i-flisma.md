@@ -53,4 +53,4 @@ Wireless IMU & EMG Sensors are really expensive which is key constraint regardin
 <img src='/images/flisma12.png'>
 <img src='/images/flisma13.png'>
 
-
+[Download Project Report here](http://chirathyh.github.io/files/flismaReport.pdf)
