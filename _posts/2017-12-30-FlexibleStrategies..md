@@ -2,10 +2,12 @@
 title: 'Flexible Strategies.'
 date: 2017-12-30
 permalink: /posts/2017/12/Flexible Strategies./
-excerpt: "True artists of strategy, will design flexible strategies to converge towards their goals in the most unexpected and beautiful routes."
+excerpt: "<img src='/images/strategies.png'><br/><br/>True artists of strategy, will design flexible strategies to converge towards their goals in the most unexpected and beautiful routes."
 tags:
   - Thoughts
 ---
+![Image](/images/strategies.png)
+
 ## “True artists of strategy, will design flexible strategies to converge towards their goals in the most unexpected and beautiful routes.”
 
 The delightful feeling of freeness is hard to come by if you are a person with great rigidity or inflexibility. You can always choose to “Be Solid as a Rock or flow freely like water... “. But to feel the bliss of freeness, you should follow something I like to reference as a !exible strategy towards life.
