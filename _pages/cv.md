@@ -34,14 +34,14 @@ PROFESSIONAL QUALIFICATIONS
   * CIMA Passed Finalist
   * Sri Lankan Prize Winner - Performance Management
 
-Publications
+PUBLICATIONS
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 EXPERIENCE 
- ======
+======
 * Research Assistant (Nov 2018 – Present)
   * Department of Computer Science & Engineering, University of Moratuwa
   * Research to develop a non-invasive early Type 2 Diabetes prediction system using Machine Learning through the analysis of     Photoplethysmography Signals (PPG) and physiological characteristics of users. 
@@ -62,7 +62,26 @@ EXPERIENCE
   * Forestpin PVT Ltd, Colombo, Sri Lanka
   * Developed algorithms for the Forestpin Risk Engine product, a forensic tool to identify outliers and discrepancies in         corporate financial transactions.
 
-  
+RESEARCH PROJECTS 
+======
+* Prediction of Diabetes Using Non-Invasive Photoplethysmography (PPG) Measurements & Physiological Characteristics.
+  * Dept. of Computer Science & Engineering, University of Moratuwa. 
+  * Supervised by Dr. Charith Chitraranjan
+  * Development of a system using Machine Learning towards the prediction of Type 2 Diabetes, using readily available             Photoplethysmography (PPG) signals and physiological characteristics of users. 
+  * Publication: In-Review: AIME 2019
+
+* A Wearable Device to Predict Injuries Due to Throwing.
+  * Dept. of Electronics & Telecommunication Engineering, University of Moratuwa. 
+  * Supervised by Dr. Pujitha Silva
+  * A wearable system which captures Electromyography (EMG) and Inertial Measurement Units (IMU) data of cricketers and           provide analytics to predict possible injuries using existing medical literature and Unsupervised Learning. The final         results and feedback are presented through a web/mobile application. [Link](https://chirathyh.github.io/portfolio/i-flisma/)
+  * Publication: In-Review: EMBC 2019
+
+* Clardia – A Smart Healthcare Device for Monitoring Key Health Parameters of Family Members.
+  * Olivescript PVT Ltd. Self-Supervised. 
+  * Development of an IoT device which obtains the Photoplethysmography (PPG) signal from the sole region and health               parameters such as the Weight, Heart Rate, Sp02 of family members to provide preventive and predictive health analytics.       [Link](https://chirathyh.github.io/portfolio/j-clardia/)
+  * Accepted Paper: ICSPS 2017, New Zealand.  
+  * Awards: Winner - 2nd Commonwealth Health Awards, Winner - Disrupt Asia 2017, 2nd Runners Up Microsoft Imagine Cup (Sri         Lanka Category) 
+
   
   
   
