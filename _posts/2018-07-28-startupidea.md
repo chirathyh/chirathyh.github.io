@@ -13,7 +13,7 @@ Alternatively you can think hard, brainstorm and find a suitable business idea t
 
 However it should be noted that, thinking should not be constrained or limited into a framework and this effort is solely to summarize important facts in the thinking process. Greatest value can only be generated when you challenge the norm and think out side the box. This will be a good stepping stone for your thought process when you are finding it difficult to find the perfect business idea you are looking for. 
 
-<img src='/images/startupidea.png'
+<img src='/images/startupidea.png'>
 
 As an entrepreneur when you are seeking for an business idea, initially you would have to decide whether you are focussing on working on an existing business idea or a totally new idea resulting in a new market and a fresh Startup. The matrix above is developed based on the creativity / innovation and the technological complexity or the experience required for the particular idea. (arrows head indicates the increasing direction) This matrix does not factor in the market impact of the idea which is also important. Although once the business idea has been finalized the market impact could be analyzed separately which is not a focus of this model.
 
