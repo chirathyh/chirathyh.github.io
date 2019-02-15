@@ -12,4 +12,3 @@ Photoplethysmography (PPG) can be identified as a non invasive technique which m
 
 [Download paper here](http://chirathyh.github.io/files/paper1.pdf)
 
-Recommended citation: Hettiarachchi, Chirath, Buddhishan Manamperi, and Dilshan Uthpala. "Identifying the Optimum Region of the Human Sole to Extract the PPG Signal for Pulse Rate Estimation." Proceedings of the 9th International Conference on Signal Processing Systems. ACM, 2017.
