@@ -17,20 +17,20 @@ Machine Learning, Artificial Intelligence, Biological Signal Processing, Data Sc
 
 EDUCATION
 ======
-* University of Moratuwa, Moratuwa, Sri Lanka (March 2014 – Jan 2018) 	
+* **University of Moratuwa, Moratuwa, Sri Lanka** (March 2014 – Jan 2018) 	
   B.Sc.Eng (Hons) in Electronics & Telecommunication Engineering
   * Class: Second Class Upper Division
   * Overall GPA: 3.53/4.20
   * Dean’s List: Semester 6, 8. 
   * Modules Undertaken: Data Structures & Algorithms, Modular Software Development, Computer Networks, Fundamentals of          Computer Organization & Design, Autonomous Systems, Electronic Control Systems, Robotics, Neural Networks & Fuzzy Logic,  Calculus, Differential Equations, Methods of Mathematics, Linear Algebra, Numerical Methods, Operational Research, Signals &   Systems, Digital Signal Processing. 
 
-* Ananda College, Colombo 10, Sri Lanka (Jan 1999 - Aug 2012) 
+* **Ananda College, Colombo 10, Sri Lanka** (Jan 1999 - Aug 2012) 
   * General Certificate of Education Advanced Level-Physical Science Stream (University Entrance):3 A (High Distinction)     passes. 
   * General Certificate of Education Ordinary Level (Junior High School): 9 A (High Distinction) passes.
 
 PROFESSIONAL QUALIFICATIONS
 ======
-* Chartered Institute of Management Accountants (Aug 2012 – Nov 2014) 
+* **Chartered Institute of Management Accountants** (Aug 2012 – Nov 2014) 
   * CIMA Passed Finalist
   * Sri Lankan Prize Winner - Performance Management
 
@@ -42,41 +42,41 @@ PUBLICATIONS
   
 EXPERIENCE 
 ======
-* Research Assistant (Nov 2018 – Present)
+* **Research Assistant** (Nov 2018 – Present)
   * Department of Computer Science & Engineering, University of Moratuwa
   * Research to develop a non-invasive early Type 2 Diabetes prediction system using Machine Learning through the analysis of     Photoplethysmography Signals (PPG) and physiological characteristics of users. 
 
-* Machine Learning Engineer - Part Time (Dec 2018 – Present)
+* **Machine Learning Engineer - Part Time** (Dec 2018 – Present)
   * Yaala Labs PVT Ltd, Sri Lanka 
   * Application of Machine Learning towards a name screening product and risk prediction for potential lease customers. 
 
-* Data Analytics & Machine Learning Engineer (April 2018 – Sep 2018)
+* **Data Analytics & Machine Learning Engineer** (April 2018 – Sep 2018)
   * Forestpin PVT Ltd, Colombo, Sri Lanka 
   * Focused on providing Data Analytics to organizations operating in diverse industries, and conducted research to develop       Machine Learning Models for better predictions and forecasting.
 
-* Co-Founder / CEO (Jan 2017 – April 2018)
+* **Co-Founder / CEO** (Jan 2017 – April 2018)
   * Olivescript PVT Ltd, Sri Lanka
   * Focused on design driven innovative Hardware & Software solutions to meet end consumer needs, and responsibility for           product branding & marketing.
 
-* Research Intern (Aug 2016 – Dec 2016)
+* **Research Intern** (Aug 2016 – Dec 2016)
   * Forestpin PVT Ltd, Colombo, Sri Lanka
   * Developed algorithms for the Forestpin Risk Engine product, a forensic tool to identify outliers and discrepancies in         corporate financial transactions.
 
 RESEARCH PROJECTS 
 ======
-* Prediction of Diabetes Using Non-Invasive Photoplethysmography (PPG) Measurements & Physiological Characteristics.
+* **Prediction of Diabetes Using Non-Invasive Photoplethysmography (PPG) Measurements & Physiological Characteristics.**
   * Dept. of Computer Science & Engineering, University of Moratuwa. 
   * Supervised by Dr. Charith Chitraranjan
   * Development of a system using Machine Learning towards the prediction of Type 2 Diabetes, using readily available             Photoplethysmography (PPG) signals and physiological characteristics of users. 
   * Publication: In-Review: AIME 2019
 
-* A Wearable Device to Predict Injuries Due to Throwing.
+* **A Wearable Device to Predict Injuries Due to Throwing.**
   * Dept. of Electronics & Telecommunication Engineering, University of Moratuwa. 
   * Supervised by Dr. Pujitha Silva
   * A wearable system which captures Electromyography (EMG) and Inertial Measurement Units (IMU) data of cricketers and           provide analytics to predict possible injuries using existing medical literature and Unsupervised Learning. The final         results and feedback are presented through a web/mobile application. [Link](https://chirathyh.github.io/portfolio/i-flisma/)
   * Publication: In-Review: EMBC 2019
 
-* Clardia – A Smart Healthcare Device for Monitoring Key Health Parameters of Family Members.
+* **Clardia – A Smart Healthcare Device for Monitoring Key Health Parameters of Family Members.**
   * Olivescript PVT Ltd. Self-Supervised. 
   * Development of an IoT device which obtains the Photoplethysmography (PPG) signal from the sole region and health               parameters such as the Weight, Heart Rate, Sp02 of family members to provide preventive and predictive health analytics.       [Link](https://chirathyh.github.io/portfolio/j-clardia/)
   * Accepted Paper: ICSPS 2017, New Zealand.  
@@ -94,34 +94,34 @@ OTHER PROJECTS
 
 SKILLS
 ======
-* Languages: Sinhalese (Native) & English (TOEFL iBT – 107/120, Listening: 30, Speaking: 27, Writing: 27, Reading: 23)
-* Programming Skills: Python, Typescript, CoffeeScript, Java
-* Technical Skills: Matlab & Simulink, Tensorflow, Keras, Scikit-learn 
-* Other Skills: Leadership (Sports / Multi-disciplinary Volunteer Teams), Team Work, Communication, Entrepreneurship, Business Management, Financial Accounting
+* **Languages**: Sinhalese (Native) & English (TOEFL iBT – 107/120, Listening: 30, Speaking: 27, Writing: 27, Reading: 23)
+* **Programming Skills**: Python, Typescript, CoffeeScript, Java
+* **Technical Skills**: Matlab & Simulink, Tensorflow, Keras, Scikit-learn 
+* **Other Skills**: Leadership (Sports / Multi-disciplinary Volunteer Teams), Team Work, Communication, Entrepreneurship, Business Management, Financial Accounting
 
 HONOURS AND AWARDS
 ======
-* Winner: 2nd Commonwealth Digital Health Conference & Awards 2017. (Non-Communicable Disease Category) 
-* Winner: Hemas Slingshot Startup Battle, Disrupt Asia 2017. 
-* Spirit of Service Award: Outstanding Commitment to Rotaract District 3220 (Sri Lanka & Maldives) 
-* Ananda Minimuthu Award: The Prize of Excellence for the Best Performance of the Grade, Ananda College. 
-* Colors Men (Chess): University of Moratuwa, Western Province and Ananda College. 
-* 2nd Runners-Up: Microsoft Imagine Cup 2017 (Sri Lanka Category) 
-* Winner: Lead Quest e-wiz Business Case Study
-* Finalist: HSBC Youth Enterprise Awards
-* Finalist: Tadhack 2016 
+* **Winner**: 2nd Commonwealth Digital Health Conference & Awards 2017. (Non-Communicable Disease Category) 
+* **Winner**: Hemas Slingshot Startup Battle, Disrupt Asia 2017. 
+* **Spirit of Service Award**: Outstanding Commitment to Rotaract District 3220 (Sri Lanka & Maldives) 
+* **Ananda Minimuthu Award**: The Prize of Excellence for the Best Performance of the Grade, Ananda College. 
+* **Colors Men (Chess)**: University of Moratuwa, Western Province and Ananda College. 
+* **2nd Runners-Up**: Microsoft Imagine Cup 2017 (Sri Lanka Category) 
+* **Winner**: Lead Quest e-wiz Business Case Study
+* **Finalist**: HSBC Youth Enterprise Awards
+* **Finalist**: Tadhack 2016 
 
 EXTRA CURRICULAR ACTIVITIES
 ======
-* Community Service & Volunteer Experience
-  * Vice President Professional Development (2016/2017), Director Professional Development (2015/2016) at Rotaract Club of         University of Moratuwa. The largest Rotaract Club of Sri Lanka which organizes the largest number of projects per year in     the domains of Community Service, Professional Development, Club Service & International Service.  
+* **Community Service & Volunteer Experience**
+  * **Vice President Professional Development (2016/2017), Director Professional Development (2015/2016)** at Rotaract Club of         University of Moratuwa. The largest Rotaract Club of Sri Lanka which organizes the largest number of projects per year in     the domains of Community Service, Professional Development, Club Service & International Service.  
   * Project Co-Chairperson of Are You Ready? 2015 the Official Careers Fair of University of Moratuwa, and active                 participation in numerous projects focusing community service. Grama Prabodaya:  Developing a rural village school,           Inspirer: English improving workshops, Hand in Hand, Gift a Smile: Projects focusing on children with special needs. 
 
-* Sport: An Internationally rated chess player representing Sri Lanka and University of Moratuwa in International Chess Championships. A Western Province, Ananda College and University of Moratuwa “Color’s Men”, and the Ananda College Chess Captain.
+* **Sport**: An Internationally rated chess player representing Sri Lanka and University of Moratuwa in International Chess Championships. A Western Province, Ananda College and University of Moratuwa “Color’s Men”, and the Ananda College Chess Captain.
 
 * Leadership Training Camp 2013, Sri Lanka Navy, Held at Advanced Naval Training Center (SLNS Nipuna) 
 
-* Clubs & Organizations: The Institute of Engineers Sri Lanka (IESL), Old Boy’s Association Ananda College, Electronic Club of University of Moratuwa (Past), Rotaract Club of University of Moratuwa (Past), Model United Nations Association of Ananda College (Past), Ananda College Broadcasting Unit (Past).  
+* **Clubs & Organizations**: The Institute of Engineers Sri Lanka (IESL), Old Boy’s Association Ananda College, Electronic Club of University of Moratuwa (Past), Rotaract Club of University of Moratuwa (Past), Model United Nations Association of Ananda College (Past), Ananda College Broadcasting Unit (Past).  
 
   
   
