@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello..."
+title: "About"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+Hi I'm Chirath, a Research Assistant at the Department of Computer Science & Engineering, University of Moratuwa.  I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the same University and am a proud product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
 
+I believe that there is great potential to apply AI towards healthcare which undoubtedly will add great value. My passion in this domain lead towards working on projects related to Biomedical Engineering and Machine Learning. I have worked on disease prediction applications focusing on the Photoplethysmography (PPG) signals of users and injury prediction applications using Electromyography (EMG) signals and IMU data. Detailed descriptions and findings of the projects can be accessed through the Portfolio section. 
 
+My philosophy is to keep everything simple, and I love to read, write and play the guitar during my leisure time. My thoughts are expressed in the form of a Blog which can be accessed through the Thoughts section. My passion is to work on novel research areas, where my ultimate goal is to combine my Engineering & Entrepreneurial skills to ensure great value addition to the society.
