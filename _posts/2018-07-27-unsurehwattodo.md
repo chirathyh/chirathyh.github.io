@@ -4,7 +4,7 @@ date: 2018-07-27
 permalink: /posts/2018/27/unsurewhattodo/
 excerpt: "Decisions. Decisions are tough to make when there are lot at stake. It might be about your career, which job to accept?, which stream to pursue your studies or another important life decision. You may be presented with numerous paths, with different levels of risk, benefits and opportunities, where you need to decide with the limited information you possess about the dynamic unpredictable future. Yes, its hard. "
 tags:
-  - Research
+  - Thoughts
 ---
 
 Decisions. Decisions are tough to make when there are lot at stake. It might be about your career, which job to accept?, which stream to pursue your studies or another important life decision. You may be presented with numerous paths, with different levels of risk, benefits and opportunities, where you need to decide with the limited information you possess about the dynamic unpredictable future. Yes, its hard. 
