@@ -2,10 +2,11 @@
 title: 'Be Solid as a Rock or Flow Freely like Water'
 date: 2017-05-16
 permalink: /posts/2017/05/flowlikewater/
-excerpt: "We are taught to be strong in life, to be strong as a rock or to standup like a mountain in tough situations. So that we would be immovable during times of stress, pain and agony. Standing strong in such situation will ultimately result in you having the better of the tough tight situation you are put in. But we never talk of the reverse possibility. What if you loose, what if you shatter into pieces like a rock!!.."
+excerpt: "<img src='/images/flow.png'><br/><br/>We are taught to be strong in life, to be strong as a rock or to standup like a mountain in tough situations. So that we would be immovable during times of stress, pain and agony. Standing strong in such situation will ultimately result in you having the better of the tough tight situation you are put in. But we never talk of the reverse possibility. What if you loose, what if you shatter into pieces like a rock!!.."
 tags:
   - Thoughts
 ---
+![Image](/images/flow.png)
 
 We are taught to be strong in life, to be strong as a rock or to standup like a mountain in tough situations. So that we would be immovable during times of stress, pain and agony. Standing strong in such situation will ultimately result in you having the better of the tough tight situation you are put in. But we never talk of the reverse possibility. What if you loose, what if you shatter into pieces like a rock!!..
 
