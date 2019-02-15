@@ -3,7 +3,7 @@ title: 'Summary of “The Lean Startup” by Eric Ries. An important read to all
 '
 date: 2018-08-09
 permalink: /posts/2018/08/leanstartup/
-excerpt: "You might have a brilliant startup idea, or you may still be brainstorming for the next big product / service which you envision to build. Although how cool your idea is and how competent you are, in order to make your idea a reality you need to have a perfect team to support you along this tedious journey."
+excerpt: "Every passionate entrepreneur who is pursuing his / her dream startup will greatly benefit by reading The Lean Startup by Eric Ries, as it encompasses many vital aspects that we should be aware of to be successful. The statistics suggest that many startups fail. They do so due to small errors made in thinking, planning and execution. Thus its would be greatly beneficial to read and learn from the experts, and have some understanding on their experiences which would help you in your journey as an entrepreneur."
 tags:
   - BookSummary
 ---
