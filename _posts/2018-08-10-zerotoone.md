@@ -2,12 +2,13 @@
 title: 'Summary of “Zero to One” ,Important Notes on Startups'
 date: 2018-08-10
 permalink: /posts/2018/08/zerotoone/
-excerpt: "You might have a brilliant startup idea, or you may still be brainstorming for the next big product / service which you envision to build. Although how cool your idea is and how competent you are, in order to make your idea a reality you need to have a perfect team to support you along this tedious journey."
+excerpt: "Peter Thiel is a popular figure when it comes to Startups. He started is startup journey Co Founding PayPal which was eventually sold to eBay. Afterwards he has founded a number of companies including Palantir Technologies, a big data company. He was the first outside investor for Facebook. This book Zero to One is based on the course he conducted on startups at Stanford University which contains the notes taken by Blake Masters."
 tags:
   - Thoughts
 ---
 
-Peter Thiel is a popular figure when it comes to Startups. He started is startup journey Co Founding PayPal which was eventually sold to eBay. Afterwards he has founded a number of companies including Palantir Technologies, a big data company. He was the first outside investor for Facebook. This book Zero to One is based on the course he conducted on startups at Stanford University which contains the notes taken by Blake Masters. 
+Peter Thiel is a popular figure when it comes to Startups. He started is startup journey Co Founding PayPal which was eventually sold to eBay. Afterwards he has founded a number of companies including Palantir Technologies, a big data company. He was the first outside investor for Facebook. This book Zero to One is based on the course he conducted on startups at Stanford University which contains the notes taken by Blake Masters.
+
 The book covers some important aspects which should be addressed by startups when they pursue their venture, along with important details to build your future. The book contains many illustrations and presents concepts really simply, which enables anyone to quickly grasp and understand. I would like to summarize key concepts presented, and hope that it would inspire you to read this valuable book.
 
 The book starts off with an important question,
