@@ -2,10 +2,11 @@
 title: 'keep it simple'
 date: 2016-11-09
 permalink: /posts/2016/11/keepotsimple/
-excerpt: "Think how complex we are, our lives, we have thousands of things to do lectures to attend, work at the office, social commitments and the list just goes on. Well guess we have become more and more complex with evolution, we don’t just full fill our basic needs as the people in the stone age. Instead we have thousands of other needs. We adding more and more as we evolve social media, fashion needs, technological needs etc. We are evolving towards a complex race but would the most intelligent species be complex or simple."
+excerpt: "<img src='/images/simple.png'><br/><br/>Think how complex we are, our lives, we have thousands of things to do lectures to attend, work at the office, social commitments and the list just goes on. Well guess we have become more and more complex with evolution, we don’t just full fill our basic needs as the people in the stone age. Instead we have thousands of other needs. We adding more and more as we evolve social media, fashion needs, technological needs etc. We are evolving towards a complex race but would the most intelligent species be complex or simple."
 tags:
   - Thoughts
 ---
+![Image](/images/simple.png)
 
 Think how complex we are, our lives, we have thousands of things to do lectures to attend, work at the office, social commitments and the list just goes on. Well guess we have become more and more complex with evolution, we don’t just full fill our basic needs as the people in the stone age. Instead we have thousands of other needs. We adding more and more as we evolve social media, fashion needs, technological needs etc. We are evolving towards a complex race but would the most intelligent species be complex or simple.
 
