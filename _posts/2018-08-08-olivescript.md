@@ -29,8 +29,7 @@ The development started at the beginning of 2017 and couple of months down the l
 We kept on developing the product adding necessary changes through the received feedback and finally found ourselves at the finals of Disrupt Asia 2017 Startup Battle. And Yes we won it! It was really great experience. We met a lot of people from diverse vertices and was able to obtain valuable feedback and input again and meet many potential investors. Consequently we were also able to continue the winning streak becoming Winners at the Commonwealth Digital Health Awards under the category of Non Communicable Diseases. 
 
 For More information regarding Clardia : 
-Product Video -   https://youtu.be/wgWlGTinScc
-Website - http://olivescript.net/clardia.html
+* Product Video -   https://youtu.be/wgWlGTinScc
 
 <img src='/images/olivescript5.png'>
 
