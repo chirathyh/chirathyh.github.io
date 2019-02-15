@@ -1,7 +1,7 @@
 ---
 title: 'Summary of “Zero to One” ,Important Notes on Startups'
 date: 2018-08-10
-permalink: /posts/2018/08/blog-post-3/
+permalink: /posts/2018/08/zerotoone/
 excerpt: "You might have a brilliant startup idea, or you may still be brainstorming for the next big product / service which you envision to build. Although how cool your idea is and how competent you are, in order to make your idea a reality you need to have a perfect team to support you along this tedious journey."
 tags:
   - Thoughts
