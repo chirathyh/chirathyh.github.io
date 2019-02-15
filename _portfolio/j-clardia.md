@@ -10,7 +10,7 @@ We identified that the focus on family healthcare is really minimal due to the b
 
 Please find the product video below, 
 
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=wgWlGTinScc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/watch?v=wgWlGTinScc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Clardia is a Comprehensive Family Health Assistant which can extract health parameters such as the Weight, Body Fat, Heart Rate, Blood Oxygen Levels, Temperature and the PPG Signal of the user. Each family member is just required to stand on top of the Clardia device for 20 seconds. The obtained parameters are thus analyzed to identify diseases symptoms in advance and identify the possibility of potential diseases.
 
