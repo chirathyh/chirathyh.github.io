@@ -82,7 +82,47 @@ RESEARCH PROJECTS
   * Accepted Paper: ICSPS 2017, New Zealand.  
   * Awards: Winner - 2nd Commonwealth Health Awards, Winner - Disrupt Asia 2017, 2nd Runners Up Microsoft Imagine Cup (Sri         Lanka Category) 
 
-  
+OTHER PROJECTS
+======
+* IoT Design & Competition: An IoT Weight Scale & Mobile Application using Arduino, RFID, Wifi, Java, Load Cells. 
+* Robotics Design & Competition – “Catch Me If You Can” using Arduino, Sensors and Bluetooth. 
+* Self-Navigating Robot using only Analog Electronics. 
+* Signal Generator using PIC & AD9850 signal generator module. 
+* Voice converter using Digital Signal Processing and Matlab. 
+* A cooling system based on humidity levels using Power Amplification. 
+* Processor design for image down sampling using FPGA. 
+
+SKILLS
+======
+* Languages: Sinhalese (Native) & English (TOEFL iBT – 107/120, Listening: 30, Speaking: 27, Writing: 27, Reading: 23)
+* Programming Skills: Python, Typescript, CoffeeScript, Java
+* Technical Skills: Matlab & Simulink, Tensorflow, Keras, Scikit-learn 
+* Other Skills: Leadership (Sports / Multi-disciplinary Volunteer Teams), Team Work, Communication, Entrepreneurship, Business Management, Financial Accounting
+
+HONOURS AND AWARDS
+======
+* Winner: 2nd Commonwealth Digital Health Conference & Awards 2017. (Non-Communicable Disease Category) 
+* Winner: Hemas Slingshot Startup Battle, Disrupt Asia 2017. 
+* Spirit of Service Award: Outstanding Commitment to Rotaract District 3220 (Sri Lanka & Maldives) 
+* Ananda Minimuthu Award: The Prize of Excellence for the Best Performance of the Grade, Ananda College. 
+* Colors Men (Chess): University of Moratuwa, Western Province and Ananda College. 
+* 2nd Runners-Up: Microsoft Imagine Cup 2017 (Sri Lanka Category) 
+* Winner: Lead Quest e-wiz Business Case Study
+* Finalist: HSBC Youth Enterprise Awards
+* Finalist: Tadhack 2016 
+
+EXTRA CURRICULAR ACTIVITIES
+======
+* Community Service & Volunteer Experience
+  * Vice President Professional Development (2016/2017), Director Professional Development (2015/2016) at Rotaract Club of         University of Moratuwa. The largest Rotaract Club of Sri Lanka which organizes the largest number of projects per year in     the domains of Community Service, Professional Development, Club Service & International Service.  
+  * Project Co-Chairperson of Are You Ready? 2015 the Official Careers Fair of University of Moratuwa, and active                 participation in numerous projects focusing community service. Grama Prabodaya:  Developing a rural village school,           Inspirer: English improving workshops, Hand in Hand, Gift a Smile: Projects focusing on children with special needs. 
+
+* Sport: An Internationally rated chess player representing Sri Lanka and University of Moratuwa in International Chess Championships. A Western Province, Ananda College and University of Moratuwa “Color’s Men”, and the Ananda College Chess Captain.
+
+* Leadership Training Camp 2013, Sri Lanka Navy, Held at Advanced Naval Training Center (SLNS Nipuna) 
+
+* Clubs & Organizations: The Institute of Engineers Sri Lanka (IESL), Old Boy’s Association Ananda College, Electronic Club of University of Moratuwa (Past), Rotaract Club of University of Moratuwa (Past), Model United Nations Association of Ananda College (Past), Ananda College Broadcasting Unit (Past).  
+
   
   
   
