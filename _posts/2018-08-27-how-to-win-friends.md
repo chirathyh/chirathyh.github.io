@@ -1,5 +1,5 @@
 ---
-title: 'The Art of Managing All Kinds of Relationships | Summary of How To Win Friends & Influence People.'
+title: 'The Art of Managing All Kinds of Relationships... Summary of How To Win Friends & Influence People.'
 date: 2018-08-27
 permalink: /posts/2018/08/blog-post-2/
 excerpt: "People are the greatest asset for any company, and the relationships that we form are of great importance. However, there are many obstacles in developing good bonds with people, and it is a different art itself. Dale Carnegie’s How to Win Friends & Influence People is a great read for anyone of you, irrespective of your occupation, age, demography. The book is a great summary analyzing the core of human nature, and how we should shape our lives to make good friends and develop great relationships."
