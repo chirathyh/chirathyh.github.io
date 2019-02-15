@@ -1,7 +1,7 @@
 ---
 title: 'Flexible Strategies.'
 date: 2017-12-30
-permalink: /posts/2017/12/Flexible Strategies./
+permalink: /posts/2017/12/FlexibleStrategies/
 excerpt: "<img src='/images/strategies.png'><br/><br/>True artists of strategy, will design flexible strategies to converge towards their goals in the most unexpected and beautiful routes."
 tags:
   - Thoughts
