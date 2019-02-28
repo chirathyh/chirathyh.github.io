@@ -44,11 +44,7 @@ EXPERIENCE
 ======
 * **Research Assistant** (Nov 2018 – Present)
   * Department of Computer Science & Engineering, University of Moratuwa
-  * Research to develop a non-invasive early Type 2 Diabetes prediction system using Machine Learning through the analysis of     Photoplethysmography Signals (PPG) and physiological characteristics of users. 
-
-* **Machine Learning Engineer - Part Time** (Dec 2018 – Present)
-  * Yaala Labs PVT Ltd, Sri Lanka 
-  * Application of Machine Learning towards a name screening product and risk prediction for potential lease customers. 
+  * Research to develop a non-invasive early Type 2 Diabetes prediction system using Machine Learning through the analysis of     Photoplethysmography Signals (PPG) and physiological characteristics of users.  
 
 * **Data Analytics & Machine Learning Engineer** (April 2018 – Sep 2018)
   * Forestpin PVT Ltd, Colombo, Sri Lanka 
