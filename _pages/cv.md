@@ -64,7 +64,7 @@ RESEARCH PROJECTS
   * Dept. of Computer Science & Engineering, University of Moratuwa. 
   * Supervised by Dr. Charith Chitraranjan
   * Development of a system using Machine Learning towards the prediction of Type 2 Diabetes, using readily available             Photoplethysmography (PPG) signals and physiological characteristics of users. 
-  * Publication: In-Review: AIME 2019
+  * Publication: Accepted: AIME 2019
 
 * **A Wearable Device to Predict Injuries Due to Throwing.**
   * Dept. of Electronics & Telecommunication Engineering, University of Moratuwa. 
