@@ -11,7 +11,7 @@ tags:
 
 Greetings from Olivescript…
 
-We have been receiving many messages from our viewers asking what exactly Olivescript is and what we actually do. There has been some confusion since we have been working on multiple domain. In order to provide you a better understanding lets go back few years..
+We have been receiving many messages from our viewers asking what exactly Olivescript is and what we actually do. There has been some confusion since we have been working on multiple domains. In order to provide you a better understanding lets go back few years..
 
 Me Buddhishan and Ahamed were good friends following our Electronics & Telecommunication Degree at University of Moratuwa. We had both participated in numerous hackathon competitions and worked separately on small startup ideas, when one day in 2016 while we were chatting about ideas we understood that we wanted to do more than just focus on competitions. Thus Olivescript was formed. 
 
