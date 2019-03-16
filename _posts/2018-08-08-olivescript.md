@@ -1,5 +1,5 @@
 ---
-title: 'What is Olivescript ? What do we do ? The Story of Olivescript'
+title: 'The Story of Olivescript...'
 date: 2018-08-08
 permalink: /posts/olivescript/
 excerpt: "<img src='/images/olivescript1.png'><br/><br/>We have been receiving many messages from our viewers asking what exactly Olivescript is and what we actually do. There has been some confusion since we have been working on multiple domain. In order to provide you a better understanding lets go back few years.."
