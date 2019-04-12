@@ -70,7 +70,7 @@ RESEARCH PROJECTS
   * Dept. of Electronics & Telecommunication Engineering, University of Moratuwa. 
   * Supervised by Dr. Pujitha Silva
   * A wearable system which captures Electromyography (EMG) and Inertial Measurement Units (IMU) data of cricketers and           provide analytics to predict possible injuries using existing medical literature and Unsupervised Learning. The final         results and feedback are presented through a web/mobile application. [Link](https://chirathyh.github.io/portfolio/i-flisma/)
-  * Publication: In-Review: EMBC 2019
+  * Publication: Accepted: EMBC 2019
 
 * **Clardia – A Smart Healthcare Device for Monitoring Key Health Parameters of Family Members.**
   * Olivescript PVT Ltd. Self-Supervised. 
