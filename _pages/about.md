@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi I'm Chirath, a Research Assistant at the Department of Computer Science & Engineering, University of Moratuwa.  I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the same University and am a proud product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
+Hi I'm Chirath, a Computer Science PhD student at the Australian National University.
+
+I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the same University and am a proud product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
 
 I believe that there is great potential to apply AI towards healthcare which undoubtedly will add great value. My passion in this domain lead towards working on projects related to Biomedical Engineering and Machine Learning. I have worked on disease prediction applications focusing on the Photoplethysmography (PPG) signals of users and injury prediction applications using Electromyography (EMG) signals and IMU data. Detailed descriptions and findings of the projects can be accessed through the Portfolio section. 
 
