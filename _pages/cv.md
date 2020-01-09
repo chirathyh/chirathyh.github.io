@@ -43,34 +43,34 @@ PUBLICATIONS
 EXPERIENCE 
 ======
 * **Research Assistant** (Nov 2018 – Present)</br>
-  Department of Computer Science & Engineering, University of Moratuwa
+  Department of Computer Science & Engineering, University of Moratuwa</br>
   Research to develop a non-invasive early Type 2 Diabetes prediction system using Machine Learning through the analysis of     Photoplethysmography Signals (PPG) and physiological characteristics of users.  
 
 * **Data Analytics & Machine Learning Engineer** (April 2018 – Sep 2018)</br>
-  Forestpin PVT Ltd, Colombo, Sri Lanka 
+  Forestpin PVT Ltd, Colombo, Sri Lanka </br>
   Focused on providing Data Analytics to organizations operating in diverse industries, and conducted research to develop       Machine Learning Models for better predictions and forecasting.
 
 * **Co-Founder / CEO** (Jan 2017 – April 2018)</br>
-  Olivescript PVT Ltd, Sri Lanka
+  Olivescript PVT Ltd, Sri Lanka</br>
   Focused on design driven innovative Hardware & Software solutions to meet end consumer needs, and responsibility for           product branding & marketing.
 
 * **Research Intern** (Aug 2016 – Dec 2016)</br>
-  Forestpin PVT Ltd, Colombo, Sri Lanka
+  Forestpin PVT Ltd, Colombo, Sri Lanka</br>
   Developed algorithms for the Forestpin Risk Engine product, a forensic tool to identify outliers and discrepancies in         corporate financial transactions.
 
 RESEARCH PROJECTS 
 ======
 * **Prediction of Diabetes Using Non-Invasive Photoplethysmography (PPG) Measurements & Physiological Characteristics.**</br>
-  Dept. of Computer Science & Engineering, University of Moratuwa. 
-  Supervised by Dr. Charith Chitraranjan
-  Development of a system using Machine Learning towards the prediction of Type 2 Diabetes, using readily available             Photoplethysmography (PPG) signals and physiological characteristics of users. 
-  Publication: Accepted: AIME 2019
+  Dept. of Computer Science & Engineering, University of Moratuwa.</br>
+  Supervised by Dr. Charith Chitraranjan</br>
+  Development of a system using Machine Learning towards the prediction of Type 2 Diabetes, using readily available             Photoplethysmography (PPG) signals and physiological characteristics of users.</br>
+  Publication: AIME 2019
 
-* **A Wearable Device to Predict Injuries Due to Throwing.**
-  * Dept. of Electronics & Telecommunication Engineering, University of Moratuwa. 
-  * Supervised by Dr. Pujitha Silva
-  * A wearable system which captures Electromyography (EMG) and Inertial Measurement Units (IMU) data of cricketers and           provide analytics to predict possible injuries using existing medical literature and Unsupervised Learning. The final         results and feedback are presented through a web/mobile application. [Link](https://chirathyh.github.io/portfolio/i-flisma/)
-  * Publication: Accepted: EMBC 2019
+* **A Wearable Device to Predict Injuries Due to Throwing.**</br>
+  Dept. of Electronics & Telecommunication Engineering, University of Moratuwa.</br>
+  Supervised by Dr. Pujitha Silva</br>
+  A wearable system which captures Electromyography (EMG) and Inertial Measurement Units (IMU) data of cricketers and           provide analytics to predict possible injuries using existing medical literature and Unsupervised Learning. The final         results and feedback are presented through a web/mobile application. [Link](https://chirathyh.github.io/portfolio/i-flisma/)</br>
+  Publication: EMBC 2019
 
 * **Clardia – A Smart Healthcare Device for Monitoring Key Health Parameters of Family Members.**
   * Olivescript PVT Ltd. Self-Supervised. 
