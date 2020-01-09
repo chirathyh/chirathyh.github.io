@@ -64,19 +64,19 @@ RESEARCH PROJECTS
   Dept. of Computer Science & Engineering, University of Moratuwa.</br>
   Supervised by Dr. Charith Chitraranjan</br>
   Development of a system using Machine Learning towards the prediction of Type 2 Diabetes, using readily available             Photoplethysmography (PPG) signals and physiological characteristics of users.</br>
-  Publication: AIME 2019
+  Publication: AIME 2019, Poland.
 
 * **A Wearable Device to Predict Injuries Due to Throwing.**</br>
   Dept. of Electronics & Telecommunication Engineering, University of Moratuwa.</br>
   Supervised by Dr. Pujitha Silva</br>
   A wearable system which captures Electromyography (EMG) and Inertial Measurement Units (IMU) data of cricketers and           provide analytics to predict possible injuries using existing medical literature and Unsupervised Learning. The final         results and feedback are presented through a web/mobile application. [Link](https://chirathyh.github.io/portfolio/i-flisma/)</br>
-  Publication: EMBC 2019
+  Publication: EMBC 2019, Germany.
 
-* **Clardia – A Smart Healthcare Device for Monitoring Key Health Parameters of Family Members.**
-  * Olivescript PVT Ltd. Self-Supervised. 
-  * Development of an IoT device which obtains the Photoplethysmography (PPG) signal from the sole region and health               parameters such as the Weight, Heart Rate, Sp02 of family members to provide preventive and predictive health analytics.       [Link](https://chirathyh.github.io/portfolio/j-clardia/)
-  * Accepted Paper: ICSPS 2017, New Zealand.  
-  * Awards: Winner - 2nd Commonwealth Health Awards, Winner - Disrupt Asia 2017, 2nd Runners Up Microsoft Imagine Cup (Sri         Lanka Category) 
+* **Clardia – A Smart Healthcare Device for Monitoring Key Health Parameters of Family Members.**</br>
+  Olivescript PVT Ltd. Self-Supervised.</br>
+  Development of an IoT device which obtains the Photoplethysmography (PPG) signal from the sole region and health               parameters such as the Weight, Heart Rate, Sp02 of family members to provide preventive and predictive health analytics.       [Link](https://chirathyh.github.io/portfolio/j-clardia/)</br>
+  Publication: ICSPS 2017, New Zealand.</br>
+  Awards: Winner - 2nd Commonwealth Health Awards, Winner - Disrupt Asia 2017, 2nd Runners Up Microsoft Imagine Cup (Sri         Lanka Category) 
 
 OTHER PROJECTS
 ======
