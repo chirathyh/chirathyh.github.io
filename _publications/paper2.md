@@ -7,7 +7,7 @@ Through the analysis of morphological features related to the PPG waveform and i
 date: 2019-03-13
 venue: '17th Conference on Artificial Intelligence in Medicine (AIME) - Poland 2019'
 paperurl: 'http://chirathyh.github.io/files/AIME_2019_paper_89.pdf'
-citation: Accepted for Publication in Springer Lecture Note on AI.
+citation: 'Hettiarachchi, Chirath, and Charith Chitraranjan. "A Machine Learning Approach to Predict Diabetes Using Short Recorded Photoplethysmography and Physiological Characteristics." Conference on Artificial Intelligence in Medicine in Europe. Springer, Cham, 2019.'
 ---
 
 Diabetes is a global epidemic, which leads to severe complications such as heart disease, limb amputations and blindness, mainly occurring due to the inability of early detection. Photoplethysmography (PPG) signals have been used as a non-invasive approach to predict dia- betes. However, current methods use long, continuous signals collected in a clinical setting. This study focuses on predicting Type 2 Diabetes from short (~2.1s) PPG signals extracted from smart devices, and readily available physiological data such as age, gender, weight and height. As this kind of PPG signals can be easily extracted using mobile phones or smart wearable technology, the user can get an initial prediction without entering a medical facility.
