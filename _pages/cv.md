@@ -42,20 +42,20 @@ PUBLICATIONS
   
 EXPERIENCE 
 ======
-* **Research Assistant** (Nov 2018 – Present)</br>
-  Department of Computer Science & Engineering, University of Moratuwa</br>
+* **Research Assistant** (Nov 2018 – Present) . 
+  Department of Computer Science & Engineering, University of Moratuwa . 
   Research to develop a non-invasive early Type 2 Diabetes prediction system using Machine Learning through the analysis of     Photoplethysmography Signals (PPG) and physiological characteristics of users.  
 
-* **Data Analytics & Machine Learning Engineer** (April 2018 – Sep 2018)</br>
-  Forestpin PVT Ltd, Colombo, Sri Lanka </br>
+* **Data Analytics & Machine Learning Engineer** (April 2018 – Sep 2018) . 
+  Forestpin PVT Ltd, Colombo, Sri Lanka . 
   Focused on providing Data Analytics to organizations operating in diverse industries, and conducted research to develop       Machine Learning Models for better predictions and forecasting.
 
-* **Co-Founder / CEO** (Jan 2017 – April 2018)</br>
-  Olivescript PVT Ltd, Sri Lanka</br>
+* **Co-Founder / CEO** (Jan 2017 – April 2018) . 
+  Olivescript PVT Ltd, Sri Lanka . 
   Focused on design driven innovative Hardware & Software solutions to meet end consumer needs, and responsibility for           product branding & marketing.
 
-* **Research Intern** (Aug 2016 – Dec 2016)</br>
-  Forestpin PVT Ltd, Colombo, Sri Lanka</br>
+* **Research Intern** (Aug 2016 – Dec 2016) . 
+  Forestpin PVT Ltd, Colombo, Sri Lanka . 
   Developed algorithms for the Forestpin Risk Engine product, a forensic tool to identify outliers and discrepancies in         corporate financial transactions.
 
 RESEARCH PROJECTS 
