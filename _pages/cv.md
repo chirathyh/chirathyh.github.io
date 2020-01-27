@@ -17,11 +17,11 @@ Machine Learning, Artificial Intelligence, Biological Signal Processing, Control
 
 EDUCATION
 ======
-* **Australian National University** (September 2019 – Present) 	
-  PhD Student
+* **Australian National University** (September 2019 – Present)<br>
+  PhD Student<br>
   Research School of Computer Science, College of Engineering & Computer Science
   
-* **University of Moratuwa, Moratuwa, Sri Lanka** (March 2014 – Jan 2018) 	
+* **University of Moratuwa, Moratuwa, Sri Lanka** (March 2014 – Jan 2018) <br>
   B.Sc.Eng (Hons) in Electronics & Telecommunication Engineering
   * Class: Second Class Upper Division
   * Overall GPA: 3.53/4.20
