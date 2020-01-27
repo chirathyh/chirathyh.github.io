@@ -13,10 +13,14 @@ I'm a genuine all rounding personality seeking to utilize acquired skills and in
 
 RESEARCH INTERESTS
 ======
-Machine Learning, Artificial Intelligence, Biological Signal Processing, Data Science, Financial Data Analytics, Robotics, Internet of Things. 
+Machine Learning, Artificial Intelligence, Biological Signal Processing, Control Systems. 
 
 EDUCATION
 ======
+* **Australian National University** (September 2019 – Present) 	
+  PhD Student
+  Research School of Computer Science, College of Engineering & Computer Science
+  
 * **University of Moratuwa, Moratuwa, Sri Lanka** (March 2014 – Jan 2018) 	
   B.Sc.Eng (Hons) in Electronics & Telecommunication Engineering
   * Class: Second Class Upper Division
