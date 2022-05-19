@@ -18,6 +18,7 @@ author_profile: true
 
 </details>
 </div>
+
 <div>
 <strong>Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes.</strong> Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology & Therapeutics. Vol. 23, 2022.
 <details>
@@ -27,6 +28,7 @@ author_profile: true
 
 </details>
 </div>
+
 <div>
 <strong>Integrating Multiple Inputs Into an Artificial Pancreas System: Narrative Literature Review.</strong> Hettiarachchi C, Daskalaki E, Desborough J, Nolan C, O'Neal D, Suominen H. JMIR diabetes, 2022.
 <details>
