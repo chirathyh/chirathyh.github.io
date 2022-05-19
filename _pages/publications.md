@@ -9,7 +9,14 @@ author_profile: true
 
 **A Reinforcement Learning Based System for Blood Glucose Control without Carbohydrate Estimation in Type 1 Diabetes**. Hettiarachchi C, Malagutti N, Nolan C, Daskalaki E, Suominen H. 44th Annual International Conference of the IEEE Engineering in Medicine and Biology Society, 2022 (Accepted). 
 [[paper]](https://www.liebertpub.com/doi/full/10.1089/dia.2021.2525.abstracts). 
-<details><summary>Abstract</summary> dflkjljkljkl</details>
+
+<details><summary>CLICK ME</summary>
+<p>
+```python
+print("hello world!")
+```
+</p>
+</details>
 
 **Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes**. Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology \& Therapeutics. Vol. 23, 2021, (Abstract) [[paper]](https://www.liebertpub.com/doi/full/10.1089/dia.2021.2525.abstracts).
 
