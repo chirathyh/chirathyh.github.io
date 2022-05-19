@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Chirath Hettiarachchi"
   avatar           : "profile.png"
-  bio              : "Researcher | Explorer"
-  location         :  #"Location"
+  bio              : "PhD Student | Blogger"
+  location         :  "Australia"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=gvLLPs8AAAAJ&hl=en"
   email            : "chirathyh@gmail.com"
@@ -101,7 +101,7 @@ author:
   instagram        : "chirathyh"
   lastfm           :
   linkedin         : "chirathyh"
-  orcid            :  #"http://orcid.org/yourorcidurl"
+  orcid            :  "https://orcid.org/0000-0002-7702-0718"
   pinterest        :
   soundcloud       :
   stackoverflow    :  # http://stackoverflow.com/users/123456/username
