@@ -18,7 +18,7 @@ author_profile: true
 
 </details>
 </div>
-
+<br>
 
 <div>
 <strong>Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes.</strong> Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology & Therapeutics. Vol. 23, 2022.
@@ -29,7 +29,7 @@ author_profile: true
 
 </details>
 </div>
-
+<br>
 
 <div>
 <strong>Integrating Multiple Inputs Into an Artificial Pancreas System: Narrative Literature Review.</strong> Hettiarachchi C, Daskalaki E, Desborough J, Nolan C, O'Neal D, Suominen H. JMIR diabetes, 2022.
@@ -40,7 +40,7 @@ author_profile: true
 
 </details>
 </div>
-
+<br>
 
 # 2021
 ---
@@ -50,17 +50,17 @@ author_profile: true
 <details>
   <summary>Abstract <a href="https://www.liebertpub.com/doi/full/10.1089/dia.2021.2525.abstracts">Full paper</a></summary>
   
-<blockquote><p><strong>Background and Aims</strong>: The complexity and inter‐subject variability of the glucoregulatory system calls for the integration of additional physiological signals in the daily management of glycaemia in Type 1 Diabetes (T1D). The aim of this study was to explore the Information Flow (IF) among different physiological signals in T1D subjects.</br>
+<blockquote><p><strong>Background and Aims</strong>: The complexity and inter‐subject variability of the glucoregulatory system calls for the integration of additional physiological signals in the daily management of glycaemia in Type 1 Diabetes (T1D). The aim of this study was to explore the Information Flow (IF) among different physiological signals in T1D subjects.<br>
 
-<strong>Methods</strong>: The OhioT1DM dataset was used for the analysis, where Continuous Glucose Monitoring (CGM), insulin delivery, meals, Galvanic Skin Response (GSR), skin temperature, and Heart Rate (HR) information was available for six weeks. The Multivariate Transfer Entropy (MTE) technique was used to construct subject‐specific network graphs and infer the existence, direction, and time lag of IF between the aforementioned parameters.</br>
+<strong>Methods</strong>: The OhioT1DM dataset was used for the analysis, where Continuous Glucose Monitoring (CGM), insulin delivery, meals, Galvanic Skin Response (GSR), skin temperature, and Heart Rate (HR) information was available for six weeks. The Multivariate Transfer Entropy (MTE) technique was used to construct subject‐specific network graphs and infer the existence, direction, and time lag of IF between the aforementioned parameters.<br>
 
-<strong>Results</strong>: Preliminary results from six subjects showed a consistent IF from HR to GSR. Moreover, an IF from HR to CGM was observed in all except one subject. Other IF relations varied among subjects and this fact could be attributed to individual differences in insulin treatment, insulin sensitivity, lifestyle, and biological variability.</br>
+<strong>Results</strong>: Preliminary results from six subjects showed a consistent IF from HR to GSR. Moreover, an IF from HR to CGM was observed in all except one subject. Other IF relations varied among subjects and this fact could be attributed to individual differences in insulin treatment, insulin sensitivity, lifestyle, and biological variability.<br>
 
 <strong>Conclusions</strong>: MTE is a valuable model‐free tool to estimate IF in complex multivariate time‐series. Our analysis demonstrated relations among the considered physiological signals in T1D subjects. As a next step, additional subjects will be evaluated, and an interpretation framework will be designed to associate the found relations to individual characteristics, in particular CGM. Knowledge of these inter‐relations can deepen the understanding of the glucoregulatory system and the design of personalised modelling and treatment solutions.</p></blockquote>
 
 </details>
 </div>
-
+<br>
 
 **Personalised Short-Term Glucose Prediction via Recurrent Self-Attention Network**. Cui, Ran, Chirath Hettiarachchi, Christopher J. Nolan, Elena Daskalaki, and Hanna Suominen. . IEEE 34th International Symposium on Computer-Based Medical Systems, 2021 [[paper]](https://ieeexplore.ieee.org/abstract/document/9474665).
 
