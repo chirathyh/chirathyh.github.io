@@ -38,7 +38,6 @@ author_profile: true
 
 </details>
 </div>
-<br>
 
 # 2021
 ---
