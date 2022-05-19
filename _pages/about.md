@@ -24,7 +24,7 @@ Type 1 Diabetes (T1D) requires the administration of insulin externally to maint
 Maintaining glucose levels is a life-long optimisation problem, complicated due to the disturbances associated with daily events (meals, exercise, stress.. etc), delays present in glucose sensing and insulin action, partial observability, and safety constraints among others. Below you can see a simulated glucose control strategy of a RL algorithm.
 
 <img src='/images/glucose.png'>
-
+<br>
 You can read more about my research through our latest publications. 
 
 
