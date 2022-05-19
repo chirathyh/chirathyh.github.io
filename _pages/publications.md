@@ -16,6 +16,8 @@ Type 1 Diabetes (T1D) is a chronic autoimmune disease, which requires the use of
 </p>
 </details>
 
+---
+
 <details>
 <summary style="font-size:14px">View code</summary>
 <p>
@@ -25,6 +27,9 @@ Type 1 Diabetes (T1D) is a chronic autoimmune disease, which requires the use of
 \```
 
 </p></details>
+
+---
+
 
 
 **Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes**. Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology \& Therapeutics. Vol. 23, 2021, (Abstract) [[paper]](https://www.liebertpub.com/doi/full/10.1089/dia.2021.2525.abstracts).
