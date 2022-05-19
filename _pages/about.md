@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello.. I'm Chirath, 
+Hello... I'm Chirath, 
 
 A PhD student at the School of Computing, Australian National University. I’m part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist.
 
@@ -17,11 +17,15 @@ My current research focus is mainly on designing a control system using reinforc
 
 My research at a glance...
 
-Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design Reinforcement Learning algorithms for this control problem.
+Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design Reinforcement Learning (RL) algorithms for this control problem.
 
 <img src='/images/sys.png' width="500" height="161">
 
+Maintaining glucose levels is a life-long optimisation problem, complicated due to the disturbances associated with daily events (meals, exercise, stress.. etc), delays present in glucose sensing and insulin action, partial observability, and safety constraints among others. Below you can see a simulated glucose control strategy of a RL algorithm.
+
 <img src='/images/glucose.png'>
+
+You can read more about my research through our latest publications. 
 
 
 <!-- I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the University of Moratuwa, Sri Lanka, and a product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
