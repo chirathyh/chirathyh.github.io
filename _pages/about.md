@@ -16,7 +16,9 @@ I enjoy exploring the research areas of Reinforcement Learning, Health Informati
 My current research focus is mainly on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. 
 
 My research at a glance...
-Type 1 Diabetes (T1D) requires the administration of insulin which is done 
+
+Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design Reinforcement Learning algorithms for this control problem.
+
 <img src='/images/sys.png' width="500" height="161">
 
 <img src='/images/glucose.png'>
