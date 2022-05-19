@@ -55,7 +55,7 @@ author_profile: true
 
 </details>
 </div>
-<br>
+
 **Personalised Short-Term Glucose Prediction via Recurrent Self-Attention Network**. Cui, Ran, Chirath Hettiarachchi, Christopher J. Nolan, Elena Daskalaki, and Hanna Suominen. . IEEE 34th International Symposium on Computer-Based Medical Systems, 2021 [[paper]](https://ieeexplore.ieee.org/abstract/document/9474665).
 
 # 2019
