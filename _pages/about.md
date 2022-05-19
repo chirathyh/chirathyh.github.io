@@ -9,7 +9,7 @@ redirect_from:
 
 Hello.. I'm Chirath, 
 
-A PhD student at the School of Computing, Australian National University. I’m part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. My current research focuses on designing a control system to the artificial pancreas for glucose regulation in Type 1 Diabetes. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and a CIMA passed finalist.
+A PhD student at the School of Computing, Australian National University. I’m part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. My current research focuses on designing a control system to the artificial pancreas for glucose regulation in Type 1 Diabetes. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist.
 
 I enjoy exploring the research areas of Reinforcement Learning, Health Informatics, ML, DL, control systems and Biomedical Signal Processing.
 
