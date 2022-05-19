@@ -15,6 +15,11 @@ I enjoy exploring the research areas of Reinforcement Learning, Health Informati
 
 My current research focus is mainly on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. 
 
+<img src='/images/sys.png'>
+
+<img src='/images/glucose.png'>
+
+
 <!-- I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the University of Moratuwa, Sri Lanka, and a product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
 
 I believe that there is great potential to apply AI towards healthcare which undoubtedly will add great value. My passion in this domain lead towards working on projects related to Biomedical Engineering and Machine Learning. I have worked on disease prediction applications focusing on the Photoplethysmography (PPG) signals of users and injury prediction applications using Electromyography (EMG) signals and IMU data. Detailed descriptions and findings of the projects can be accessed through the Portfolio section.  -->
