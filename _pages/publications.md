@@ -18,8 +18,7 @@ author_profile: true
 
 </details>
 </div>
-
-
+<hr>
 <div>
 <strong>Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes.</strong> Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology & Therapeutics. Vol. 23, 2022.
 <details>
@@ -29,7 +28,7 @@ author_profile: true
 
 </details>
 </div>
-
+<hr>
 <div>
 <strong>Integrating Multiple Inputs Into an Artificial Pancreas System: Narrative Literature Review.</strong> Hettiarachchi C, Daskalaki E, Desborough J, Nolan C, O'Neal D, Suominen H. JMIR diabetes, 2022.
 <details>
@@ -39,7 +38,7 @@ author_profile: true
 
 </details>
 </div>
-
+<hr>
 # 2021
 ---
 
@@ -55,7 +54,7 @@ author_profile: true
 
 </details>
 </div>
-
+<hr>
 **Personalised Short-Term Glucose Prediction via Recurrent Self-Attention Network**. Cui, Ran, Chirath Hettiarachchi, Christopher J. Nolan, Elena Daskalaki, and Hanna Suominen. . IEEE 34th International Symposium on Computer-Based Medical Systems, 2021 [[paper]](https://ieeexplore.ieee.org/abstract/document/9474665).
 
 # 2019
