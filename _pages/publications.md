@@ -7,8 +7,9 @@ author_profile: true
 
 Hettiarachchi, Chirath, and Charith Chitraranjan. **"A Machine Learning Approach to Predict Diabetes Using Short Recorded Photoplethysmography and Physiological Characteristics."** Conference on Artificial Intelligence in Medicine in Europe. Springer, Cham, 2019 [paper](http://chirathyh.github.io/files/AIME_2019_paper_89.pdf).
 
-Hettiarachchi, Chirath, et al. **"A Wearable System to Analyze the Human Arm for Predicting Injuries Due to Throwing."** 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). IEEE, 2019 [paper] (http://chirathyh.github.io/files/EMBC19_0212_FI.pdf).
+Hettiarachchi, Chirath, et al. **"A Wearable System to Analyze the Human Arm for Predicting Injuries Due to Throwing."** 2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC). IEEE, 2019 [paper](http://chirathyh.github.io/files/EMBC19_0212_FI.pdf).
 
+Hettiarachchi, Chirath, Buddhishan Manamperi, and Dilshan Uthpala. **"Identifying the Optimum Region of the Human Sole to Extract the PPG Signal for Pulse Rate Estimation."** Proceedings of the 9th International Conference on Signal Processing Systems. ACM, 2017 [paper](http://chirathyh.github.io/files/paper1.pdf).
 
 
 <!-- {% if author.googlescholar %}
