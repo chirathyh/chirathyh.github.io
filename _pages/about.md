@@ -15,7 +15,7 @@ I enjoy exploring the research areas of Reinforcement Learning, Health Informati
 
 My current research focus is mainly on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. 
 
-<img src='/images/sys.png'>
+<img src='/images/sys.png' width="500" height="400">
 
 <img src='/images/glucose.png'>
 
