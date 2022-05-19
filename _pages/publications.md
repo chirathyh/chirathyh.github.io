@@ -14,6 +14,11 @@ author_profile: true
 > Type 1 Diabetes (T1D) is a chronic autoimmune disease, which requires the use of exogenous insulin for glucose regulation. In current hybrid closed-loop systems, meal entry is manual which adds cognitive burden to the persons living with T1D. In this study, we proposed a control system based on Proximal Policy Optimisation (PPO) that controls both basal and bolus insulin infusion and only requires meal announcement, thus eliminating the need for carbohydrate estimation. We evaluated the system on a challenging meal scenario, using an open-source simulator based on the UVA/Padova 2008 model and achieved a mean Time in Range value of 65\% for the adult subject cohort, while maintaining a moderate hypoglycemic and hyperglycemic risk profile. The approach shows promise and welcomes further research towards the translation to a real-life artificial~pancreas. 
   
 </details>
+<details><summary>Abstract</summary>
+  
+> Type 1 Diabetes (T1D) is a chronic autoimmune disease, which requires the use of exogenous insulin for glucose regulation. In current hybrid closed-loop systems, meal entry is manual which adds cognitive burden to the persons living with T1D. In this study, we proposed a control system based on Proximal Policy Optimisation (PPO) that controls both basal and bolus insulin infusion and only requires meal announcement, thus eliminating the need for carbohydrate estimation. We evaluated the system on a challenging meal scenario, using an open-source simulator based on the UVA/Padova 2008 model and achieved a mean Time in Range value of 65\% for the adult subject cohort, while maintaining a moderate hypoglycemic and hyperglycemic risk profile. The approach shows promise and welcomes further research towards the translation to a real-life artificial~pancreas. 
+  
+</details>
 
 **Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes**. Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology \& Therapeutics. Vol. 23, 2021, (Abstract) [[paper]](https://www.liebertpub.com/doi/full/10.1089/dia.2021.2525.abstracts).
 
