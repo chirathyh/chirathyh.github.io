@@ -11,7 +11,7 @@ Hettiarachchi C, Malagutti N, Nolan C, Daskalaki E, Suominen H. **"A Reinforceme
 
 Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. **"Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes"**. Diabetes Technology \& Therapeutics. Vol. 23, 2021, (Abstract) [[paper]](https://www.liebertpub.com/doi/full/10.1089/dia.2021.2525.abstracts).
 
-Hettiarachchi C, Daskalaki E, Desborough J, Nolan C, O'Neal D, Suominen H. **"Integrating Multiple Inputs Into an Artificial Pancreas System: Narrative Literature Review"**. JMIR diabetes 7.1 (2022): e28861 \href{https://diabetes.jmir.org/2022/1/e28861/}{[Link]}
+Hettiarachchi C, Daskalaki E, Desborough J, Nolan C, O'Neal D, Suominen H. **"Integrating Multiple Inputs Into an Artificial Pancreas System: Narrative Literature Review"**. JMIR diabetes 7.1 (2022) [[paper]](https://diabetes.jmir.org/2022/1/e28861/).
 
 Hettiarachchi C, Daskalaki E, Malagutti N, Nolan C, Suominen H. **"Model-free inference of information flow among physiological signals in type 1 diabetes subjects using multivariate transfer entropy"**. Diabetes Technology \& Therapeutics. Vol. 23, 2021, (Abstract) [[paper]](https://www.liebertpub.com/doi/full/10.1089/dia.2021.2525.abstracts).
 
