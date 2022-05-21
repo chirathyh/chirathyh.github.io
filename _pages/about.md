@@ -9,7 +9,7 @@ redirect_from:
 
 **Hello... I'm Chirath,** 
 
-A PhD student at the School of Computing, Australian National University. I’m part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. <br>I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist.
+A PhD student at the School of Computing, Australian National University. I’m part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. <br>I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist. I have worked as a Machine Learning Engineer in the FinTech industry, developing algorithms for identifying outliers in corporate financial transactions, forecasting, name screening and risk prediction applications. During the final year of my undergraduate studies, I pursued my entrepreneurial aspirations by co-founding [Olivescript](https://chirathyh.github.io/posts/olivescript/), a healthcare startup which achieved multiple awards and publications.
 
 I enjoy exploring the research areas of Reinforcement Learning, Health Informatics, ML, DL, Control Systems and Biomedical Signal Processing.
 
