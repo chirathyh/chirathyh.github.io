@@ -1,6 +1,6 @@
 ---
 title: "Clardia - A Comprehensive Family Health Assistant"
-excerpt: "<img src='/images/clardia1.png' width="500" height="288"><br/><br/>Clardia is a Comprehensive Family Health Assistant which can extract health parameters such as the Weight, Body Fat, Heart Rate, Blood Oxygen Levels, Temperature and the PPG Signal of the user. Each family member is just required to stand on top of the Clardia device for 20 seconds. The obtained parameters are thus analyzed to identify diseases symptoms in advance and identify the possibility of potential diseases."
+excerpt: "<img src='/images/clardia1.png'><br/><br/>Clardia is a Comprehensive Family Health Assistant which can extract health parameters such as the Weight, Body Fat, Heart Rate, Blood Oxygen Levels, Temperature and the PPG Signal of the user. Each family member is just required to stand on top of the Clardia device for 20 seconds. The obtained parameters are thus analyzed to identify diseases symptoms in advance and identify the possibility of potential diseases."
 collection: portfolio
 ---
 
