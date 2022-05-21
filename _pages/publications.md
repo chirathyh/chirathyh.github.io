@@ -20,7 +20,7 @@ author_profile: true
 </div>
 <hr>
 <div>
-<strong>Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes.</strong> Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology & Therapeutics. Vol. 23, 2022.
+<strong>Deep Reinforcement Learning for Eliminating Carbohydrate Estimation in Glucose Regulation in Type 1 Diabetes.</strong> Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Diabetes Technology & Therapeutics. Vol. 24, 2022.
 <details>
   <summary>Abstract <a href="https://www.liebertpub.com/doi/10.1089/dia.2022.2525.abstracts">Full paper</a></summary>
   
