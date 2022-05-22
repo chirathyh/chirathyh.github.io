@@ -36,3 +36,4 @@ The research would be carried out using the dataset, ​A new, short-recorded ph
 ## UPDATE
 
 Please find the final thesis of the above project [here](http://chirathyh.github.io/files/msc_thesis.pdf) for the results and discussion.
+The code base of the project [here](https://github.com/chirathyh/clardia---Type-2-Diabetes-Prediction-Using-Short-PPG-Signals-and-Physiological-Characteristics-).
