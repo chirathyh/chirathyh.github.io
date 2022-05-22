@@ -31,3 +31,8 @@ The aim of this research is to develop a machine learning model capable of detec
 5. Suggest methods where the research can be applied practically with the use of general wearable devices embedded with PPG sensors.
 
 The research would be carried out using the dataset, ​A new, short-recorded photoplethysmogram dataset for blood pressure monitoring in China (​Liang, Yongbo; Liu, Guiyong; Chen, Zhencheng; Elgendi, Mohamed (2018) published in the Nature Journal under a creative common license.
+
+
+## UPDATE
+
+Please find the final thesis of the above project [here](http://chirathyh.github.io/files/msc_thesis.pdf) for the results and discussion.
