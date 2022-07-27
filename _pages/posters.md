@@ -7,6 +7,8 @@ author_profile: true
 # 2022
 ---
 
+<center><img src='/images/embc22.png' width="1000" height="563"></center>
+<br>
 <center><img src='/images/attd22.png' width="1000" height="563"></center>
 <hr>
 # 2021
