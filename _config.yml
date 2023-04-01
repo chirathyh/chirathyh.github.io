@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Chirath Hettiarachchi"
   avatar           : "profile.png"
-  bio              : "PhD Student"
-  location         :  "Australia"
+#   bio              : "PhD Student"
+#   location         :  "Australia"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=gvLLPs8AAAAJ&hl=en"
   email            : "chirathyh@gmail.com"
-  researchgate     : "https://www.researchgate.net/profile/Chirath_Hettiarachchi"
+#   researchgate     : "https://www.researchgate.net/profile/Chirath_Hettiarachchi"
   uri              :
   bitbucket        :
   codepen          :
