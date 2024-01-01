@@ -4,10 +4,13 @@ permalink: /publications/
 author_profile: true
 ---
 <!-- title: "Publications" -->
+
+# Please visit <a href="https://scholar.google.com/citations?user=gvLLPs8AAAAJ&hl=en">Google Scholar</a> profile for latest papers. 
+
 # 2022
 ---
 
-**Non-linear Continuous Action Spaces for Reinforcement Learning in Type 1 Diabetes**. Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E.  IEEE International Conference on Systems, Man, and Cybernetics, 2022 (in-review).
+**Non-linear Continuous Action Spaces for Reinforcement Learning in Type 1 Diabetes**. Hettiarachchi C, Malagutti N, Nolan C, Suominen H, Daskalaki E. Australasian Joint Conference on Artificial Intelligence. Cham: Springer International Publishing, 2022.
 
 <div>
 <strong>A Reinforcement Learning Based System for Blood Glucose Control without Carbohydrate Estimation in Type 1 Diabetes.</strong> Hettiarachchi C, Malagutti N, Nolan C, Daskalaki E, Suominen H. 44th Annual International Conference of the IEEE Engineering in Medicine and Biology Society, 2022 (Accepted).
