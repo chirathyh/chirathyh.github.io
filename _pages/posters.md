@@ -4,6 +4,10 @@ permalink: /posters/
 author_profile: true
 ---
 <!-- title: "Publications" -->
+# 2023
+---
+<center><img src='/images/capsml_poster.jpg' width="1000" height="1414"></center>
+<hr>
 # 2022
 ---
 
