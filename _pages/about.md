@@ -9,7 +9,7 @@ redirect_from:
 
 **Hi! I'm Chirath.** 
 
-I'm interested in exploring Machine Learning and Reinforcement Learning algorithms for decision-making in medical applications, with a focus on developing closed-loop clinical treatment solutions. This is often challenging due to the complex dynamics, partial observability, high inter- and intra-population variability, safety & practical learning constraints, and the presence of unknown delays and disturbances. These complexities call for the development of real-world algorithms capable of handling safety and explainability requirements, which are vital in medical applications. Currently research directions:
+I'm interested in exploring Machine Learning and Reinforcement Learning algorithms for decision-making in medical applications, with a focus on developing closed-loop clinical treatment solutions. This is often challenging due to the complex dynamics, partial observability, high inter- and intra-population variability, safety & practical learning constraints, and the presence of unknown delays and disturbances. These complexities call for the development of real-world algorithms capable of handling safety and explainability requirements, which are vital in medical applications. Current research directions:
 1. Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.
 2. Developing Algorithms for a New Therapeutic for Depression Using Closed-Loop Non-invasive Brain Stimulation.
 
