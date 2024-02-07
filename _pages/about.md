@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**Hello... I'm Chirath,** 
-
-A Research Fellow at the School of Computing, College of Engineering, Computing, and, Cybernetics, Australian National University (ANU). 
+**Hi! I'm Chirath A Research Fellow at the School of Computing, College of Engineering, Computing, and, Cybernetics, Australian National University (ANU). ** 
 
 Previously, I completed my PhD (Computer Science) at ANU and I was part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist. I have worked as a Machine Learning Engineer in the FinTech industry, developing algorithms for identifying outliers in corporate financial transactions, forecasting, name screening and risk prediction applications. During the final year of my undergraduate studies, I pursued my entrepreneurial aspirations by co-founding a healthcare startup where we designed [Clardia](https://chirathyh.github.io/portfolio/j-clardia/) which achieved multiple awards and publications.
 
