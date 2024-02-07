@@ -35,6 +35,8 @@ Maintaining glucose levels is a life-long optimisation problem, complicated due 
 
 <center><img src='/images/gif_tacs.gif' width="750" height="513"></center>
 
+<hr>
+
 Previously, I completed my PhD (Computer Science) at ANU and I was part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist. I have worked as a Machine Learning Engineer in the FinTech industry, developing algorithms for identifying outliers in corporate financial transactions, forecasting, name screening and risk prediction applications. During the final year of my undergraduate studies, I pursued my entrepreneurial aspirations by co-founding a healthcare startup where we designed [Clardia](https://chirathyh.github.io/portfolio/j-clardia/) which achieved multiple awards and publications.
 
 <!-- I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the University of Moratuwa, Sri Lanka, and a product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
