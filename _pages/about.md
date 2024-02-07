@@ -29,6 +29,8 @@ Maintaining glucose levels is a life-long optimisation problem, complicated due 
 
 **You can read more about this project [here](https://openresearch-repository.anu.edu.au/handle/1885/305591), developed algorithm [G2P2C](https://www.sciencedirect.com/science/article/pii/S1746809423012727), simulator [GluCoEnv](https://github.com/chirathyh/GluCoEnv), and a demonstration tool [CAPSML](https://capsml.com/).**
 
+<hr>
+
 **2.Developing Algorithms for a New Therapeutic for Depression Using Closed-Loop Non-invasive Brain Stimulation.**
 
 <center><img src='/images/gif_tacs.gif' width="750" height="513"></center>
