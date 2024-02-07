@@ -13,7 +13,7 @@ I enjoy exploring the research areas of Reinforcement Learning, Health Informati
 
 <!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
 
-**Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.**
+**1.Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.**
 
 Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design Reinforcement Learning (RL) algorithms for this control problem. The figure below represents the main components of an Artificial Pancreas System (APS) to treat T1D. 
 
@@ -24,6 +24,10 @@ Maintaining glucose levels is a life-long optimisation problem, complicated due 
 <img src='/images/gif_glucose.gif'>
 
 **You can read more about this project [here](https://openresearch-repository.anu.edu.au/handle/1885/305591), developed algorithm [G2P2C](https://www.sciencedirect.com/science/article/pii/S1746809423012727), simulator [GluCoEnv](https://github.com/chirathyh/GluCoEnv), and a demonstration tool [CAPSML](https://capsml.com/).**
+
+**2.Developing Algorithms for a New Therapeutic for Depression Using Closed-Loop Non-invasive Brain Stimulation.**
+
+<center><img src='/images/gif_tacs.gif' width="750" height="513"></center>
 
 Previously, I completed my PhD (Computer Science) at ANU and I was part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist. I have worked as a Machine Learning Engineer in the FinTech industry, developing algorithms for identifying outliers in corporate financial transactions, forecasting, name screening and risk prediction applications. During the final year of my undergraduate studies, I pursued my entrepreneurial aspirations by co-founding a healthcare startup where we designed [Clardia](https://chirathyh.github.io/portfolio/j-clardia/) which achieved multiple awards and publications.
 
