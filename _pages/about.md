@@ -9,7 +9,7 @@ redirect_from:
 
 **Hi! I'm Chirath.** 
 
-I'm interested in designing Machine Learning and Reinforcement Learning algorithms to develop closed-loop clinical treatment strategies and currently working on the following research:
+I'm interested in exploring Machine Learning and Reinforcement Learning algorithms for decision-making in medical applications, with a focus on developing closed-loop clinical treatment solutions. This is often challenging due to the complex dynamics, partial observability, high inter- and intra-population variability, safety & practical learning constraints, and the presence of unknown delays and disturbances. These complexities call for the development of real-world algorithms capable of handling safety and explainability requirements, which are vital in medical applications. Currently research directions:
 1. Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.
 2. Developing Algorithms for a New Therapeutic for Depression Using Closed-Loop Non-invasive Brain Stimulation.
 
@@ -17,7 +17,7 @@ I'm interested in designing Machine Learning and Reinforcement Learning algorith
 
 **1.Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.**
 
-Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design Reinforcement Learning (RL) algorithms for this control problem. The figure below represents the main components of an Artificial Pancreas System (APS) to treat T1D. 
+Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design RL algorithms for this control problem. The figure below represents the main components of an Artificial Pancreas System (APS) to treat T1D. 
 
 <center><img src='/images/gif_aps.gif' width="750" height="513"></center>
 <br>
