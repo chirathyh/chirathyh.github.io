@@ -9,7 +9,9 @@ redirect_from:
 
 **Hi! I'm Chirath.** 
 
-I'm interested in designing Machine Learning and Reinforcement Learning algorithms to develop closed-loop clinical treatment strategies.
+I'm interested in designing Machine Learning and Reinforcement Learning algorithms to develop closed-loop clinical treatment strategies and currently working on the following research:
+1. Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.
+2. Developing Algorithms for a New Therapeutic for Depression Using Closed-Loop Non-invasive Brain Stimulation.
 
 <!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
 
