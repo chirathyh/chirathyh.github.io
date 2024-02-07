@@ -9,7 +9,7 @@ redirect_from:
 
 **Hi! I'm Chirath.** 
 
-I enjoy exploring the research areas of Reinforcement Learning, Health Informatics, ML, DL, Control Systems and Biomedical Signal Processing.
+I'm interested in designing Machine Learning and Reinforcement Learning algorithms to develop closed-loop clinical treatment strategies.
 
 <!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
 
