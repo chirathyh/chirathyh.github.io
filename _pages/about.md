@@ -9,8 +9,6 @@ redirect_from:
 
 **Hi! I'm Chirath.** 
 
-Previously, I completed my PhD (Computer Science) at ANU and I was part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist. I have worked as a Machine Learning Engineer in the FinTech industry, developing algorithms for identifying outliers in corporate financial transactions, forecasting, name screening and risk prediction applications. During the final year of my undergraduate studies, I pursued my entrepreneurial aspirations by co-founding a healthcare startup where we designed [Clardia](https://chirathyh.github.io/portfolio/j-clardia/) which achieved multiple awards and publications.
-
 I enjoy exploring the research areas of Reinforcement Learning, Health Informatics, ML, DL, Control Systems and Biomedical Signal Processing.
 
 <!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
@@ -27,6 +25,7 @@ Maintaining glucose levels is a life-long optimisation problem, complicated due 
 
 **You can read more about this project [here](https://openresearch-repository.anu.edu.au/handle/1885/305591), developed algorithm [G2P2C](https://www.sciencedirect.com/science/article/pii/S1746809423012727), simulator [GluCoEnv](https://github.com/chirathyh/GluCoEnv), and a demonstration tool [CAPSML](https://capsml.com/).**
 
+Previously, I completed my PhD (Computer Science) at ANU and I was part of the Big Data program of the “Our Health In Our Hands (OHIOH)” ANU Grand Challenge initiative. I completed my BSc (Hons) in Electronics & Telecommunication Engineering and MSc (Research) in Computer Science & Engineering from the University of Moratuwa, Sri Lanka and also a CIMA passed finalist. I have worked as a Machine Learning Engineer in the FinTech industry, developing algorithms for identifying outliers in corporate financial transactions, forecasting, name screening and risk prediction applications. During the final year of my undergraduate studies, I pursued my entrepreneurial aspirations by co-founding a healthcare startup where we designed [Clardia](https://chirathyh.github.io/portfolio/j-clardia/) which achieved multiple awards and publications.
 
 <!-- I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the University of Moratuwa, Sri Lanka, and a product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
 
