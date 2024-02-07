@@ -15,7 +15,7 @@ I enjoy exploring the research areas of Reinforcement Learning, Health Informati
 
 <!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
 
-**Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes**
+**Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.**
 
 Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design Reinforcement Learning (RL) algorithms for this control problem. The figure below represents the main components of an Artificial Pancreas System (APS) to treat T1D. 
 
@@ -25,7 +25,7 @@ Maintaining glucose levels is a life-long optimisation problem, complicated due 
 
 <img src='/images/gif_glucose.gif'>
 
-You can read more about this project [here](https://openresearch-repository.anu.edu.au/handle/1885/305591), developed algorithm [G2P2C](https://www.sciencedirect.com/science/article/pii/S1746809423012727), simulator [GluCoEnv](https://github.com/chirathyh/GluCoEnv), and a demonstration tool of designed algorithm [CAPSML](https://capsml.com/).
+**You can read more about this project [here](https://openresearch-repository.anu.edu.au/handle/1885/305591), developed algorithm [G2P2C](https://www.sciencedirect.com/science/article/pii/S1746809423012727), simulator [GluCoEnv](https://github.com/chirathyh/GluCoEnv), and a demonstration tool of designed algorithm [CAPSML](https://capsml.com/).**
 
 
 <!-- I completed my BSc (Hons) in Electronics & Telecommunication Engineering from the University of Moratuwa, Sri Lanka, and a product of Ananda College, Colombo 10. I have diverse interest areas in research such as AI, Machine Learning, Biomedical Signal Processing, Financial Analytics and Data Science. I'm a CIMA passed finalist, and have been able to successfully combine my engineering and accounting knowledge to work on develop algorithms focusing on financial predictions and fraud analytics. 
