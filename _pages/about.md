@@ -13,7 +13,7 @@ Previously, I completed my PhD (Computer Science) at ANU and I was part of the B
 
 I enjoy exploring the research areas of Reinforcement Learning, Health Informatics, ML, DL, Control Systems and Biomedical Signal Processing.
 
-My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. 
+<!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
 
 **Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes**
 
