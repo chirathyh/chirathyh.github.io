@@ -13,7 +13,7 @@ I'm interested in exploring Machine Learning and Reinforcement Learning algorith
 1. Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.
 2. Developing Algorithms for a New Therapeutic for Depression Using Closed-Loop Non-invasive Brain Stimulation.
 
-<center><img src='/images/gif_aps_tacs.gif' width="750" height="513"></center>
+<center><img src='/images/gif_aps_tacs.gif' width="853" height="480"></center>
 <br>
 
 <!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
