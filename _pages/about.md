@@ -13,6 +13,9 @@ I'm interested in exploring Machine Learning and Reinforcement Learning algorith
 1. Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.
 2. Developing Algorithms for a New Therapeutic for Depression Using Closed-Loop Non-invasive Brain Stimulation.
 
+<center><img src='/images/gif_aps_tacs.gif' width="750" height="513"></center>
+<br>
+
 <!-- My PhD research focused on designing a control system using reinforcement learning to an artificial pancreas system for glucose regulation in Type 1 Diabetes. If you are interested in collaborations, to learn more about my research, or in sharing your research work please contact me. -->
 
 <hr>
@@ -21,8 +24,6 @@ I'm interested in exploring Machine Learning and Reinforcement Learning algorith
 
 Type 1 Diabetes (T1D) requires the administration of insulin externally to maintain glucose levels, which is cruicial as both low and high glucose levels are detrimental. This is usually done through an insulin pump attached to the body. An continuous glucose sensor is also attached to measure the glucose levels so that a control algorithm can estimate the appropriate insulin dose. I design RL algorithms for this control problem. The figure below represents the main components of an Artificial Pancreas System (APS) to treat T1D. 
 
-<center><img src='/images/gif_aps.gif' width="750" height="513"></center>
-<br>
 Maintaining glucose levels is a life-long optimisation problem, complicated due to the disturbances associated with daily events (meals, exercise, stress.. etc), delays present in glucose sensing and insulin action, partial observability, and safety constraints among others. Below you can see a simulated glucose control strategy of a RL algorithm.
 
 <img src='/images/gif_glucose.gif'>
