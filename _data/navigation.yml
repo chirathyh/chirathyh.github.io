@@ -2,15 +2,15 @@
 main:
 #   - title: "CV"
 #     url: /cv/
+
+  - title: "Talks"
+    url: /talks/  
     
   - title: "Publications"
     url: /publications/
     
   - title: "Posters"
-    url: /posters/ 
-
-#  - title: "Talks"
-#    url: /talks/      
+    url: /posters/     
     
   - title: "Projects"
     url: /portfolio/
