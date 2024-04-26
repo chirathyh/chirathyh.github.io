@@ -3,8 +3,8 @@ main:
 #   - title: "CV"
 #     url: /cv/
 
-  - title: "Talks"
-    url: /talks/  
+  - title: "Short Notes"
+    url: /short-notes/  
     
   - title: "Publications"
     url: /publications/
