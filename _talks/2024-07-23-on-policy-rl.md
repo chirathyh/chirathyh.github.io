@@ -31,7 +31,7 @@ $$
 
 In episodic tasks $ d^{\pi}(s) $ is the on-policy distribution and, 
 
-$ v_{\pi}(s) =  \mathbb{E}_{s_{t}, a_{t} \sim \pi_{\theta}}[\sum_{t=0}^{t-1} r_{t}(s_{t},a_{t})] $, 
+$ v_{\pi}(s) =  \mathbb{E}_{s_{t}, a_{t} \sim \pi}[ \sum_{t=0}^{t-1} r_{t}(s_{t},a_{t}) ] $, 
 
 is the value-function, which represents the expected return when starting in $s$ and following $ \pi $.
 
@@ -71,7 +71,7 @@ $$
 
 In the discounted setting $\gamma \in [0,1] $ is introduced to discount the future rewards. Depending on the value of $\gamma$, the agent could be either myopic or farsighted. 
 
-$v^{\gamma}_{\pi}(s) =  E_{s_{t}, a_{t} \sim\pi_{\theta}}[\sum_{t=0}^{t-1} \gamma^{t} r_{t}(s_{t},a_{t})]$ is the value function. 
+$ v^{\gamma}_{\pi}(s) =  \mathbb{E}_{s_{t}, a_{t} \sim \pi } [ \sum_{t=0}^{t-1} \gamma^{t} r_{t}(s_{t},a_{t}) ] $ is the value function. 
 
 $$ 
 J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v^{\gamma}_{\pi}(s). 
