@@ -13,11 +13,11 @@ The interaction between a RL agent and its environment is formulated using the f
 
 **Notation**: An MDP is defined as a tuple $(S, A, P, r)$, where $S$ is a finite set of states, $A$ is a finite set of actions, $P: S \times A \times S \rightarrow [0, 1]$ is the state transition probability function, 
 
-where $P(s' | s, a)$ denotes the probability of transitioning to state $s'$ from state $s$ after taking action $a$, and $R: S \times A \rightarrow \mathbb{R}$ is the reward function, where $r(s, a)$ gives the immediate reward received after taking action $a$ in state $s$.
+where $P(s' \vert s, a)$ denotes the probability of transitioning to state $s'$ from state $s$ after taking action $a$, and $R: S \times A \rightarrow \mathbb{R}$ is the reward function, where $r(s, a)$ gives the immediate reward received after taking action $a$ in state $s$.
 
 A policy $ \pi $ is a mapping from states to a probability distribution over actions: $ \pi : S \times A \rightarrow [0, 1] $, 
 
-where $ \pi (a|s) $ denotes the probability of taking action $ a $ when in state $ s $.
+where $ \pi (a \vert s) $ denotes the probability of taking action $ a $ when in state $ s $.
 
 #### Our goal is to use an optimisation objetive to learn the optimal policy $ \pi^{\star}(a|s) $.
 
