@@ -24,7 +24,7 @@ We can design the objective by considering,
 By maximizing the weighted average of $ M_{\pi}(s)$ with each state weighted by $\mu(s)$, we can obtain an optimisation objectcive:
 
 $$ 
-J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) M_{\pi}(s) 
+J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) M_{\pi}(s) .
 $$
 
 ## Episodic Tasks
@@ -32,16 +32,19 @@ $$
 In episodic tasks $d^{\pi}(s)$ is the on-policy distribution and $v_{\pi}(s) =  \mathbb{E}_{s_{t}, a_{t} \sim\pi_{\theta}}[\sum_{t=0}^{t-1} r_{t}(s_{t},a_{t})] $ is the value-function, which represents the expected return when starting in $s$ and following $\pi$.
 
 $$ 
-J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v_{\pi}(s) 
+J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v_{\pi}(s). 
 $$
 
 $d^{\pi}(s)$ can be calculated using the initial state distribution $h(s)$ and $ \eta(s) $ the number of time steps spent, on average, in state $s$ in a single episode.
 
 $$ 
-d^{\pi}(s) = \frac{\eta(s)}{\sum_{s'} \eta(s')}
+d^{\pi}(s) = \frac{\eta(s)}{\sum_{s'} \eta(s')},
 $$
+
+where, 
+
 $$ 
- \eta(s) = h(s) + \sum_{\bar{s}} \eta(\bar{s}) \sum_{a} \pi (a|\bar{s})P(s|\bar{s},a)
+ \eta(s) = h(s) + \sum_{\bar{s}} \eta(\bar{s}) \sum_{a} \pi (a|\bar{s})P(s|\bar{s},a).
 
 $$
 
@@ -50,13 +53,13 @@ $$
 In the average reward setting, $M_{\pi}(s)$ represents the average one-step reward received by the agent following $\pi$, where $r_{\pi}(s) = \sum_{a \in A} \pi(a|s)r(s, a)$. 
 
 $$ 
-J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) r_{\pi}(s) 
+J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) r_{\pi}(s). 
 $$
 
 In continuing tasks $d^{\pi}(s)$ is the stationary distribution over the states.
 
 $$ 
-d^{\pi}(s) = \lim_{t\to\infty} P(s_{t}=s|\pi)
+d^{\pi}(s) = \lim_{t\to\infty} P(s_{t}=s|\pi).
 $$
 
 
@@ -65,11 +68,11 @@ $$
 In the discounted setting $\gamma \in [0,1] $ is introduced to discount the future rewards. Depending on the value of $\gamma$, the agent could be either myopic or farsighted. $v^{\gamma}_{\pi}(s) =  =  \mathbb{E}_{s_{t}, a_{t} \sim\pi_{\theta}}[\sum_{t=0}^{t-1} \gamma^{t} r_{t}(s_{t},a_{t})]$ is the value function. 
 
 $$ 
-J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v^{\gamma}_{\pi}(s) 
+J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v^{\gamma}_{\pi}(s). 
 $$
 
 $$ 
-d^{\pi}(s) = (1-\gamma) \sum_{t=0}^{\infty} \gamma^{t}P(s_{t}=s|\pi)
+d^{\pi}(s) = (1-\gamma) \sum_{t=0}^{\infty} \gamma^{t}P(s_{t}=s|\pi).
 $$
 
 ### References
