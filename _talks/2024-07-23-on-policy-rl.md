@@ -7,17 +7,17 @@ date: 2024-07-23
 ---
 
 ## Overview.
-This article summarises concepts related to on-policy Reinforcement Learning (RL) algorithms. Specifically the focus is on looking at the optimisation objectives, on-policy distributions and ccompare between different RL task settings. 
+This article summarises concepts related to on-policy Reinforcement Learning (RL) algorithms. Specifically the focus is on looking at the optimisation objectives, on-policy distributions and compare between different RL task settings. 
 
 The interaction between a RL agent and its environment is formulated using the formal Markov Decision Process (MDP) framework, where the underlying task could be either episodic (naturally broken down into identifiable episodes) or continuing (goes on continuall over the lifetime of the agent). 
 
-**Notation**: An MDP is defined as a tuple $(S, A, P, r)$, where $S$ is a finite set of states, $A$ is a finite set of actions, $P: S \times A \times S \rightarrow [0, 1]$ is the state transition probability function, where $P(s' \vert s, a)$ denotes the probability of transitioning to state $s'$ from state $s$ after taking action $a$, and $R: S \times A \rightarrow \mathbb{R}$ is the reward function, where $r(s, a)$ gives the immediate reward received after taking action $a$ in state $s$.
+**Notation**: An MDP is defined as a tuple $(S, A, P, r)$, where $S$ is a finite set of states, $A$ is a finite set of actions, $P: S \times A \times S \rightarrow [0, 1]$ is the state transition probability function, where $P(s' \vert s, a)$ denotes the probability of transitioning to state $s'$ from state $s$ after taking action $a$, and $R: S \times A \rightarrow \mathbb{R}$ is the reward function, where $r(s, a)$ gives the immediate reward received after taking action $a$ in state $s$ [1].
 
 A policy $ \pi $ is a mapping from states to a probability distribution over actions: $ \pi : S \times A \rightarrow [0, 1] $, where $ \pi (a \vert s) $ denotes the probability of taking action $ a $ when in state $ s $.
 
 ## Understanding the Optimisation Objetive
 
-Our goal is to use an optimisation objetive to learn the optimal policy $ \pi^{\star}(a \vert s) $.
+Our goal is to use an optimisation objetive to learn the optimal policy $ \pi^{\star}(a \vert s) $. A policy can be considered optimal if it achieves a higher expected future reward ($ M_{\pi}(s) $) in every state. Then $ \pi^{\star} $ satisfies $ M_{\pi^{\star}}(s) \ge M_{\pi}(s) $, which gives a partial ordering of policies. However, for non-tabular settings the partial ordering is not sufficient, as we cant represent all policies, instead we approximate a policy, which can have higher $ M_{\pi}(s) $ for one and lower for another. Therefore, we need to also consider the distribution over the states ($ d^{\pi}(s) $) the agent experiences [2]. 
 
 We can design the objective by considering,
 - $ M_{\pi}(s) $, a metric which estimates the expected future reward of a state $s$, following the policy $\pi$.
