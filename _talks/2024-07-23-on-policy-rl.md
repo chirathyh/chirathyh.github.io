@@ -73,7 +73,7 @@ $$
 
 In the discounted setting $\gamma \in [0,1] $ is introduced to discount the future rewards. Depending on the value of $\gamma$, the agent could be either myopic or farsighted. 
 
-$ v^{\gamma}_{\pi}(s) =  \mathbb{E}_{s_{t}, a_{t} \sim \pi } \left[ \sum_{t=0}^{t-1} \gamma^{t} r_{t}(s_{t},a_{t}) \right] $ is the value function. 
+$ v_{\pi}^{\gamma}(s) =  E_{ s_{t}, a_{t} \sim \pi } \left[ \sum_{t=0}^{t-1} \gamma^{t} r_{t}(s_{t},a_{t}) \right] $ is the value function. 
 
 $$ 
 J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v^{\gamma}_{\pi}(s). 
