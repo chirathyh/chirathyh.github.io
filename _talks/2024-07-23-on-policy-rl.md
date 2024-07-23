@@ -31,11 +31,7 @@ $$
 
 ## Episodic Tasks
 
-In episodic tasks $ d^{\pi}(s) $ is the on-policy distribution and, 
-
-$ v_{\pi}(s) =  \mathbb{E}_{ s_{t}, a_{t} \sim \pi } \left[ \sum_{t=0}^{t-1} r_{t}(s_{t},a_{t}) \right] $, 
-
-is the value-function, which represents the expected return when starting in $s$ and following $ \pi $.
+In episodic tasks $ d^{\pi}(s) $ is the on-policy distribution and, $ v_{\pi}(s) =  E_{ s_{t}, a_{t} \sim \pi } \left[ \sum_{t=0}^{t-1} r_{t}(s_{t},a_{t}) \right] $, is the value-function, which represents the expected return when starting in $s$ and following $ \pi $.
 
 $$ 
 J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v_{\pi}(s). 
