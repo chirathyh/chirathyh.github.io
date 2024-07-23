@@ -29,6 +29,8 @@ $$
 J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) M_{\pi}(s) .
 $$
 
+In the next sections we explore, how $ M_{\pi}(s), d^{\pi}(s) $ change based on the task setting.
+
 ## Episodic Tasks
 
 In episodic tasks $ d^{\pi}(s) $ is the on-policy distribution and, $ v_{\pi}(s) =  E_{ s_{t}, a_{t} \sim \pi } \left[ \sum_{t=0}^{t-1} r_{t}(s_{t},a_{t}) \right] $, is the value-function, which represents the expected return when starting in $s$ and following $ \pi $.
