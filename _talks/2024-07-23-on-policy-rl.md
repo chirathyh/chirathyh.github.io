@@ -19,7 +19,7 @@ A policy $ \pi $ is a mapping from states to a probability distribution over act
 
 where $ \pi (a \vert s) $ denotes the probability of taking action $ a $ when in state $ s $.
 
-#### Our goal is to use an optimisation objetive to learn the optimal policy $ \pi^{\star}(a|s) $.
+#### Our goal is to use an optimisation objetive to learn the optimal policy $ \pi^{\star}(a \vert s) $.
 
 We can design the objective by considering,
 - $ M_{\pi}(s) $, a metric which estimates the expected future reward of a state $s$, following the policy $\pi$.
@@ -48,13 +48,13 @@ $$
 where, 
 
 $$ 
- \eta(s) = h(s) + \sum_{\bar{s}} \eta(\bar{s}) \sum_{a} \pi (a|\bar{s})P(s|\bar{s},a).
+ \eta(s) = h(s) + \sum_{\bar{s}} \eta(\bar{s}) \sum_{a} \pi (a \vert \bar{s})P(s \vert \bar{s},a).
 
 $$
 
 ## Continuing Tasks: Average Reward $(r_{\pi}(s))$ Setting 
 
-In the average reward setting, $M_{\pi}(s)$ represents the average one-step reward received by the agent following $\pi$, where $r_{\pi}(s) = \sum_{a \in A} \pi(a|s)r(s, a)$. 
+In the average reward setting, $M_{\pi}(s)$ represents the average one-step reward received by the agent following $\pi$, where $r_{\pi}(s) = \sum_{a \in A} \pi(a \vert s)r(s, a)$. 
 
 $$ 
 J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) r_{\pi}(s). 
@@ -69,7 +69,7 @@ $$
 
 ## Continuing Tasks: Discounted $(\gamma)$ Setting 
 
-In the discounted setting $\gamma \in [0,1] $ is introduced to discount the future rewards. Depending on the value of $\gamma$, the agent could be either myopic or farsighted. $v^{\gamma}_{\pi}(s) =  =  \mathbb{E}_{s_{t}, a_{t} \sim\pi_{\theta}}[\sum_{t=0}^{t-1} \gamma^{t} r_{t}(s_{t},a_{t})]$ is the value function. 
+In the discounted setting $\gamma \in [0,1] $ is introduced to discount the future rewards. Depending on the value of $\gamma$, the agent could be either myopic or farsighted. $v^{\gamma}_{\pi}(s) =  =  E_{s_{t}, a_{t} \sim\pi_{\theta}}[\sum_{t=0}^{t-1} \gamma^{t} r_{t}(s_{t},a_{t})]$ is the value function. 
 
 $$ 
 J(\pi) \doteq \sum_{s \in S} d^{\pi}(s) v^{\gamma}_{\pi}(s). 
