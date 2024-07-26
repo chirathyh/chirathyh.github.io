@@ -89,11 +89,11 @@ $$
 In the above equation $ (1-\gamma) $ is a normalisation factor to ensure that $  \sum_{s} d^{\gamma}_{\pi}(s) = 1$. Where,
 
 $$ 
-\sum_{s} d^{\gamma}_{\pi}(s) = (1-\gamma) \sum_{s_{0}} p_{0}(s_{0}) \sum_{t=0}^{\infty} \gamma^{t} \sum_{s}P(s_{t}=s|\pi, s_{0}).
+\sum_{s} d^{\gamma}_{\pi}(s) = (1-\gamma) \sum_{s_{0}} p_{0}(s_{0}) {\color{red}{\sum_{t=0}^{\infty} \gamma^{t}}} \sum_{s}P(s_{t}=s|\pi, s_{0}).
 $$
 
 $$ 
-\sum_{s} d^{\gamma}_{\pi}(s) = (1-\gamma) \sum_{s_{0}} p_{0}(s_{0}) \frac{1}{(1-\gamma)} = 1.
+\sum_{s} d^{\gamma}_{\pi}(s) = (1-\gamma) \sum_{s_{0}} p_{0}(s_{0}) {\color{red} { \frac{1}{(1-\gamma)} }} = 1.
 $$
 
 **Note**: In practice, when we implement policy gradient based, on-policy deep RL algorithms, we ignore the discounted state distribution. Instead we use the on-policy distribution. Read [3] for more information.  
