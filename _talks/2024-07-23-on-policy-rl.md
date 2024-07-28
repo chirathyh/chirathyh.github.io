@@ -4,6 +4,7 @@ collection: talks
 type: "Tutorial"
 permalink: /talks/2024-07-23-on-policy-rl
 date: 2024-07-23
+excerpt: "This article summarises concepts related to on-policy Reinforcement Learning (RL) algorithms. Specifically the focus is on looking at the optimisation objectives, on-policy distributions and compare between different RL task settings."
 ---
 
 ## Overview.
