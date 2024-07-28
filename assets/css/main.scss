@@ -10,6 +10,13 @@
  *
 */
 
+:root {
+    --radius: 8px;
+    --gap: 10px;
+    --entry: rgb(255, 255, 255);
+    --border: rgb(238, 238, 238)
+  }
+
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
