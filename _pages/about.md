@@ -12,7 +12,7 @@ redirect_from:
 I enjoy solving problems and learning new things along the way. During my PhD, I designed a Reinforcement Learning (RL)-based Artificial Pancreas System to gluocse regulation in Type 1 Diabetes. Currently, in my post-doc, I'm working on RL-based brain stimulation treatment for depression. Previously, I worked as a Machine Learning Engineer in FinTech, where I deployed machine learning solutions for enterprise applications.
 
 <center><img src='/images/interests.png' width="1000" height="186"></center>
-
+<br>
 
 I'm interested in exploring Machine Learning and Reinforcement Learning algorithms for decision-making in medical applications, with a focus on developing closed-loop clinical treatment solutions. This is often challenging due to the complex dynamics, partial observability, high inter- and intra-population variability, safety & practical learning constraints, and the presence of unknown delays and disturbances. These complexities call for the development of real-world algorithms capable of handling safety and explainability requirements, which are vital in medical applications. Current research directions:
 1. Reinforcement Learning (RL)-based Artificial Pancreas Systems (APS) to Automate Treatment in Type 1 Diabetes.
