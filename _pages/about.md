@@ -9,7 +9,7 @@ redirect_from:
 
 **Hi! I'm Chirath.** 
 
-I enjoy solving research/engineering problems and learning new things along the way. 
+I enjoy solving research/engineering problems and learning new things along the way. <br>
 Interests: ![Reinforcement Learning](https://img.shields.io/badge/Reinforcement%20Learning-blue)
 
 During my PhD, I designed a Reinforcement Learning (RL)-based Artificial Pancreas System to gluocse regulation in Type 1 Diabetes. Currently, in my post-doc, I'm working on RL-based brain stimulation treatment for depression. Previously, I worked as a Machine Learning Engineer in FinTech, where I deployed machine learning solutions for enterprise applications.
