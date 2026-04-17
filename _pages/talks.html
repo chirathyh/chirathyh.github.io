@@ -1,0 +1,51 @@
+---
+layout: archive
+title: "Talks"
+permalink: /talks/
+author_profile: true
+---
+
+{% assign talks = site.data.talks.talks %}
+
+{% if talks and talks.size > 0 %}
+  {% assign sorted_talks = talks | sort: "date" | reverse %}
+
+  {% for talk in sorted_talks %}
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline">
+          {% if talk.slides %}
+            {% if talk.slides contains "://" %}
+              {% assign slides_url = talk.slides %}
+            {% else %}
+              {% assign slides_url = talk.slides | relative_url %}
+            {% endif %}
+            <a href="{{ slides_url }}">{{ talk.title }}</a>
+          {% else %}
+            {{ talk.title }}
+          {% endif %}
+        </h2>
+
+        {% if talk.date %}
+          <p class="page__meta"><i class="fa fa-calendar" aria-hidden="true"></i> {{ talk.date | date: "%B %d, %Y" }}</p>
+        {% endif %}
+
+        {% if talk.venue or talk.location %}
+          <p class="archive__item-excerpt" itemprop="description">
+            {% if talk.venue %}{{ talk.venue }}{% endif %}{% if talk.venue and talk.location %}, {% endif %}{% if talk.location %}{{ talk.location }}{% endif %}
+          </p>
+        {% endif %}
+
+        {% if talk.description %}
+          <p class="archive__item-excerpt" itemprop="description">{{ talk.description | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+        {% endif %}
+
+        {% if talk.slides %}
+          <p><a href="{{ slides_url }}" class="btn btn--small">Slides PDF</a></p>
+        {% endif %}
+      </article>
+    </div>
+  {% endfor %}
+{% else %}
+  <p>Talk slides will be added here.</p>
+{% endif %}

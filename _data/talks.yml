@@ -1,0 +1,12 @@
+# Add slide PDFs to the files/ directory, then add one item here.
+#
+# Example:
+# talks:
+#   - title: "My talk title"
+#     slides: "/files/my-talk-slides.pdf"
+#     date: "2026-04-17"
+#     venue: "Optional venue"
+#     location: "Optional location"
+#     description: "Optional one-line note."
+
+talks:
