@@ -10,6 +10,11 @@
 #     description: "Optional one-line note."
 
 talks:
+  - title: "Research Introduction"
+    slides: "/files/research-intro.pdf"
+    date: "2026-04-24"
+    venue: "ANU"
+  
   - title: "Bridging Expertise Through Open Science: A Transdisciplinary Effort to Develop Artificial Intelligence Equipped Automated Insulin Delivery Systems for Glucose Regulation in Diabetes"
     slides: "/files/CHARM2025.pdf"
     date: "2025-06-18"
