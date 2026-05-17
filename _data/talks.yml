@@ -10,10 +10,20 @@
 #     description: "Optional one-line note."
 
 talks:
-  - title: "Research Introduction"
+  - title: "Reinforcement learning systems for closed-loop clinical treatment"
     slides: "/files/research-intro.pdf"
     date: "2026-04-24"
-    venue: "ANU"
+    venue: "Vibecorner 2, ANU AI and Machine Learning Society (AIMSoc) 2026"
+
+  - title: "Optimising brain stimulation treatment for depression using computational simulations and machine learning"
+    slides: "/files/ChirathHettiarachchi_ANU-MentalHealthSymposium-v1.pdf"
+    date: "2026-04-15"
+    venue: "ANU Early and Mid-Career Mental Health Research Showcase 2026"
+  
+  - title: "Algorithms Among Us: Artificial Intelligence in Closed-Loop Clinical Treatment Applications"
+    slides: "/files/PEPSS_Seminar-ChirathHettiarachchi.pdf"
+    date: "2025-11-27"
+    venue: "Political and Environmental Psychology and Social Science (PEPSS) Seminar Series 2025"
   
   - title: "Bridging Expertise Through Open Science: A Transdisciplinary Effort to Develop Artificial Intelligence Equipped Automated Insulin Delivery Systems for Glucose Regulation in Diabetes"
     slides: "/files/CHARM2025.pdf"
@@ -24,3 +34,8 @@ talks:
     slides: "/files/Medinfo2025.pdf"
     date: "2025-08-12"
     venue: "The 20th World Congress on Medical and Health Informatics"
+
+  - title: "Bridging the Gap Between Clinicians, Lived Experience Experts, and AI Systems for Glucose Regulation in Type 1 Diabetes"
+    slides: "/files/IAI_ECR_ChirathHettiarachchi.pdf"
+    date: "2025-03-24"
+    venue: "ANU Integrated AI (IAI) Network ECR Seminar Series 2025"
