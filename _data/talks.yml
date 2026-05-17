@@ -39,3 +39,23 @@ talks:
     slides: "/files/IAI_ECR_ChirathHettiarachchi.pdf"
     date: "2025-03-24"
     venue: "ANU Integrated AI (IAI) Network ECR Seminar Series 2025"
+
+  - title: "Optimising Personal Medical Insights by Introducing a Scalable Health Informatics Application"
+    slides: "/files/SensAnalytics_presentation.pdf"
+    date: "2024-07-08"
+    venue: "Australian Institute of Digital Health (AIDH) Networking Event 2024"
+  
+  - title: "Reinforcement Learning-based Artificial Pancreas Systems to Automate Treatment in Type 1 Diabetes"
+    slides: "/files/AIxBIO2024_ChirathHettiarachchi.pdf"
+    date: "2024-07-01"
+    venue: "ANU Symposium in Computational Biology, Biomedicine, and Artificial Intelligence (AIxBIO) 2024"
+  
+  - title: "CAPSML: Bridging the Gap Between Clinicians, Lived Experience Experts, and Artificial Intelligence Systems for Glucose Regulation in Type 1 Diabetes"
+    slides: "/files/CAPSML_DEMO_Dedalus.pdf"
+    date: "2024-04-17"
+    venue: "Dedalus’s Clinical Community of Practice Annual Meeting (cCoP) 2024"
+
+  - title: "Uniting Clinicians, Lived Experience, and AI Systems In Type 1 Diabetes"
+    slides: "/files/CAPSML_DEMO_ACADI.pdf"
+    date: "2023-09-15"
+    venue: "Australian Centre for Accelerating Diabetes Innovations (ACADI) Seminar Series 2023"
