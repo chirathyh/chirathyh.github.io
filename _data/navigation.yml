@@ -3,24 +3,23 @@ main:
 #   - title: "CV"
 #     url: /cv/
 
-  - title: "Short Notes"
-    url: /short-notes/  
+#  - title: "Short Notes"
+#    url: /short-notes/  
     
-  - title: "Publications"
-    url: /publications/
+# - title: "Publications"
+#   url: /publications/
     
   - title: "Posters"
     url: /posters/     
 
-  - title: "Talks"
+  - title: "Presentations"
     url: /talks/
     
-  - title: "Projects"
-    url: /portfolio/
+#  - title: "Projects"
+#    url: /portfolio/
         
-  - title: "Blog"
-    url: /year-archive/
-  
+#  - title: "Blog"
+#    url: /year-archive/ 
     
 #  - title: "Guide"
 #    url: /markdown/
