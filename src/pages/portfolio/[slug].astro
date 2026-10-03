@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  const projects = [
+    { slug: 'h-msc', title: 'Diabetes prediction from PPG and physiological characteristics', resource: '/files/msc_thesis.pdf' },
+    { slug: 'i-flisma', title: 'Flisma wearable throwing-injury analysis', resource: '/files/flismaReport.pdf' },
+    { slug: 'j-clardia', title: 'Clardia family health assistant', resource: '/files/ClardiaReport.pdf' },
+    { slug: 'k-skewedDistribution', title: 'Analyzing skewed distributions' },
+    { slug: 'l-iotScale', title: 'Gym Tracker IoT weight scale' },
+    { slug: 'm-rampage', title: 'Rampage line-following robot' },
+  ];
+  return projects.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+}
+
+const { project } = Astro.props;
+---
+
+<BaseLayout title={`${project.title} — project archive`} description="Archived project compatibility page.">
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Earlier project</span>
+      <h1>{project.title}</h1>
+      <p class="page-lead">This minimal archive preserves an externally linked URL from the previous site. It is not part of the current featured research portfolio.</p>
+      <div class="button-row">
+        {project.resource && <a class="button primary" href={project.resource}>Archived resource</a>}
+        <a class="button" href="/portfolio/">Current projects</a>
+      </div>
+    </div>
+  </header>
+</BaseLayout>

@@ -1,0 +1,44 @@
+export const talks = [
+  {
+    title: 'Reinforcement learning systems for closed-loop clinical treatment',
+    slides: '/files/research-intro.pdf',
+    date: '2026-04-24',
+    venue: 'Vibecorner 2, ANU AI and Machine Learning Society (AIMSoc) 2026',
+  },
+  {
+    title: 'Optimising brain stimulation treatment for depression using computational simulations and machine learning',
+    slides: '/files/ChirathHettiarachchi_ANU-MentalHealthSymposium-v1.pdf',
+    date: '2026-04-15',
+    venue: 'ANU Early and Mid-Career Mental Health Research Showcase 2026',
+  },
+  {
+    title: 'Algorithms Among Us: Artificial Intelligence in Closed-Loop Clinical Treatment Applications',
+    slides: '/files/PEPSS_Seminar-ChirathHettiarachchi.pdf',
+    date: '2025-11-27',
+    venue: 'Political and Environmental Psychology and Social Science Seminar Series 2025',
+  },
+  {
+    title: 'Comparing Deterministic and Stochastic Reinforcement Learning for Glucose Regulation in Type 1 Diabetes',
+    slides: '/files/Medinfo2025.pdf',
+    date: '2025-08-12',
+    venue: '20th World Congress on Medical and Health Informatics',
+  },
+  {
+    title: 'Bridging Expertise Through Open Science: AI-equipped automated insulin delivery systems',
+    slides: '/files/CHARM2025.pdf',
+    date: '2025-06-18',
+    venue: 'Canberra Health Annual Research Meeting 2025',
+  },
+  {
+    title: 'Reinforcement Learning-based Artificial Pancreas Systems to Automate Treatment in Type 1 Diabetes',
+    slides: '/files/AIxBIO2024_ChirathHettiarachchi.pdf',
+    date: '2024-07-01',
+    venue: 'ANU Symposium in Computational Biology, Biomedicine, and Artificial Intelligence 2024',
+  },
+  {
+    title: 'CAPSML: Bridging clinicians, lived experience, and AI systems for glucose regulation',
+    slides: '/files/CAPSML_DEMO_Dedalus.pdf',
+    date: '2024-04-17',
+    venue: 'Dedalus Clinical Community of Practice Annual Meeting 2024',
+  },
+] as const;

@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import ProjectCard from '../../components/ProjectCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const projects = (await getCollection('projects', ({ data }) => data.status === 'public')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const archivedProjects = [
+  ['h-msc', 'Diabetes prediction from PPG and physiological characteristics'],
+  ['i-flisma', 'Flisma wearable throwing-injury analysis'],
+  ['j-clardia', 'Clardia family health assistant'],
+  ['k-skewedDistribution', 'Analyzing skewed distributions'],
+  ['l-iotScale', 'Gym Tracker IoT weight scale'],
+  ['m-rampage', 'Rampage line-following robot'],
+];
+---
+
+<BaseLayout title="Projects — Chirath Hettiarachchi" description="Current research systems and archived project links.">
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Compatibility archive</span>
+      <h1>Projects</h1>
+      <p class="page-lead">Current research systems are listed first. A minimal archive keeps externally linked legacy project URLs valid.</p>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <div class="project-grid">{projects.map((project) => <ProjectCard project={project} />)}</div>
+    </div>
+  </section>
+  <section class="section compact">
+    <div class="container">
+      <h2>Earlier projects</h2>
+      <div class="timeline" style="margin-top: 1.5rem;">
+        {archivedProjects.map(([slug, title]) => (
+          <div class="timeline-item"><span>Archive</span><strong>{title}</strong><a href={`/portfolio/${slug}/`}>Open</a></div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

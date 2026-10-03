@@ -1,0 +1,17 @@
+---
+interface Props {
+  href?: string | null;
+  label: string;
+  primary?: boolean;
+  disabled?: boolean;
+}
+
+const { href, label, primary = false, disabled = false } = Astro.props;
+const isDisabled = disabled || !href;
+---
+
+{isDisabled ? (
+  <span class:list={['button', { primary, disabled: isDisabled }]} aria-disabled="true">{label}</span>
+) : (
+  <a class:list={['button', { primary }]} href={href}>{label}</a>
+)}

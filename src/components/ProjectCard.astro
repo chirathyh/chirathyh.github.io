@@ -1,0 +1,53 @@
+---
+import { Picture } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const { data } = project;
+const route = `/projects/${project.id}/`;
+const externalLinks = [
+  ['Paper', data.links.paper],
+  ['CAPSML', data.links.demo],
+  ['Code', data.links.code],
+  ['G2P2C', data.links.g2p2c],
+  ['GluCoEnv', data.links.glucoenv],
+  ['RL4T1D', data.links.rl4t1d],
+  ['NeurIPS 2026', data.links.neurips],
+].filter((link): link is [string, string] => Boolean(link[1]));
+---
+
+<article class="project-card">
+  <a class="project-image" href={route} aria-label={`Read about ${data.title}`}>
+    <Picture
+      src={data.thumbnail}
+      alt={data.thumbnailAlt}
+      widths={[560, 900]}
+      sizes="(max-width: 760px) calc(100vw - 2rem), 540px"
+      formats={['avif', 'webp']}
+      fallbackFormat="png"
+      loading="eager"
+      decoding="async"
+    />
+  </a>
+  <div class="project-card-body">
+    <div>
+      <h3><a href={route}>{data.title}</a></h3>
+      <p class="subtitle">{data.subtitle}</p>
+    </div>
+    <p>{data.summary}</p>
+    <p class="secondary">{data.secondary}</p>
+    <div class="tag-list" aria-label="Technologies and topics">
+      {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+    <div class="link-row">
+      <a class="text-link internal" href={route}>Project</a>
+      {externalLinks.map(([label, href]) => (
+        <a class:list={['text-link', { internal: href.startsWith('/') }]} href={href}>{label}</a>
+      ))}
+    </div>
+  </div>
+</article>

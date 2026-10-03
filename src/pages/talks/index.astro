@@ -1,0 +1,25 @@
+---
+import { talks } from '../../data/talks';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Talks — Chirath Hettiarachchi" description="A compact archive of public research talks and slide PDFs.">
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Compatibility archive</span>
+      <h1>Talks</h1>
+      <p class="page-lead">Public research slides retained for existing links. Talks are intentionally not part of the primary navigation.</p>
+    </div>
+  </header>
+  <section class="section compact">
+    <div class="container timeline">
+      {talks.map((talk) => (
+        <article class="timeline-item">
+          <time datetime={talk.date}>{talk.date}</time>
+          <div><h3>{talk.title}</h3><p>{talk.venue}</p></div>
+          <a class="small-link" href={talk.slides}>Slides PDF</a>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

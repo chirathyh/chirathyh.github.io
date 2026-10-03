@@ -1,0 +1,45 @@
+---
+import ButtonLink from '../../components/ButtonLink.astro';
+import { capabilities, siteConfig } from '../../config/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="CV — Chirath Hettiarachchi"
+  description="Concise professional summary and CV download for Chirath Hettiarachchi."
+>
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Curriculum vitae</span>
+      <h1>CV</h1>
+      <p class="page-lead">Machine-learning researcher working across sequential decision-making, scientific simulation, computational neuroscience and adaptive biomedical systems.</p>
+      <div class="button-row">
+        <ButtonLink
+          href={siteConfig.cvAvailable ? siteConfig.cvPath : null}
+          label={siteConfig.cvAvailable ? 'Download CV' : 'Download CV — PDF pending'}
+          primary
+        />
+        <ButtonLink href={`mailto:${siteConfig.email}`} label="Email" />
+      </div>
+    </div>
+  </header>
+
+  <section class="section compact">
+    <div class="container project-detail-grid">
+      <div class="prose">
+        <h2>Research profile</h2>
+        <p>I design learning methods and research software for complex dynamical systems, with current public work spanning reinforcement learning for virtual glucose control and simulation-based closed-loop neuromodulation.</p>
+        <h2>Methods and engineering</h2>
+        <ul>
+          {capabilities.map((capability) => <li><strong>{capability.title}:</strong> {capability.body}</li>)}
+        </ul>
+        <h2>Research outputs</h2>
+        <p>See the <a href="/publications/">publications page</a>, <a href="/#work">featured systems</a> and <a href={siteConfig.github}>public code</a>.</p>
+      </div>
+      <div class="side-panel" role="note" aria-labelledby="cv-pdf-status">
+        <h2 id="cv-pdf-status">PDF status</h2>
+        <p class="secondary">A verified current CV PDF was not present in the repository. Before launch, place it at <code>public/files/chirath-hettiarachchi-cv.pdf</code> and enable the download in <code>src/config/site.ts</code>.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
