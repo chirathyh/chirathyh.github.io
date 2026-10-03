@@ -17,6 +17,15 @@ const projects = defineCollection({
       tags: z.array(z.string()),
       thumbnail: image(),
       thumbnailAlt: z.string(),
+      homepageVisual: z.object({
+        image: image(),
+        alt: z.string(),
+        caption: z.string(),
+        video: z.object({
+          mp4: z.string(),
+          webm: z.string().optional(),
+        }).optional(),
+      }).optional(),
       links: z.object({
         paper: z.url().optional(),
         code: z.url().optional(),

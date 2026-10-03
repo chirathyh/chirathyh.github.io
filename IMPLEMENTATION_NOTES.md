@@ -9,7 +9,7 @@ Push/merge performed: no
 - The visual system was rebuilt around the compact two-column structure of [Academic Portfolio Astro](https://github.com/rubzip/academic-portfolio-astro/) at commit `6f296c22bd2dc1712d39545835dc9cd4e4f4854b`.
 - The current site keeps its original Astro content collections, verified research claims, project routes, compatibility pages, image pipeline, metadata and deployment workflow.
 - Template features outside the portfolio's scope—blogging, teaching, page transitions, analytics, LaTeX packages, third-party fonts and the JavaScript theme switcher—were intentionally not imported.
-- The homepage now uses a sticky profile rail, compact navigation, a readable central column, text-first project summaries and simple typographic dividers. Featured projects expose their system overview and concrete technical points directly on the homepage; detailed pages retain the full narrative and figures. On mobile, the profile becomes a short masthead and all primary navigation remains visible without JavaScript.
+- The homepage now uses a sticky profile rail, compact navigation, a readable central column, project summaries and simple typographic dividers. Featured projects expose their system overview and concrete technical points directly on the homepage, followed by explanatory figures where available. On mobile, the profile becomes a short masthead and all primary navigation remains visible without JavaScript.
 - License attribution is recorded in `THIRD_PARTY_NOTICES.md`.
 
 ## Verified publication and system claims
@@ -35,13 +35,14 @@ Push/merge performed: no
 ## Image provenance and handling
 
 - `src/assets/images/profile.png`: existing public profile image from the previous site. Astro generates a 112 px WebP derivative for the homepage; the 1.56 MB source is not embedded directly.
-- `src/assets/images/neurostimenv-framework.png`, `neurostimenv-output.png`, and `neurostimenv-logo.png`: public NeuroStimEnv repository assets. That repository is MIT licensed. The 5.9 MB framework source is processed by Astro into responsive AVIF/WebP outputs and is not shipped directly on ordinary pages.
+- `src/assets/images/neurostimenv-framework.png` and `neurostimenv-output.png`: public NeuroStimEnv repository assets. That repository is MIT licensed. The framework matches the owner's supplied reference and is shown at a readable width on the homepage as well as the detail page. Astro generates responsive AVIF/WebP outputs rather than serving the 5.9 MB source.
 - `src/assets/images/g2p2c-architecture.png`: public G2P2C repository asset (MIT licensed), used only on the detailed project page and optimized by Astro.
-- `src/assets/images/glucoenv.png`: existing site asset also referenced by the public GluCoEnv repository; used for the open-source systems card and optimized by Astro.
-- `src/assets/images/capsml-glucose.png`: current public OpenGraph image fetched from `https://capsml.com/assets/glucose.png` during migration. It shows a virtual glucose-control simulation and replaces the old poster as the CAPSML homepage visual.
+- `src/assets/images/glucoenv.png`: existing site asset also referenced by the public GluCoEnv repository; used on the open-source systems detail page and optimized by Astro.
+- `src/assets/images/capsml-glucose.png`: current public OpenGraph image fetched from `https://capsml.com/assets/glucose.png` during migration. It shows a virtual glucose-control simulation and is used on the CAPSML detail page.
+- `src/assets/images/glucose-demo-poster.png` and `public/media/glucose-control.{webm,mp4}`: derived from the owner's existing public `https://chirathyh.github.io/images/gif_glucose.gif`, explicitly supplied for homepage use. The 39.12-second GIF is converted to silent 15 fps MP4 (145,507 bytes) and WebM (240,365 bytes). Its 24-second frame provides an optimized static preview showing meal disturbances, simulated glucose and insulin delivery. An optional native disclosure reveals the player and replaces the static preview; the visitor then presses play. The player has controls, `preload="none"`, and no autoplay or loop, so the page has no automatic motion even when reduced motion is preferred. The animation is illustrative simulation evidence, not clinical data or a claim about a particular algorithm's performance.
 - `src/assets/images/capsml-poster.jpg`: existing public poster used only on the compatibility poster page and optimized by Astro.
 - `public/images/og-card.png`: generated locally from `src/assets/images/og-card-source.svg`; it combines site typography with an abstract state/dynamics network, not a headshot.
-- The previous multi-megabyte GIFs, generic/sample theme images, AI-generated G2P2C cover, and 33 slide PNG exports were not migrated.
+- Other legacy GIFs, generic/sample theme images, AI-generated G2P2C cover, and 33 slide PNG exports were not migrated.
 
 ## Links requiring owner confirmation
 

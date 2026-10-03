@@ -17,6 +17,10 @@ tags:
   - "HPC / MPI"
 thumbnail: "../../assets/images/neurostimenv-framework.png"
 thumbnailAlt: "NeuroStimEnv framework linking a biophysical neural circuit, simulated EEG, transcranial stimulation and a learning agent"
+homepageVisual:
+  image: "../../assets/images/neurostimenv-framework.png"
+  alt: "Closed-loop NeuroStimEnv workflow: a human cortical microcircuit produces simulated EEG observations; a reinforcement-learning agent selects stimulation actions that feed back into the circuit. NEURON, LFPy and SimNIBS provide circuit, signal and stimulation modelling."
+  caption: "The simulation loop: neural activity provides observations, a learning agent chooses stimulation parameters, and the circuit responds. This framework supports computational experiments; it is not clinical validation."
 links:
   paper: "https://doi.org/10.21203/rs.3.rs-7958165/v1"
   code: "https://github.com/chirathyh/neurostimenv"
