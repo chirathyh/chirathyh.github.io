@@ -37,7 +37,6 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
     <div class="container">
       <div class="section-heading">
         <h2 id="work-title">Featured work</h2>
-        <p>Research software and computational methods built to make difficult biomedical control problems testable, inspectable and reproducible.</p>
       </div>
       <div class="project-grid">
         {projects.map((project) => <ProjectCard project={project} />)}
