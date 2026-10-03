@@ -1,0 +1,16 @@
+---
+import { siteConfig } from '../config/site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© {year} {siteConfig.name}. Built as a static Astro site.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href={siteConfig.scholar}>Google Scholar</a>
+      <a href={siteConfig.orcid}>ORCID</a>
+      <a href={siteConfig.linkedin}>LinkedIn</a>
+      <a href={`mailto:${siteConfig.email}`}>Email</a>
+    </nav>
+  </div>
+</footer>

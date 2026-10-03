@@ -1,31 +1,82 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Chirath Hettiarachchi — research portfolio
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Static Astro website for <https://chirathyh.github.io>. The site is project-first, uses content collections for research systems and publications, and ships no client-side framework or ordinary-page JavaScript.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+## Stack
 
-# Instructions
+- Astro 7 with TypeScript and static output
+- Tailwind CSS v4 through the official Vite plugin
+- Astro content collections for projects and publications
+- `@astrojs/sitemap`
+- Astro image optimization for locally stored source images
+- Official Astro GitHub Pages action
+- npm and Node 24 LTS
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Local development
 
-See more info at https://academicpages.github.io/
+Use Node 24 (the `.nvmrc` is included), then:
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+```bash
+nvm use
+npm install
+npm run dev
+```
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+The development server prints its local URL, normally `http://localhost:4321`.
 
-# Changelog -- bugfixes and enhancements
+## Build and preview
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+```bash
+npm run build
+npm run preview
+```
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+The production output is generated in `dist/`.
+
+## Quality checks
+
+Build before running checks that inspect `dist/`:
+
+```bash
+npm run build
+npm run test:links
+npm run test:a11y
+npm run test:visual
+npm run test:lighthouse
+```
+
+Playwright uses the installed Chrome browser and saves desktop/mobile review screenshots in the gitignored `artifacts/review-screenshots/` directory.
+
+## Content updates
+
+- Global identity, links, CV availability and NeurIPS placeholders: `src/config/site.ts`
+- Projects: `src/content/projects/`
+- Publications: `src/content/publications/`
+- Public static files: `public/`
+- Locally optimized image sources: `src/assets/images/`
+
+Project and publication schemas are defined in `src/content.config.ts`.
+
+## CV
+
+No verified current CV PDF was present during migration. Place the reviewed PDF at:
+
+```text
+public/files/chirath-hettiarachchi-cv.pdf
+```
+
+Then set `cvAvailable: true` in `src/config/site.ts`. Until then, the site displays a visibly disabled PDF action and does not invent a document.
+
+## NeurIPS 2026 QR code
+
+`public/qr/neurips-2026.svg` points to <https://chirathyh.github.io/neurips-2026/>. The SVG can be inserted directly into the workshop poster. Confirm the live destination and scan a printed proof before final poster export.
+
+## GitHub Pages
+
+`.github/workflows/deploy.yml` uses the official Astro Pages action. It runs on pushes to `main` and can also be started manually.
+
+Before the first approved deployment, set:
+
+**Repository Settings → Pages → Source → GitHub Actions**
+
+Do not change the Pages setting or merge this migration until the placeholders and visual review in `IMPLEMENTATION_NOTES.md` are complete.

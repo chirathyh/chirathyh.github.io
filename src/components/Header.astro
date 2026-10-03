@@ -1,0 +1,24 @@
+---
+import { siteConfig } from '../config/site';
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="site-name" href="/" aria-label="Chirath Hettiarachchi, home">{siteConfig.name}</a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {siteConfig.nav.map((item) => (
+        <a href={item.href}>{item.label}</a>
+      ))}
+    </nav>
+
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        {siteConfig.nav.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))}
+      </nav>
+    </details>
+  </div>
+</header>

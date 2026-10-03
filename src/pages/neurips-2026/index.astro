@@ -1,0 +1,46 @@
+---
+import ButtonLink from '../../components/ButtonLink.astro';
+import { siteConfig } from '../../config/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="NeurIPS 2026 workshop — Chirath Hettiarachchi"
+  description="Mobile conference landing page for Chirath Hettiarachchi, NeurIPS 2026 workshop presenter in Sydney."
+>
+  <section class="conference-page">
+    <div class="container">
+      <div class="conference-card">
+        <span class="eyebrow">{siteConfig.neurips.label}</span>
+        <h1>{siteConfig.name}</h1>
+        <p class="status-pill" style="margin-top: 1.25rem;">{siteConfig.neurips.status}</p>
+        <div class="conference-title">
+          <span>Workshop paper</span>
+          <strong>{siteConfig.neurips.paperTitle}</strong>
+        </div>
+        <p class="conference-summary">{siteConfig.neurips.summary}</p>
+        <div class="button-row">
+          <ButtonLink href={siteConfig.neurips.paperUrl} label="Paper — pending" primary />
+          <ButtonLink href={siteConfig.neurips.posterUrl} label="Poster — pending" />
+          <ButtonLink href={siteConfig.neurips.codeUrl} label="Code" />
+          <ButtonLink href="/cv/" label="CV" />
+          <ButtonLink href={`mailto:${siteConfig.email}`} label="Email" />
+        </div>
+        <p class="notice" style="margin-top: 1.5rem;">This is a NeurIPS 2026 workshop presentation. It is not described as a NeurIPS main-track paper. Exact workshop, paper and poster details are awaiting final confirmation.</p>
+      </div>
+
+      <div class="other-work">
+        <span class="eyebrow">Other work</span>
+        <h2>Research systems</h2>
+        <div class="other-work-list">
+          <a class="other-work-item" href="/projects/neurostimenv/"><span>NeuroStimEnv</span><span>View →</span></a>
+          <a class="other-work-item" href="/projects/capsml/"><span>CAPSML / G2P2C</span><span>View →</span></a>
+          <a class="other-work-item" href="/projects/open-source-systems/"><span>Open-source research systems</span><span>View →</span></a>
+        </div>
+        <div class="button-row">
+          <a class="button" href="/chirath-hettiarachchi.vcf" download>Save contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

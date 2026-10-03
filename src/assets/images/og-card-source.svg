@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fbfbfa"/>
+  <path d="M0 0h18v630H0z" fill="#175cd3"/>
+  <g fill="none" stroke="#cbd5e1" stroke-width="3">
+    <path d="M770 179h138l75 82 101-54"/>
+    <path d="M770 316h116l80 82 118-29"/>
+    <path d="M770 453h132l70-63 112 57"/>
+  </g>
+  <g fill="#fff" stroke="#175cd3" stroke-width="4">
+    <circle cx="770" cy="179" r="15"/><circle cx="908" cy="179" r="15"/><circle cx="983" cy="261" r="15"/><circle cx="1084" cy="207" r="15"/>
+    <circle cx="770" cy="316" r="15"/><circle cx="886" cy="316" r="15"/><circle cx="966" cy="398" r="15"/><circle cx="1084" cy="369" r="15"/>
+    <circle cx="770" cy="453" r="15"/><circle cx="902" cy="453" r="15"/><circle cx="972" cy="390" r="15"/><circle cx="1084" cy="447" r="15"/>
+  </g>
+  <text x="96" y="176" fill="#171a1f" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Chirath Hettiarachchi</text>
+  <text x="96" y="249" fill="#171a1f" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="600">Machine learning for</text>
+  <text x="96" y="298" fill="#171a1f" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="600">adaptive biomedical systems.</text>
+  <text x="96" y="389" fill="#5e6673" font-family="Arial, Helvetica, sans-serif" font-size="24">Reinforcement learning · Scientific ML</text>
+  <text x="96" y="427" fill="#5e6673" font-family="Arial, Helvetica, sans-serif" font-size="24">Computational neuroscience · Dynamical systems</text>
+  <text x="96" y="535" fill="#175cd3" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">chirathyh.github.io</text>
+</svg>
