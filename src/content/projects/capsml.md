@@ -19,7 +19,7 @@ thumbnailAlt: "CAPSML simulation plot showing glucose trajectory, meal disturban
 homepageVisual:
   image: "../../assets/images/glucose-demo-poster.png"
   alt: "Glucose-control simulation showing a blue glucose trace, red meal markers and green insulin-delivery bars over a day."
-  caption: "An illustrative in-silico glucose-control experiment. Blue shows sensed glucose, red marks meals, and green shows insulin delivery. Open the animation and press play to see the trajectory unfold. These are simulated signals, not patient data."
+  caption: "An illustrative in-silico glucose-control experiment. Blue shows sensed glucose, red marks meals, and green shows insulin delivery. Use the playback controls to pause or replay the animation. These are simulated signals, not patient data."
   video:
     webm: "/media/glucose-control.webm"
     mp4: "/media/glucose-control.mp4"

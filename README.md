@@ -1,6 +1,6 @@
 # Chirath Hettiarachchi — research portfolio
 
-Static Astro website for <https://chirathyh.github.io>. The site is project-first, uses content collections for research systems and publications, and ships no client-side framework or ordinary-page JavaScript. Its compact academic layout is adapted from Academic Portfolio Astro while retaining this site's verified content model and accessibility requirements.
+Static Astro website for <https://chirathyh.github.io>. The site is project-first, uses content collections for research systems and publications, and ships no client-side framework. A small script manages accessible video autoplay on the homepage and portfolio; other pages ship no JavaScript. Its compact academic layout is adapted from Academic Portfolio Astro while retaining this site's verified content model and accessibility requirements.
 
 ## Stack
 
@@ -61,7 +61,7 @@ Playwright uses the installed Chrome browser and saves desktop/mobile review scr
 
 Project and publication schemas are defined in `src/content.config.ts`.
 
-Projects may include an optional `homepageVisual` with an image, descriptive alt text and caption. Adding `video.mp4` and `video.webm` provides an expandable native video player beneath the static figure. Homepage animations play only when a visitor opens the player and chooses to start them.
+Projects may include an optional `homepageVisual` with an image, descriptive alt text and caption. Adding `video.mp4` and `video.webm` provides a native video player with the image as its poster. Animations autoplay silently and loop when visible, pause offscreen or in a hidden tab, and respect a visitor's manual pause. Reduced-motion preferences disable autoplay; native controls still allow optional playback. Without JavaScript or when autoplay is blocked, the poster and manual playback controls remain available.
 
 ## CV
 
