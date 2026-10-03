@@ -1,5 +1,4 @@
 ---
-import { Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -21,32 +20,34 @@ const externalLinks = [
 ---
 
 <article class="project-card">
-  <a class="project-image" href={route} aria-label={`Read about ${data.title}`}>
-    <Picture
-      src={data.thumbnail}
-      alt={data.thumbnailAlt}
-      widths={[560, 900]}
-      sizes="(max-width: 700px) calc(100vw - 2rem), 184px"
-      formats={['avif', 'webp']}
-      fallbackFormat="png"
-      loading="eager"
-      decoding="async"
-    />
-  </a>
-  <div class="project-card-body">
+  <header class="project-card-header">
     <div>
       <h3><a href={route}>{data.title}</a></h3>
       <p class="subtitle">{data.subtitle}</p>
     </div>
-    <p>{data.summary}</p>
-    <div class="tag-list" aria-label="Technologies and topics">
-      {data.tags.slice(0, 5).map((tag) => <span class="tag">{tag}</span>)}
+    <a class="project-detail-link" href={route}>Full project →</a>
+  </header>
+
+  <div class="project-summary-grid">
+    <div class="project-overview">
+      <p class="project-summary">{data.summary}</p>
+      <p class="secondary">{data.secondary}</p>
     </div>
-    <div class="link-row">
-      <a class="text-link internal" href={route}>Project</a>
-      {externalLinks.map(([label, href]) => (
-        <a class:list={['text-link', { internal: href.startsWith('/') }]} href={href}>{label}</a>
-      ))}
+
+    <div class="project-evidence">
+      <p class="project-evidence-label">Technical summary</p>
+      <ul>
+        {data.technicalHighlights.slice(0, 3).map((highlight) => <li>{highlight}</li>)}
+      </ul>
     </div>
+  </div>
+
+  <div class="tag-list" aria-label="Technologies and topics">
+    {data.tags.slice(0, 6).map((tag) => <span class="tag">{tag}</span>)}
+  </div>
+  <div class="link-row">
+    {externalLinks.map(([label, href]) => (
+      <a class:list={['text-link', { internal: href.startsWith('/') }]} href={href}>{label}</a>
+    ))}
   </div>
 </article>
