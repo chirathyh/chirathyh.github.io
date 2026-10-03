@@ -260,13 +260,17 @@ main {
   padding-bottom: 1.5rem;
 }
 
-.intro h1 {
+.intro h1,
+#work-title {
   max-width: 100%;
-  margin-top: 0.9rem;
   font-size: clamp(1.45rem, 2.4vw, 2rem);
   font-weight: 740;
   line-height: 1.3;
   text-wrap: balance;
+}
+
+.intro h1 {
+  margin-top: 0.9rem;
 }
 
 .intro-summary {
@@ -420,6 +424,15 @@ main {
   border-top: 1px solid var(--line);
 }
 
+#work .section-heading {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+#work .project-grid {
+  border-top: 0;
+}
+
 .project-card {
   padding: 1.65rem 0 1.75rem;
   border-bottom: 1px solid var(--line);
@@ -539,26 +552,6 @@ main {
 .project-home-visual video {
   aspect-ratio: 1080 / 608;
   background: var(--white);
-}
-
-.project-animation {
-  margin-top: 0.6rem;
-}
-
-.project-animation summary {
-  width: fit-content;
-  cursor: pointer;
-  color: var(--accent);
-  font-size: 0.8rem;
-  font-weight: 680;
-}
-
-.project-animation[open] video {
-  margin-top: 0.6rem;
-}
-
-.project-home-visual:has(.project-animation[open]) .project-video-preview {
-  display: none;
 }
 
 .project-home-visual figcaption {
@@ -1073,9 +1066,13 @@ main {
     padding-bottom: 1.25rem;
   }
 
+  .intro h1,
+  #work-title {
+    font-size: 1.45rem;
+  }
+
   .intro h1 {
     margin-top: 0.8rem;
-    font-size: 1.45rem;
   }
 
   .intro-summary {

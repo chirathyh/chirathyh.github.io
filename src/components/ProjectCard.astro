@@ -50,37 +50,23 @@ const externalLinks = [
   {visual && (
     <figure class="project-home-visual">
       {visual.video && poster ? (
-        <>
-          <div class="project-video-preview">
-            <Picture
-              src={visual.image}
-              alt={visual.alt}
-              widths={[480, 800, 1080]}
-              sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) calc(100vw - 6rem), (max-width: 1184px) calc(100vw - 22rem), 800px"
-              formats={['avif', 'webp']}
-              fallbackFormat="webp"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <details class="project-animation">
-            <summary>Watch glucose-control animation · 39 seconds</summary>
-            <video
-              controls
-              playsinline
-              preload="none"
-              poster={poster.src}
-              width={visual.image.width}
-              height={visual.image.height}
-              aria-label={visual.alt}
-              aria-describedby={`${project.id}-visual-caption`}
-            >
-              <source src={visual.video.mp4} type="video/mp4" />
-              {visual.video.webm && <source src={visual.video.webm} type="video/webm" />}
-              <p><a href={visual.video.mp4}>Watch the glucose-control simulation</a>.</p>
-            </video>
-          </details>
-        </>
+        <video
+          data-project-animation
+          controls
+          muted
+          loop
+          playsinline
+          preload="none"
+          poster={poster.src}
+          width={visual.image.width}
+          height={visual.image.height}
+          aria-label={visual.alt}
+          aria-describedby={`${project.id}-visual-caption`}
+        >
+          <source src={visual.video.mp4} type="video/mp4" />
+          {visual.video.webm && <source src={visual.video.webm} type="video/webm" />}
+          <p><a href={visual.video.mp4}>Watch the glucose-control simulation</a>.</p>
+        </video>
       ) : (
         <a class="project-figure-link" href={route} aria-label={`Explore the ${data.title} framework in detail`}>
           <Picture
@@ -108,3 +94,40 @@ const externalLinks = [
     ))}
   </div>
 </article>
+
+<script>
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  document.querySelectorAll<HTMLVideoElement>('[data-project-animation]').forEach((video) => {
+    let inView = false;
+    let userPaused = false;
+    let automaticPauses = 0;
+
+    const updatePlayback = () => {
+      if (inView && !document.hidden && !reducedMotion.matches && !userPaused) {
+        // Native controls remain available if the browser declines autoplay.
+        void video.play().catch(() => {});
+      } else if (!video.paused) {
+        automaticPauses += 1;
+        video.pause();
+      }
+    };
+
+    video.addEventListener('pause', () => {
+      if (automaticPauses > 0) automaticPauses -= 1;
+      else userPaused = true;
+    });
+    video.addEventListener('play', () => {
+      userPaused = false;
+    });
+
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      updatePlayback();
+    }, { threshold: 0 });
+    observer.observe(video);
+
+    reducedMotion.addEventListener('change', updatePlayback);
+    document.addEventListener('visibilitychange', updatePlayback);
+  });
+</script>
