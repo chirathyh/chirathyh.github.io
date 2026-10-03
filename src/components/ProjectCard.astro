@@ -1,4 +1,5 @@
 ---
+import { getImage, Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -7,6 +8,10 @@ interface Props {
 
 const { project } = Astro.props;
 const { data } = project;
+const visual = data.homepageVisual;
+const poster = visual?.video
+  ? await getImage({ src: visual.image, width: 1080, format: 'webp' })
+  : null;
 const route = `/projects/${project.id}/`;
 const externalLinks = [
   ['Paper', data.links.paper],
@@ -41,6 +46,58 @@ const externalLinks = [
       </ul>
     </div>
   </div>
+
+  {visual && (
+    <figure class="project-home-visual">
+      {visual.video && poster ? (
+        <>
+          <div class="project-video-preview">
+            <Picture
+              src={visual.image}
+              alt={visual.alt}
+              widths={[480, 800, 1080]}
+              sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) calc(100vw - 6rem), (max-width: 1184px) calc(100vw - 22rem), 800px"
+              formats={['avif', 'webp']}
+              fallbackFormat="webp"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <details class="project-animation">
+            <summary>Watch glucose-control animation · 39 seconds</summary>
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster={poster.src}
+              width={visual.image.width}
+              height={visual.image.height}
+              aria-label={visual.alt}
+              aria-describedby={`${project.id}-visual-caption`}
+            >
+              <source src={visual.video.mp4} type="video/mp4" />
+              {visual.video.webm && <source src={visual.video.webm} type="video/webm" />}
+              <p><a href={visual.video.mp4}>Watch the glucose-control simulation</a>.</p>
+            </video>
+          </details>
+        </>
+      ) : (
+        <a class="project-figure-link" href={route} aria-label={`Explore the ${data.title} framework in detail`}>
+          <Picture
+            src={visual.image}
+            alt={visual.alt}
+            widths={[480, 800, 1440]}
+            sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) calc(100vw - 6rem), (max-width: 1184px) calc(100vw - 22rem), 800px"
+            formats={['avif', 'webp']}
+            fallbackFormat="webp"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      )}
+      <figcaption id={`${project.id}-visual-caption`}>{visual.caption}</figcaption>
+    </figure>
+  )}
 
   <div class="tag-list" aria-label="Technologies and topics">
     {data.tags.slice(0, 6).map((tag) => <span class="tag">{tag}</span>)}

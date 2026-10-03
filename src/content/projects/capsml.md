@@ -16,6 +16,13 @@ tags:
   - "Biomedical AI"
 thumbnail: "../../assets/images/capsml-glucose.png"
 thumbnailAlt: "CAPSML simulation plot showing glucose trajectory, meal disturbances and insulin delivery over time"
+homepageVisual:
+  image: "../../assets/images/glucose-demo-poster.png"
+  alt: "Glucose-control simulation showing a blue glucose trace, red meal markers and green insulin-delivery bars over a day."
+  caption: "An illustrative in-silico glucose-control experiment. Blue shows sensed glucose, red marks meals, and green shows insulin delivery. Open the animation and press play to see the trajectory unfold. These are simulated signals, not patient data."
+  video:
+    webm: "/media/glucose-control.webm"
+    mp4: "/media/glucose-control.mp4"
 links:
   paper: "https://doi.org/10.1016/j.bspc.2023.105839"
   demo: "https://capsml.com/"

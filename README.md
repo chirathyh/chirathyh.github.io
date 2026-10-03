@@ -61,6 +61,8 @@ Playwright uses the installed Chrome browser and saves desktop/mobile review scr
 
 Project and publication schemas are defined in `src/content.config.ts`.
 
+Projects may include an optional `homepageVisual` with an image, descriptive alt text and caption. Adding `video.mp4` and `video.webm` provides an expandable native video player beneath the static figure. Homepage animations play only when a visitor opens the player and chooses to start them.
+
 ## CV
 
 No verified current CV PDF was present during migration. Place the reviewed PDF at:

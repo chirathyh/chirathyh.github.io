@@ -496,6 +496,56 @@ main {
   margin-top: 0.85rem;
 }
 
+.project-home-visual {
+  width: 100%;
+  max-width: 50rem;
+  margin: 1.4rem 0 0;
+}
+
+.project-figure-link {
+  display: block;
+}
+
+.project-home-visual img,
+.project-home-visual video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-home-visual video {
+  aspect-ratio: 1080 / 608;
+  background: var(--white);
+}
+
+.project-animation {
+  margin-top: 0.6rem;
+}
+
+.project-animation summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 680;
+}
+
+.project-animation[open] video {
+  margin-top: 0.6rem;
+}
+
+.project-home-visual:has(.project-animation[open]) .project-video-preview {
+  display: none;
+}
+
+.project-home-visual figcaption {
+  max-width: 78ch;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
 .link-row {
   gap: 0.8rem;
   margin-top: auto;

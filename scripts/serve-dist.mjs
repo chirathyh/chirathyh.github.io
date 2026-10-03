@@ -10,11 +10,13 @@ const mimeTypes = {
   '.jpg': 'image/jpeg',
   '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
+  '.mp4': 'video/mp4',
   '.pdf': 'application/pdf',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
   '.vcf': 'text/vcard; charset=utf-8',
   '.webp': 'image/webp',
+  '.webm': 'video/webm',
   '.xml': 'application/xml; charset=utf-8',
 };
 
