@@ -26,7 +26,7 @@ const externalLinks = [
       src={data.thumbnail}
       alt={data.thumbnailAlt}
       widths={[560, 900]}
-      sizes="(max-width: 760px) calc(100vw - 2rem), 540px"
+      sizes="(max-width: 700px) calc(100vw - 2rem), 184px"
       formats={['avif', 'webp']}
       fallbackFormat="png"
       loading="eager"
@@ -39,9 +39,8 @@ const externalLinks = [
       <p class="subtitle">{data.subtitle}</p>
     </div>
     <p>{data.summary}</p>
-    <p class="secondary">{data.secondary}</p>
     <div class="tag-list" aria-label="Technologies and topics">
-      {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+      {data.tags.slice(0, 5).map((tag) => <span class="tag">{tag}</span>)}
     </div>
     <div class="link-row">
       <a class="text-link internal" href={route}>Project</a>

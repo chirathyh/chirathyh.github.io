@@ -1,6 +1,6 @@
 # Chirath Hettiarachchi — research portfolio
 
-Static Astro website for <https://chirathyh.github.io>. The site is project-first, uses content collections for research systems and publications, and ships no client-side framework or ordinary-page JavaScript.
+Static Astro website for <https://chirathyh.github.io>. The site is project-first, uses content collections for research systems and publications, and ships no client-side framework or ordinary-page JavaScript. Its compact academic layout is adapted from Academic Portfolio Astro while retaining this site's verified content model and accessibility requirements.
 
 ## Stack
 
@@ -11,6 +11,10 @@ Static Astro website for <https://chirathyh.github.io>. The site is project-firs
 - Astro image optimization for locally stored source images
 - Official Astro GitHub Pages action
 - npm and Node 24 LTS
+
+## Design provenance
+
+The two-column profile layout and restrained visual direction are adapted from [Academic Portfolio Astro](https://github.com/rubzip/academic-portfolio-astro/). The implementation intentionally omits the reference template's blog, teaching, client-side theme switcher, page transitions and analytics. See `THIRD_PARTY_NOTICES.md` for attribution.
 
 ## Local development
 

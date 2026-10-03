@@ -1,24 +1,19 @@
 ---
 import { siteConfig } from '../config/site';
+
+const currentPath = Astro.url.pathname;
 ---
 
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="site-name" href="/" aria-label="Chirath Hettiarachchi, home">{siteConfig.name}</a>
-
-    <nav class="desktop-nav" aria-label="Primary navigation">
-      {siteConfig.nav.map((item) => (
-        <a href={item.href}>{item.label}</a>
-      ))}
-    </nav>
-
-    <details class="mobile-menu">
-      <summary>Menu</summary>
-      <nav class="mobile-nav" aria-label="Mobile navigation">
-        {siteConfig.nav.map((item) => (
-          <a href={item.href}>{item.label}</a>
-        ))}
-      </nav>
-    </details>
-  </div>
+  <nav class="primary-nav" aria-label="Primary navigation">
+    {siteConfig.nav.map((item) => {
+      const path = item.href.split('#')[0];
+      const active = item.href === '/#work'
+        ? currentPath === '/'
+        : item.href.startsWith('/#') || item.href.startsWith('http')
+          ? false
+          : Boolean(path && currentPath.startsWith(path));
+      return <a class:list={{ active }} href={item.href} aria-current={active ? 'page' : undefined}>{item.label}</a>;
+    })}
+  </nav>
 </header>

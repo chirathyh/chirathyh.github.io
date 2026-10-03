@@ -1,12 +1,10 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import ButtonLink from '../components/ButtonLink.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import PublicationList from '../components/PublicationList.astro';
 import { capabilities, siteConfig } from '../config/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import portrait from '../assets/images/profile.png';
 
 const projects = (await getCollection('projects', ({ data }) => data.featured && data.status === 'public')).sort(
   (a, b) => a.data.order - b.data.order,
@@ -17,32 +15,20 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
 ---
 
 <BaseLayout>
-  <section class="hero">
-    <div class="container hero-inner">
-      <Image
-        class="portrait"
-        src={portrait}
-        alt="Portrait of Chirath Hettiarachchi"
-        width={112}
-        height={112}
-        format="webp"
-        loading="eager"
-      />
-      <div>
-        <a class="status-pill" href="/neurips-2026/">NeurIPS 2026 · Sydney · Workshop presenter</a>
-        <h1>{siteConfig.displayName}</h1>
-        <p class="hero-kicker">Machine learning for adaptive biomedical systems.</p>
-        <p class="hero-summary">
-          I build sequential decision-making, generative modelling and simulation methods for complex biological systems—from closed-loop insulin delivery to computational neuromodulation.
-        </p>
-        <div class="tag-list" aria-label="Research areas">
-          {siteConfig.researchTags.map((tag) => <span class="tag">{tag}</span>)}
-        </div>
-        <div class="button-row">
-          <ButtonLink href="#work" label="Featured work" primary />
-          <ButtonLink href="/cv/" label="CV" />
-          <ButtonLink href={siteConfig.github} label="GitHub" />
-        </div>
+  <section class="intro">
+    <div class="container">
+      <a class="conference-link" href="/neurips-2026/">NeurIPS 2026 · Sydney · Workshop presenter <span>→</span></a>
+      <h1>Machine learning for adaptive biomedical systems.</h1>
+      <p class="intro-summary">
+        I build sequential decision-making, generative modelling and simulation methods for complex biological systems—from closed-loop insulin delivery to computational neuromodulation.
+      </p>
+      <div class="tag-list" aria-label="Research areas">
+        {siteConfig.researchTags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+      <div class="button-row">
+        <ButtonLink href="#work" label="Featured work" primary />
+        <ButtonLink href="/cv/" label="CV" />
+        <ButtonLink href={siteConfig.github} label="GitHub" />
       </div>
     </div>
   </section>
@@ -50,10 +36,7 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
   <section class="section" id="work" aria-labelledby="work-title">
     <div class="container">
       <div class="section-heading">
-        <div>
-          <span class="eyebrow">Selected systems</span>
-          <h2 id="work-title">Featured work</h2>
-        </div>
+        <h2 id="work-title">Featured work</h2>
         <p>Research software and computational methods built to make difficult biomedical control problems testable, inspectable and reproducible.</p>
       </div>
       <div class="project-grid">
@@ -65,10 +48,7 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
   <section class="section compact" aria-labelledby="capabilities-title">
     <div class="container">
       <div class="section-heading">
-        <div>
-          <span class="eyebrow">Technical capabilities</span>
-          <h2 id="capabilities-title">What I build</h2>
-        </div>
+        <h2 id="capabilities-title">What I build</h2>
         <p>Methods and systems that connect learning algorithms to scientific models, simulation environments and real experimental constraints.</p>
       </div>
       <div class="capability-grid">
@@ -85,10 +65,7 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
   <section class="section" id="papers" aria-labelledby="papers-title">
     <div class="container">
       <div class="section-heading">
-        <div>
-          <span class="eyebrow">Research record</span>
-          <h2 id="papers-title">Selected papers</h2>
-        </div>
+        <h2 id="papers-title">Selected papers</h2>
         <p>A short selection emphasizing sequential decision-making, computational modelling and adaptive biomedical systems.</p>
       </div>
       <PublicationList publications={publications} />
@@ -99,14 +76,13 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
   <section class="section compact" aria-labelledby="about-title">
     <div class="container about-grid">
       <div>
-        <span class="eyebrow">About</span>
-        <h2 id="about-title">Research across methods and systems</h2>
+        <h2 id="about-title">About</h2>
         <p>
           I am a machine-learning researcher interested in sequential decision-making and computational methods for complex biological systems. My work spans reinforcement learning, scientific simulation, generative modelling and biomedical applications, with an emphasis on building reproducible systems that connect methodological research with real scientific problems.
         </p>
       </div>
       <div class="contact-panel">
-        <h3>Background</h3>
+        <h3>Background and experience</h3>
         <p>Employment and education history are kept in the concise CV page.</p>
         <a href="/cv/">View CV →</a>
       </div>
@@ -116,8 +92,7 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
   <section class="section compact" id="contact" aria-labelledby="contact-title">
     <div class="container contact-grid">
       <div>
-        <span class="eyebrow">Contact</span>
-        <h2 id="contact-title">Research, engineering and collaboration</h2>
+        <h2 id="contact-title">Contact</h2>
         <p>If you would like to discuss research systems, sequential decision-making or machine learning for biomedical science, email is the most direct route.</p>
       </div>
       <div class="contact-panel">
