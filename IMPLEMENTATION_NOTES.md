@@ -4,6 +4,14 @@ Implementation branch: `redesign/2026`
 Production branch affected: no
 Push/merge performed: no
 
+## Minimal academic template adaptation
+
+- The visual system was rebuilt around the compact two-column structure of [Academic Portfolio Astro](https://github.com/rubzip/academic-portfolio-astro/) at commit `6f296c22bd2dc1712d39545835dc9cd4e4f4854b`.
+- The current site keeps its original Astro content collections, verified research claims, project routes, compatibility pages, image pipeline, metadata and deployment workflow.
+- Template features outside the portfolio's scope—blogging, teaching, page transitions, analytics, LaTeX packages, third-party fonts and the JavaScript theme switcher—were intentionally not imported.
+- The homepage now uses a sticky profile rail, compact navigation, narrow reading column, flat project rows and simple typographic dividers. On mobile, the profile becomes a short masthead and all primary navigation remains visible without JavaScript.
+- License attribution is recorded in `THIRD_PARTY_NOTICES.md`.
+
 ## Verified publication and system claims
 
 - The title, authors, 20 February 2026 preprint date, DOI, and preprint status for “Simulating closed-loop transcranial brain stimulation for reinforcement learning-based treatment discovery” were checked through Crossref and the public Research Square record.

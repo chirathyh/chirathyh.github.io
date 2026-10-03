@@ -11,9 +11,11 @@ const { publications } = Astro.props;
 <div class="paper-list">
   {publications.map(({ data }) => (
     <article class="paper-item">
-      <p class="paper-year">{data.year}</p>
       <div>
-        <p class="paper-title">{data.title}</p>
+        <div class="paper-heading">
+          <p class="paper-title">{data.title}</p>
+          <p class="paper-year">{data.year}</p>
+        </div>
         <p class="paper-authors">{data.authors}</p>
         <p class="paper-venue">{data.venue}</p>
         {data.note && <p class="paper-note">{data.note}</p>}

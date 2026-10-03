@@ -28,13 +28,13 @@ test('homepage has no console errors or horizontal overflow and saves review cap
   await page.screenshot({ path: path.join(outputDir, fileName), fullPage: true });
 });
 
-test('mobile menu is keyboard accessible and does not overflow', async ({ page }, testInfo) => {
+test('mobile navigation is keyboard accessible and does not overflow', async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== 'mobile', 'Mobile-only navigation check');
   await page.goto('/');
-  const menu = page.locator('.mobile-menu summary');
-  await menu.focus();
-  await page.keyboard.press('Enter');
-  await expect(page.locator('.mobile-nav')).toBeVisible();
+  const firstLink = page.locator('.primary-nav a').first();
+  await firstLink.focus();
+  await expect(firstLink).toBeFocused();
+  await expect(page.locator('.primary-nav')).toBeVisible();
   const hasOverflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
   expect(hasOverflow).toBe(false);
 });
