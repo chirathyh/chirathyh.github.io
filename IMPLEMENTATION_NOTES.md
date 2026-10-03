@@ -34,7 +34,8 @@ Push/merge performed: no
 
 ## Image provenance and handling
 
-- `src/assets/images/profile.png`: existing public profile image from the previous site. Astro generates a 112 px WebP derivative for the homepage; the 1.56 MB source is not embedded directly.
+- `src/assets/images/profile.png`: replaced on 4 October 2026 with the owner's supplied `CFDB5599-04DD-47D1-86C6-E16318C04A90.PNG`. Astro generates 112 px and 224 px WebP derivatives for the profile sidebar and mobile masthead; the original PNG is not served directly.
+- `src/assets/images/research-overview.png`: the owner's supplied `clt2.png`, explicitly requested for the homepage. It compares the closed-loop insulin-delivery and brain-stimulation research directions and appears immediately before Featured work. Astro generates responsive AVIF/WebP derivatives, with descriptive alt text and a concise explanatory caption.
 - `src/assets/images/neurostimenv-framework.png` and `neurostimenv-output.png`: public NeuroStimEnv repository assets. That repository is MIT licensed. The framework matches the owner's supplied reference and is shown at a readable width on the homepage as well as the detail page. Astro generates responsive AVIF/WebP outputs rather than serving the 5.9 MB source.
 - `src/assets/images/g2p2c-architecture.png`: public G2P2C repository asset (MIT licensed), used only on the detailed project page and optimized by Astro.
 - `src/assets/images/glucoenv.png`: existing site asset also referenced by the public GluCoEnv repository; used on the open-source systems detail page and optimized by Astro.

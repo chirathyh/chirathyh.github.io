@@ -10,14 +10,14 @@ test('homepage has no console errors or horizontal overflow and saves review cap
 
   await page.goto('/');
   await page.locator('main').waitFor();
-  await page.evaluate(async () => {
-    for (let y = 0; y < document.body.scrollHeight; y += 600) {
-      window.scrollTo(0, y);
-      await new Promise((resolve) => setTimeout(resolve, 20));
-    }
-    window.scrollTo(0, 0);
-  });
-  await page.waitForFunction(() => Array.from(document.images).every((image) => image.complete));
+  // Load each lazy figure before capturing the whole page. Fast scrolling can
+  // skip them when CSS smooth scrolling is enabled, especially on mobile.
+  for (const image of await page.locator('img').all()) {
+    await image.scrollIntoViewIfNeeded();
+    await expect(image).toHaveJSProperty('complete', true);
+    expect(await image.evaluate((element) => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  }
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   const hasOverflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth);
   expect(hasOverflow).toBe(false);
   expect(consoleErrors).toEqual([]);

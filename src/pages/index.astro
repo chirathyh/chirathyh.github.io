@@ -1,5 +1,7 @@
 ---
+import { Picture } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import researchOverview from '../assets/images/research-overview.png';
 import ButtonLink from '../components/ButtonLink.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import PublicationList from '../components/PublicationList.astro';
@@ -30,6 +32,21 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
         <ButtonLink href="/cv/" label="CV" />
         <ButtonLink href={siteConfig.github} label="GitHub" />
       </div>
+      <figure class="research-overview">
+        <Picture
+          src={researchOverview}
+          alt="Two closed-loop research systems: glucose measurements guide a reinforcement-learning algorithm that selects insulin doses, while EEG observations guide an algorithm that selects transcranial alternating-current stimulation."
+          widths={[480, 800, 1600]}
+          sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) calc(100vw - 6rem), (max-width: 1184px) calc(100vw - 22rem), 800px"
+          formats={['avif', 'webp']}
+          fallbackFormat="webp"
+          loading="eager"
+          decoding="async"
+        />
+        <figcaption>
+          Closed-loop control across insulin delivery and brain stimulation: physiological signals inform a learning algorithm, which selects the next intervention.
+        </figcaption>
+      </figure>
     </div>
   </section>
 
