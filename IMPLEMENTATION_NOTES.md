@@ -4,6 +4,15 @@ Implementation branch: `redesign/2026`
 Production target: `main`
 Push/merge/deployment authorization: explicitly approved by the owner on 4 October 2026
 
+## Initial production release
+
+- Old production revision: `8b69c1dd9291badf32a8d782f2075abc8f14d8c4`. It is preserved on the published `backup/jekyll-before-astro` branch before replacing `main`.
+- The release is validated from a detached clean checkout with Node 24 and `npm ci`, using the committed lockfile. The owner's existing local `package-lock.json` metadata edits are intentionally not included or discarded.
+- Production build: 25 static pages, zero type-check errors/warnings; all internal links and 152 external anchors pass validation. All 53 desktop/mobile browser tests pass, with one mobile-only check skipped on desktop. Homepage and CV Lighthouse scores are 100 for performance, accessibility, best practices and SEO across two runs each.
+- The deployment workflow uses the official Astro action, Node 24, the GitHub Pages artifact and `actions/deploy-pages`. The target is `https://chirathyh.github.io/` with no repository-name base path. The only requested settings change is Pages publishing source from legacy Jekyll to GitHub Actions; HTTPS and domain settings remain unchanged.
+- Rollback: in Settings → Pages, choose Deploy from a branch, then `backup/jekyll-before-astro` and `/(root)`. This backup contains the original Jekyll source, including its PDFs and assets. Do not force-reset or delete production history.
+- Conference promotion is deferred as described below. No workshop title or paper/poster placeholder is presented on active portfolio pages.
+
 ## Minimal academic template adaptation
 
 - The visual system was rebuilt around the compact two-column structure of [Academic Portfolio Astro](https://github.com/rubzip/academic-portfolio-astro/) at commit `6f296c22bd2dc1712d39545835dc9cd4e4f4854b`.
@@ -101,7 +110,7 @@ All 19 existing PDF files were moved to `public/files/` so their `/files/...` UR
 4. Confirm contact email, social links, vCard fields, publication list and author spelling.
 5. Decide whether to replace the current CAPSML simulation image with an approved fresh UI screenshot.
 6. Run `npm install`, `npm run build`, link checks, accessibility tests, visual tests and Lighthouse again after content changes.
-7. Monitor the current Astro build dependency advisory before merge. `npm audit` reports one high-severity advisory through Astro 7.3.5 → `http-cache-semantics@4.2.0`; no patched npm release was available on the audit date. The deployed site is static and does not run this package server-side.
+7. Monitor the current Astro build dependency advisory. The 4 October 2026 clean-install audit reports two high-severity package findings (Astro and `http-cache-semantics`) arising from the same [GHSA-ch52-4w7c-c8xp advisory](https://github.com/advisories/GHSA-ch52-4w7c-c8xp). The latest `http-cache-semantics` npm release is still 4.2.0, with no patched release available. Do not run `npm audit fix --force`: its proposed Astro 2.10.9 downgrade would break this migration. The deployed artifact is static HTML/CSS/media and does not include a running Astro server or this server-side cache dependency.
 8. Review `git diff main...redesign/2026` and merge only after approval.
 9. In GitHub, select **Settings → Pages → Source → GitHub Actions** immediately before or after the approved merge.
 10. The owner explicitly requested the identified production-deployment steps on 4 October 2026, including backup, push, merge and the GitHub Actions publishing-source switch. No unrelated repository settings are in scope.
