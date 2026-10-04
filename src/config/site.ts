@@ -10,8 +10,8 @@ export const siteConfig = {
   scholar: 'https://scholar.google.com/citations?user=gvLLPs8AAAAJ&hl=en',
   orcid: 'https://orcid.org/0000-0002-7702-0718',
   linkedin: 'https://www.linkedin.com/in/chirathyh/',
-  cvPath: '/files/chirath-hettiarachchi-cv.pdf',
-  cvAvailable: false,
+  cvPath: '/files/Industry-CV-2026.pdf',
+  cvAvailable: true,
   nav: [
     { label: 'Work', href: '/#work' },
     { label: 'Papers', href: '/publications/' },

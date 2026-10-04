@@ -6,7 +6,7 @@ Static Astro website for <https://chirathyh.github.io>. The site is project-firs
 
 - Astro 7 with TypeScript and static output
 - Tailwind CSS v4 through the official Vite plugin
-- Astro content collections for projects and publications
+- Astro content collections for projects, publications and the CV summary
 - `@astrojs/sitemap`
 - Astro image optimization for locally stored source images
 - Official Astro GitHub Pages action
@@ -56,22 +56,25 @@ Playwright uses the installed Chrome browser and saves desktop/mobile review scr
 - Global identity, links, CV availability and NeurIPS placeholders: `src/config/site.ts`
 - Projects: `src/content/projects/`
 - Publications: `src/content/publications/`
+- CV summary: `src/content/cv/profile.md`
 - Public static files: `public/`
 - Locally optimized image sources: `src/assets/images/`
 
-Project and publication schemas are defined in `src/content.config.ts`.
+Project, publication and CV schemas are defined in `src/content.config.ts`.
 
 Projects may include an optional `homepageVisual` with an image, descriptive alt text and caption. Adding `video.mp4` and `video.webm` provides a native video player with the image as its poster. Animations autoplay silently and loop when visible, pause offscreen or in a hidden tab, and respect a visitor's manual pause. Reduced-motion preferences disable autoplay; native controls still allow optional playback. Without JavaScript or when autoplay is blocked, the poster and manual playback controls remain available.
 
 ## CV
 
-No verified current CV PDF was present during migration. Place the reviewed PDF at:
+The `/cv/` page is a short summary of the owner's supplied October 2026 Overleaf CV resources. Its native download button uses the two-page **Industry-CV-2026** PDF, not either academic CV or the template/example PDFs.
+
+Edit the HTML summary in `src/content/cv/profile.md`. To update the downloadable CV, replace:
 
 ```text
-public/files/chirath-hettiarachchi-cv.pdf
+public/files/Industry-CV-2026.pdf
 ```
 
-Then set `cvAvailable: true` in `src/config/site.ts`. Until then, the site displays a visibly disabled PDF action and does not invent a document.
+The download is enabled through `cvAvailable: true` in `src/config/site.ts`. Overleaf source archives and intermediate LaTeX files are not deployed. The website keeps `chirathyh@hotmail.com` as explicitly requested; the supplied industry CV retains its original Gmail contact.
 
 ## NeurIPS 2026 QR code
 

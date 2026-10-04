@@ -4,14 +4,15 @@ interface Props {
   label: string;
   primary?: boolean;
   disabled?: boolean;
+  download?: string;
 }
 
-const { href, label, primary = false, disabled = false } = Astro.props;
+const { href, label, primary = false, disabled = false, download } = Astro.props;
 const isDisabled = disabled || !href;
 ---
 
 {isDisabled ? (
   <span class:list={['button', { primary, disabled: isDisabled }]} aria-disabled="true">{label}</span>
 ) : (
-  <a class:list={['button', { primary }]} href={href}>{label}</a>
+  <a class:list={['button', { primary }]} href={href} download={download}>{label}</a>
 )}
