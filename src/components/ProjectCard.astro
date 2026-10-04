@@ -2,6 +2,7 @@
 import { getImage, Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import Link from './Link.astro';
+import { siteConfig } from '../config/site';
 
 interface Props {
   project: CollectionEntry<'projects'>;
@@ -21,7 +22,7 @@ const externalLinks = [
   ['G2P2C', data.links.g2p2c],
   ['GluCoEnv', data.links.glucoenv],
   ['RL4T1D', data.links.rl4t1d],
-  ['NeurIPS 2026', data.links.neurips],
+  ['NeurIPS 2026', siteConfig.neurips.enabled ? data.links.neurips : undefined],
 ].filter((link): link is [string, string] => Boolean(link[1]));
 ---
 

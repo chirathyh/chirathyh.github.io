@@ -5,9 +5,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="NeurIPS 2026 workshop — Chirath Hettiarachchi"
-  description="Mobile conference landing page for Chirath Hettiarachchi, NeurIPS 2026 workshop presenter in Sydney."
+  title={siteConfig.neurips.enabled ? 'NeurIPS 2026 workshop — Chirath Hettiarachchi' : 'Conference resources — Chirath Hettiarachchi'}
+  description={siteConfig.neurips.enabled ? 'Mobile conference landing page for Chirath Hettiarachchi, NeurIPS 2026 workshop presenter in Sydney.' : 'Conference resources will be added closer to the event. Explore current research projects and the CV.'}
+  noindex={!siteConfig.neurips.enabled}
 >
+  {siteConfig.neurips.enabled ? (
   <section class="conference-page">
     <div class="container">
       <div class="conference-card">
@@ -43,4 +45,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
+  ) : (
+    <section class="conference-page">
+      <div class="container">
+        <div class="conference-card">
+          <h1>Conference resources</h1>
+          <p class="conference-summary">Conference materials will be added closer to the event. Current research projects and the CV are available below.</p>
+          <div class="button-row">
+            <ButtonLink href="/#work" label="Featured work" primary />
+            <ButtonLink href="/cv/" label="CV" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>

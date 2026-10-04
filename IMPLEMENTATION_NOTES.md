@@ -1,8 +1,8 @@
 # Implementation notes
 
 Implementation branch: `redesign/2026`
-Production branch affected: no
-Push/merge performed: no
+Production target: `main`
+Push/merge/deployment authorization: explicitly approved by the owner on 4 October 2026
 
 ## Minimal academic template adaptation
 
@@ -69,6 +69,8 @@ Push/merge performed: no
 
 ## NeurIPS 2026 placeholders
 
+The owner deferred conference promotion before the first production deployment. `siteConfig.neurips.enabled` is `false`: homepage and project links are not rendered, and the prepared landing route shows a neutral resources notice without workshop claims or title/PDF placeholders. It is marked `noindex` and excluded from the sitemap. The QR asset and full page implementation are preserved for later activation. Lighthouse's SEO target currently covers only the active homepage and CV; restore the conference URL when enabling it.
+
 The exact workshop-paper title, paper link and poster link are centralized in `src/config/site.ts`. The page deliberately displays pending states rather than guessing. Before launch:
 
 1. replace `paperTitle`;
@@ -95,11 +97,11 @@ All 19 existing PDF files were moved to `public/files/` so their `/files/...` UR
 
 1. Review the desktop and mobile screenshots in `artifacts/review-screenshots/`.
 2. Review the supplied industry CV's wording, usage metrics and differing SMP ECR award year before launch; confirm whether its Gmail contact should remain in the downloadable PDF.
-3. Replace the NeurIPS title/paper/poster placeholders and confirm workshop wording.
+3. Keep NeurIPS promotion disabled for the initial launch; before enabling it later, replace the title/paper/poster placeholders and confirm workshop wording.
 4. Confirm contact email, social links, vCard fields, publication list and author spelling.
 5. Decide whether to replace the current CAPSML simulation image with an approved fresh UI screenshot.
 6. Run `npm install`, `npm run build`, link checks, accessibility tests, visual tests and Lighthouse again after content changes.
 7. Monitor the current Astro build dependency advisory before merge. `npm audit` reports one high-severity advisory through Astro 7.3.5 → `http-cache-semantics@4.2.0`; no patched npm release was available on the audit date. The deployed site is static and does not run this package server-side.
 8. Review `git diff main...redesign/2026` and merge only after approval.
 9. In GitHub, select **Settings → Pages → Source → GitHub Actions** immediately before or after the approved merge.
-10. Do not change repository settings automatically; do not push this branch unless explicitly requested.
+10. The owner explicitly requested the identified production-deployment steps on 4 October 2026, including backup, push, merge and the GitHub Actions publishing-source switch. No unrelated repository settings are in scope.
