@@ -94,4 +94,4 @@ Before the first approved deployment, set:
 
 **Repository Settings → Pages → Source → GitHub Actions**
 
-Do not change the Pages setting or merge this migration until the placeholders and visual review in `IMPLEMENTATION_NOTES.md` are complete.
+The owner approved production deployment on 4 October 2026. Review and test future changes before merging to `main`; pushes to `main` publish automatically. Conference promotion remains disabled until its details are confirmed. Release checks, the original-site backup and rollback instructions are recorded in `IMPLEMENTATION_NOTES.md`.
