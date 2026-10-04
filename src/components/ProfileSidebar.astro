@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/images/profile.png';
+import { siteConfig } from '../config/site';
+import Link from './Link.astro';
+---
+
+<aside class="profile-sidebar" aria-label="Profile">
+  <div class="profile-inner">
+    <a class="profile-portrait" href="/" aria-label="Chirath Hettiarachchi, home">
+      <Image
+        src={portrait}
+        alt="Portrait of Chirath Hettiarachchi"
+        width={112}
+        height={112}
+        densities={[1, 2]}
+        format="webp"
+        loading="eager"
+      />
+    </a>
+    <div class="profile-copy">
+      <a class="profile-name" href="/">{siteConfig.name}</a>
+      <p class="profile-role">Researcher | Engineer</p>
+      <p class="profile-summary">Sequential decision-making and scientific machine learning for complex biological systems.</p>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href={`mailto:${siteConfig.email}`}>Email</a>
+        <Link href={siteConfig.scholar}>Scholar</Link>
+        <Link href={siteConfig.orcid}>ORCID</Link>
+        <Link href={siteConfig.linkedin}>LinkedIn</Link>
+      </nav>
+    </div>
+  </div>
+</aside>

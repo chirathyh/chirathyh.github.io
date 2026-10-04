@@ -1,0 +1,95 @@
+---
+import { Picture } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import researchOverview from '../assets/images/research-overview.png';
+import ButtonLink from '../components/ButtonLink.astro';
+import Link from '../components/Link.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { capabilities, siteConfig } from '../config/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = (await getCollection('projects', ({ data }) => data.featured && data.status === 'public')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<BaseLayout>
+  <section class="intro">
+    <div class="container">
+      {/* Conference announcement is disabled until closer to NeurIPS. */}
+      {siteConfig.neurips.enabled && (
+        <a class="conference-link" href="/neurips-2026/">NeurIPS 2026 · Sydney · Workshop presenter <span>→</span></a>
+      )}
+      <h1>Machine learning for adaptive biomedical systems.</h1>
+      <p class="intro-summary">
+        I build sequential decision-making, generative modelling and simulation methods for complex biological systems—from closed-loop insulin delivery to neuromodulation.
+      </p>
+      <div class="tag-list" aria-label="Research areas">
+        {siteConfig.researchTags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+      <div class="button-row">
+        <ButtonLink href="#work" label="Featured work" primary />
+        <ButtonLink href="/cv/" label="CV" />
+        <ButtonLink href={siteConfig.github} label="GitHub" />
+      </div>
+      <figure class="research-overview">
+        <Picture
+          src={researchOverview}
+          alt="Two closed-loop research systems: glucose measurements guide a reinforcement-learning algorithm that selects insulin doses, while EEG observations guide an algorithm that selects transcranial alternating-current stimulation."
+          widths={[480, 800, 1600]}
+          sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) calc(100vw - 6rem), (max-width: 1184px) calc(100vw - 22rem), 800px"
+          formats={['avif', 'webp']}
+          fallbackFormat="webp"
+          loading="eager"
+          decoding="async"
+        />
+        <figcaption>
+          Closed-loop control across (a) insulin delivery and (b) brain stimulation: physiological signals inform a learning algorithm, which selects the next intervention.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="work-title">Featured work</h2>
+      </div>
+      <div class="project-grid">
+        {projects.map((project) => <ProjectCard project={project} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact" aria-labelledby="capabilities-title">
+    <div class="container">
+      <div class="section-heading">
+        <h2 id="capabilities-title">What I build</h2>
+        <p>Methods and systems that connect learning algorithms to scientific models, simulation environments and real experimental constraints.</p>
+      </div>
+      <div class="capability-grid">
+        {capabilities.map((capability) => (
+          <article class="capability">
+            <h3>{capability.title}</h3>
+            <p>{capability.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div>
+        <h2 id="contact-title">Contact</h2>
+        <p>If you would like to discuss research systems, sequential decision-making or machine learning for biomedical science, email is the most direct route.</p>
+      </div>
+      <div class="contact-panel">
+        <h3>Get in touch</h3>
+        <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+        <Link href={siteConfig.github}>GitHub</Link>
+        <Link href={siteConfig.scholar}>Google Scholar</Link>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

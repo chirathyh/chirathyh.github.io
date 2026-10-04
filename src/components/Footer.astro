@@ -1,0 +1,11 @@
+---
+import { siteConfig } from '../config/site';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© {year} {siteConfig.name}. Built as a static Astro site.</p>
+    <a href="#main-content">Back to top ↑</a>
+  </div>
+</footer>

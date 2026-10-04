@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Link from './Link.astro';
+
+interface Props {
+  publications: CollectionEntry<'publications'>[];
+}
+
+const { publications } = Astro.props;
+---
+
+<div class="paper-list">
+  {publications.map(({ data }) => (
+    <article class="paper-item">
+      <div>
+        <div class="paper-heading">
+          <p class="paper-title">{data.title}</p>
+          <p class="paper-year">{data.year}</p>
+        </div>
+        <p class="paper-authors">{data.authors}</p>
+        <p class="paper-venue">{data.venue}</p>
+        {data.note && <p class="paper-note">{data.note}</p>}
+        <div class="tag-list paper-topics" aria-label="Paper topics">
+          {data.topics.map((topic) => <span class="tag">{topic}</span>)}
+        </div>
+      </div>
+      <div class="paper-actions">
+        {data.paper && <Link class="small-link" href={data.paper}>Paper</Link>}
+        {data.doi && <Link class="small-link" href={`https://doi.org/${data.doi}`}>DOI</Link>}
+        {data.localPdf && <Link class="small-link" href={data.localPdf}>PDF</Link>}
+      </div>
+    </article>
+  ))}
+</div>

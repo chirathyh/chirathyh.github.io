@@ -1,2 +1,9 @@
-_site/
-
+node_modules/
+dist/
+.astro/
+.DS_Store
+.lighthouseci/
+artifacts/
+/output/pdf/
+playwright-report/
+test-results/

@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:4.0
+KIND:individual
+FN:Chirath Hettiarachchi
+N:Hettiarachchi;Chirath;;;
+TITLE:Machine Learning Researcher
+EMAIL;TYPE=work:chirathyh@hotmail.com
+URL:https://chirathyh.github.io
+URL;TYPE=GitHub:https://github.com/chirathyh
+URL;TYPE=ORCID:https://orcid.org/0000-0002-7702-0718
+NOTE:Research in reinforcement learning, scientific machine learning, computational neuroscience and adaptive biomedical systems.
+END:VCARD

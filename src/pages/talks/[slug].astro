@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  const notes = [
+    { slug: '2024-04-01-RL-notes', title: 'On-policy Reinforcement Learning Algorithm Concepts' },
+    { slug: '2024-04-02-eigen-values', title: 'Eigen Vectors, Values, Frequencies and Modes' },
+    { slug: '2024-07-23-on-policy-rl', title: 'On-policy State Distributions and Optimisation Objectives' },
+  ];
+  return notes.map((note) => ({ params: { slug: note.slug }, props: { note } }));
+}
+
+const { note } = Astro.props;
+---
+
+<BaseLayout title={`${note.title} — archived note`} description="Archived technical-note compatibility page.">
+  <header class="page-hero"><div class="container"><span class="eyebrow">Archived technical note</span><h1>{note.title}</h1><p class="page-lead">This compatibility page preserves a URL from the previous site. The old note included broken figure references and has not been republished as a current research output.</p><div class="button-row"><a class="button" href="/talks/">Talk archive</a><a class="button primary" href="/">Current work</a></div></div></header>
+</BaseLayout>

@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import PublicationList from '../../components/PublicationList.astro';
+import Link from '../../components/Link.astro';
+import { siteConfig } from '../../config/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const publications = (await getCollection('publications')).sort(
+  (a, b) => b.data.year - a.data.year || a.data.order - b.data.order,
+);
+---
+
+<BaseLayout
+  title="Publications — Chirath Hettiarachchi"
+  description="Selected and archived publications by Chirath Hettiarachchi in reinforcement learning, biomedical systems and signal processing."
+>
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Papers</span>
+      <h1>Publications</h1>
+      <p class="page-lead">A concise chronological list. Google Scholar remains the source for the complete and most current publication record.</p>
+      <div class="button-row">
+        <Link class="button primary" href={siteConfig.scholar}>Google Scholar</Link>
+        <Link class="button" href={siteConfig.orcid}>ORCID</Link>
+      </div>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <PublicationList publications={publications} />
+    </div>
+  </section>
+</BaseLayout>

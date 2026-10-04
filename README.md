@@ -1,31 +1,97 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Chirath Hettiarachchi — research portfolio
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Static Astro website for <https://chirathyh.github.io>. The site is project-first, uses content collections for research systems and publications, and ships no client-side framework. A small script manages accessible video autoplay on the homepage and portfolio; other pages ship no JavaScript. Its compact academic layout is adapted from Academic Portfolio Astro while retaining this site's verified content model and accessibility requirements.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+## Stack
 
-# Instructions
+- Astro 7 with TypeScript and static output
+- Tailwind CSS v4 through the official Vite plugin
+- Astro content collections for projects, publications and the CV summary
+- `@astrojs/sitemap`
+- Astro image optimization for locally stored source images
+- Official Astro GitHub Pages action
+- npm and Node 24 LTS
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Design provenance
 
-See more info at https://academicpages.github.io/
+The two-column profile layout and restrained visual direction are adapted from [Academic Portfolio Astro](https://github.com/rubzip/academic-portfolio-astro/). The implementation intentionally omits the reference template's blog, teaching, client-side theme switcher, page transitions and analytics. See `THIRD_PARTY_NOTICES.md` for attribution.
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+## Local development
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+Use Node 24 (the `.nvmrc` is included), then:
 
-# Changelog -- bugfixes and enhancements
+```bash
+nvm use
+npm install
+npm run dev
+```
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+The development server prints its local URL, normally `http://localhost:4321`.
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+## Build and preview
+
+```bash
+npm run build
+npm run preview
+```
+
+The production output is generated in `dist/`.
+
+## Quality checks
+
+Build before running checks that inspect `dist/`:
+
+```bash
+npm run build
+npm run test:links
+npm run test:a11y
+npm run test:visual
+npm run test:lighthouse
+```
+
+Playwright uses the installed Chrome browser and saves desktop/mobile review screenshots in the gitignored `artifacts/review-screenshots/` directory.
+
+## Content updates
+
+- Global identity, links, CV availability and NeurIPS placeholders: `src/config/site.ts`
+- Projects: `src/content/projects/`
+- Publications: `src/content/publications/`
+- CV summary: `src/content/cv/profile.md`
+- Public static files: `public/`
+- Locally optimized image sources: `src/assets/images/`
+
+Project, publication and CV schemas are defined in `src/content.config.ts`.
+
+The homepage keeps the research overview, featured work, capabilities and contact. Publications and professional history live on their dedicated Papers and CV pages.
+
+External HTTP/HTTPS links open in a new tab with `rel="noopener noreferrer"` and a screen-reader notice. Use `src/components/Link.astro` for template links; the matching Markdown transformation is configured in `astro.config.mjs`. This policy is applied during static generation and requires no client JavaScript. Internal links, email links and local downloads keep their normal behavior.
+
+Projects may include an optional `homepageVisual` with an image, descriptive alt text and caption. Adding `video.mp4` and `video.webm` provides a native video player with the image as its poster. Animations autoplay silently and loop when visible, pause offscreen or in a hidden tab, and respect a visitor's manual pause. Reduced-motion preferences disable autoplay; native controls still allow optional playback. Without JavaScript or when autoplay is blocked, the poster and manual playback controls remain available.
+
+## CV
+
+The `/cv/` page is a short summary of the owner's supplied October 2026 Overleaf CV resources. Its native download button uses the two-page **Industry-CV-2026** PDF, not either academic CV or the template/example PDFs.
+
+Edit the HTML summary in `src/content/cv/profile.md`. To update the downloadable CV, replace:
+
+```text
+public/files/Industry-CV-2026.pdf
+```
+
+The download is enabled through `cvAvailable: true` in `src/config/site.ts`. Overleaf source archives and intermediate LaTeX files are not deployed. The website keeps `chirathyh@hotmail.com` as explicitly requested; the supplied industry CV retains its original Gmail contact.
+
+## NeurIPS 2026 QR code
+
+`public/qr/neurips-2026.svg` points to <https://chirathyh.github.io/neurips-2026/>. The SVG can be inserted directly into the workshop poster. Confirm the live destination and scan a printed proof before final poster export.
+
+Conference promotion is currently deferred: `siteConfig.neurips.enabled` is `false`. The homepage announcement and project conference links are not rendered. The prepared landing page instead shows a minimal resources notice, is marked `noindex`, and is omitted from the sitemap. To launch it closer to the event, confirm the title, paper/poster links and workshop wording, set `enabled: true`, and restore its URL in `lighthouserc.json` for SEO checks.
+
+## GitHub Pages
+
+`.github/workflows/deploy.yml` uses the official Astro Pages action. It runs on pushes to `main` and can also be started manually.
+
+Before the first approved deployment, set:
+
+**Repository Settings → Pages → Source → GitHub Actions**
+
+The owner approved production deployment on 4 October 2026. Review and test future changes before merging to `main`; pushes to `main` publish automatically. Conference promotion remains disabled until its details are confirmed. Release checks, the original-site backup and rollback instructions are recorded in `IMPLEMENTATION_NOTES.md`.

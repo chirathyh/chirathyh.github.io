@@ -1,0 +1,10 @@
+---
+import { Picture } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import capsmlPoster from '../../assets/images/capsml-poster.jpg';
+---
+
+<BaseLayout title="Posters — Chirath Hettiarachchi" description="A minimal compatibility archive for public research posters.">
+  <header class="page-hero"><div class="container"><span class="eyebrow">Compatibility archive</span><h1>Posters</h1><p class="page-lead">This page preserves the legacy poster URL without adding posters to the primary navigation.</p></div></header>
+  <section class="section compact"><div class="container"><h2>CAPSML</h2><p class="page-lead">Interactive simulation and research infrastructure for virtual glucose-control experiments.</p><Picture class="poster-preview" src={capsmlPoster} alt="CAPSML research poster about reinforcement learning for Type 1 Diabetes" widths={[480, 800]} sizes="(max-width: 760px) calc(100vw - 2rem), 672px" formats={['avif', 'webp']} fallbackFormat="jpg" loading="lazy" /></div></section>
+</BaseLayout>
