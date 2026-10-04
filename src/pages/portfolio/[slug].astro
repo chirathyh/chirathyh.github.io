@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Link from '../../components/Link.astro';
 
 export function getStaticPaths() {
   const projects = [
@@ -23,7 +24,7 @@ const { project } = Astro.props;
       <h1>{project.title}</h1>
       <p class="page-lead">This minimal archive preserves an externally linked URL from the previous site. It is not part of the current featured research portfolio.</p>
       <div class="button-row">
-        {project.resource && <a class="button primary" href={project.resource}>Archived resource</a>}
+        {project.resource && <Link class="button primary" href={project.resource}>Archived resource</Link>}
         <a class="button" href="/portfolio/">Current projects</a>
       </div>
     </div>

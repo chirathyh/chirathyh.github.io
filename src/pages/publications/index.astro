@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import PublicationList from '../../components/PublicationList.astro';
+import Link from '../../components/Link.astro';
 import { siteConfig } from '../../config/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
@@ -19,8 +20,8 @@ const publications = (await getCollection('publications')).sort(
       <h1>Publications</h1>
       <p class="page-lead">A concise chronological list. Google Scholar remains the source for the complete and most current publication record.</p>
       <div class="button-row">
-        <a class="button primary" href={siteConfig.scholar}>Google Scholar</a>
-        <a class="button" href={siteConfig.orcid}>ORCID</a>
+        <Link class="button primary" href={siteConfig.scholar}>Google Scholar</Link>
+        <Link class="button" href={siteConfig.orcid}>ORCID</Link>
       </div>
     </div>
   </header>

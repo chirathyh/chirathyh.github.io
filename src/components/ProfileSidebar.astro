@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import portrait from '../assets/images/profile.png';
 import { siteConfig } from '../config/site';
+import Link from './Link.astro';
 ---
 
 <aside class="profile-sidebar" aria-label="Profile">
@@ -23,9 +24,9 @@ import { siteConfig } from '../config/site';
       <p class="profile-summary">Sequential decision-making and scientific machine learning for complex biological systems.</p>
       <nav class="profile-links" aria-label="Profile links">
         <a href={`mailto:${siteConfig.email}`}>Email</a>
-        <a href={siteConfig.scholar}>Scholar</a>
-        <a href={siteConfig.orcid}>ORCID</a>
-        <a href={siteConfig.linkedin}>LinkedIn</a>
+        <Link href={siteConfig.scholar}>Scholar</Link>
+        <Link href={siteConfig.orcid}>ORCID</Link>
+        <Link href={siteConfig.linkedin}>LinkedIn</Link>
       </nav>
     </div>
   </div>

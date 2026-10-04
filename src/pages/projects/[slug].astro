@@ -2,6 +2,7 @@
 import { Picture } from 'astro:assets';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Link from '../../components/Link.astro';
 import neuroOutput from '../../assets/images/neurostimenv-output.png';
 import g2p2cArchitecture from '../../assets/images/g2p2c-architecture.png';
 
@@ -53,7 +54,7 @@ const projectJsonLd = {
       </div>
       <div class="button-row">
         {links.map(([label, href], index) => (
-          <a class:list={['button', { primary: index === 0 }]} href={href}>{label}</a>
+          <Link class:list={['button', { primary: index === 0 }]} href={href}>{label}</Link>
         ))}
       </div>
       <figure class="project-detail-visual">

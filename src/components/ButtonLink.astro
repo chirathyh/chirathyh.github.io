@@ -1,4 +1,6 @@
 ---
+import Link from './Link.astro';
+
 interface Props {
   href?: string | null;
   label: string;
@@ -14,5 +16,5 @@ const isDisabled = disabled || !href;
 {isDisabled ? (
   <span class:list={['button', { primary, disabled: isDisabled }]} aria-disabled="true">{label}</span>
 ) : (
-  <a class:list={['button', { primary }]} href={href} download={download}>{label}</a>
+  <Link class:list={['button', { primary }]} href={href} download={download}>{label}</Link>
 )}

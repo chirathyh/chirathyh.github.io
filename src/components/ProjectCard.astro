@@ -1,6 +1,7 @@
 ---
 import { getImage, Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
+import Link from './Link.astro';
 
 interface Props {
   project: CollectionEntry<'projects'>;
@@ -90,7 +91,7 @@ const externalLinks = [
   </div>
   <div class="link-row">
     {externalLinks.map(([label, href]) => (
-      <a class:list={['text-link', { internal: href.startsWith('/') }]} href={href}>{label}</a>
+      <Link class:list={['text-link', { internal: href.startsWith('/') }]} href={href}>{label}</Link>
     ))}
   </div>
 </article>
