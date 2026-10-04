@@ -48,6 +48,22 @@ test('Markdown resource links receive the same policy as page buttons', async ({
   await expect(link.locator('.sr-only')).toHaveText('(opens in a new tab)');
 });
 
+test('open-source systems describes CAPSML without the obsolete assistant branding', async ({ page }) => {
+  await page.goto('/projects/open-source-systems/');
+  await expect(page.locator('main')).not.toContainText('CAPSML Assistant');
+  await expect(page.locator('.prose').getByRole('heading', { name: 'CAPSML', exact: true })).toBeVisible();
+  await expect(page.locator('.prose')).toContainText('compare dosing strategies');
+  await expect(page.locator('.prose')).toContainText('in-silico experiments');
+  const link = page.locator('.prose a[href="https://capsml.com/"]');
+  await expect(link).toBeVisible();
+  await expect(link).toHaveAttribute('target', '_blank');
+  await expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+  await expect(link.locator('.sr-only')).toHaveText('(opens in a new tab)');
+
+  await page.goto('/');
+  await expect(page.locator('main')).not.toContainText('CAPSML Assistant');
+});
+
 test('opening GitHub keeps the portfolio tab in place and isolates the new tab', async ({ page, context }) => {
   // Avoid a network dependency while testing a real browser popup.
   await context.route('https://github.com/chirathyh', (route) => route.fulfill({
