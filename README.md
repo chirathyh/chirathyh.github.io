@@ -84,6 +84,8 @@ The download is enabled through `cvAvailable: true` in `src/config/site.ts`. Ove
 
 `public/qr/neurips-2026.svg` points to <https://chirathyh.github.io/neurips-2026/>. The SVG can be inserted directly into the workshop poster. Confirm the live destination and scan a printed proof before final poster export.
 
+Conference promotion is currently deferred: `siteConfig.neurips.enabled` is `false`. The homepage announcement and project conference links are not rendered. The prepared landing page instead shows a minimal resources notice, is marked `noindex`, and is omitted from the sitemap. To launch it closer to the event, confirm the title, paper/poster links and workshop wording, set `enabled: true`, and restore its URL in `lighthouserc.json` for SEO checks.
+
 ## GitHub Pages
 
 `.github/workflows/deploy.yml` uses the official Astro Pages action. It runs on pushes to `main` and can also be started manually.

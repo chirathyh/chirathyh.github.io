@@ -26,6 +26,8 @@ export const siteConfig = {
     'Computational Neuroscience',
   ],
   neurips: {
+    // Re-enable closer to the conference after confirming the paper and poster.
+    enabled: false,
     label: 'NeurIPS 2026 · Sydney',
     status: 'Workshop presenter',
     paperTitle: 'Workshop paper title to be confirmed',

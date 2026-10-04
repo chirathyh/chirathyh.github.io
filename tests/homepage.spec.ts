@@ -1,4 +1,22 @@
 import { expect, test } from '@playwright/test';
+import { siteConfig } from '../src/config/site';
+
+test('conference promotion stays hidden while its landing page is deferred', async ({ page, request }) => {
+  test.skip(siteConfig.neurips.enabled, 'The announcement has been intentionally re-enabled.');
+  for (const path of ['/', '/projects/neurostimenv/', '/portfolio/']) {
+    await page.goto(path);
+    await expect(page.locator('a[href="/neurips-2026/"]')).toHaveCount(0);
+    await expect(page.locator('main')).not.toContainText('NeurIPS 2026');
+  }
+  await page.goto('/neurips-2026/');
+  await expect(page.getByRole('heading', { name: 'Conference resources', exact: true })).toBeVisible();
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex');
+  await expect(page.locator('main')).not.toContainText('Workshop presenter');
+  await expect(page.locator('main')).not.toContainText('title to be confirmed');
+  const sitemap = await request.get('/sitemap-0.xml');
+  expect(sitemap.ok()).toBe(true);
+  expect(await sitemap.text()).not.toContain('/neurips-2026/');
+});
 
 test('homepage stays focused on projects, capabilities and contact', async ({ page }) => {
   await page.goto('/');

@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./dist",
-      "url": ["http://localhost/", "http://localhost/neurips-2026/", "http://localhost/cv/"],
+      "url": ["http://localhost/", "http://localhost/cv/"],
       "numberOfRuns": 2,
       "settings": {
         "chromeFlags": "--headless --no-sandbox --disable-dev-shm-usage"
