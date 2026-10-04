@@ -2,7 +2,11 @@ import { expect, test } from '@playwright/test';
 
 test('homepage copy, heading sizes and Featured work dividers match the requested edits', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('.profile-role')).toHaveText('Machine learning researcher / engineer');
+  await expect(page.locator('.profile-role')).toHaveText('Researcher | Engineer');
+  await expect(page.getByText('Towards fully closed-loop artificial pancreas systems', { exact: true })).toBeVisible();
+  const overview = page.locator('.research-overview img');
+  await expect(overview).toHaveAttribute('width', '2218');
+  await expect(overview).toHaveAttribute('height', '1197');
   await expect(page.locator('.intro-summary')).toHaveText(
     'I build sequential decision-making, generative modelling and simulation methods for complex biological systems—from closed-loop insulin delivery to neuromodulation.',
   );

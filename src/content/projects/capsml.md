@@ -1,7 +1,7 @@
 ---
 title: "CAPSML / G2P2C"
 shortTitle: "CAPSML / G2P2C"
-subtitle: "Towards fully closed-loop insulin delivery"
+subtitle: "Towards fully closed-loop artificial pancreas systems"
 summary: "A research ecosystem for learning adaptive insulin-dosing strategies that reduce dependence on manual meal announcements and carbohydrate estimation."
 secondary: "G2P2C combines reinforcement-learning policy optimization with glucose dynamics modelling and short-horizon planning. CAPSML exposes the research through an interactive simulation platform, while GluCoEnv and RL4T1D provide reusable open-source research infrastructure."
 featured: true
