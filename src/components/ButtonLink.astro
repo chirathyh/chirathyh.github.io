@@ -1,0 +1,20 @@
+---
+import Link from './Link.astro';
+
+interface Props {
+  href?: string | null;
+  label: string;
+  primary?: boolean;
+  disabled?: boolean;
+  download?: string;
+}
+
+const { href, label, primary = false, disabled = false, download } = Astro.props;
+const isDisabled = disabled || !href;
+---
+
+{isDisabled ? (
+  <span class:list={['button', { primary, disabled: isDisabled }]} aria-disabled="true">{label}</span>
+) : (
+  <Link class:list={['button', { primary }]} href={href} download={download}>{label}</Link>
+)}

@@ -1,0 +1,16 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import { isExternalLink } from '../utils/external-links';
+
+type Props = HTMLAttributes<'a'>;
+
+const { href, target, rel, ...attributes } = Astro.props;
+const external = isExternalLink(href);
+const relation = external
+  ? [...new Set([...(rel?.split(/\s+/) ?? []), 'noopener', 'noreferrer'])].join(' ')
+  : rel;
+---
+
+<a {...attributes} href={href} target={external ? '_blank' : target} rel={relation}>
+  <slot />{external && <span class="sr-only"> (opens in a new tab)</span>}
+</a>

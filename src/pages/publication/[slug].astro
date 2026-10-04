@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  const papers = [
+    { slug: '2009-10-01-paper-title-number-1', title: 'Identifying the Optimum Region of the Human Sole to Extract the PPG Signal for Pulse Rate Estimation', pdf: '/files/paper1.pdf' },
+    { slug: '2019-03-13-aime17', title: 'A Machine Learning Approach to Predict Diabetes Using Short Recorded Photoplethysmography and Physiological Characteristics', pdf: '/files/AIME_2019_paper_89.pdf' },
+    { slug: '2019-04-01-embc', title: 'A Wearable System to Analyze the Human Arm for Predicting Injuries Due to Throwing', pdf: '/files/EMBC19_0212_FI.pdf' },
+  ];
+  return papers.map((paper) => ({ params: { slug: paper.slug }, props: { paper } }));
+}
+
+const { paper } = Astro.props;
+---
+
+<BaseLayout title={`${paper.title} — Chirath Hettiarachchi`} description="Archived publication page with preserved paper PDF.">
+  <header class="page-hero"><div class="container"><span class="eyebrow">Publication archive</span><h1>{paper.title}</h1><p class="page-lead">This compatibility page preserves the publication URL and local paper file from the previous site.</p><div class="button-row"><a class="button primary" href={paper.pdf}>Download paper</a><a class="button" href="/publications/">All publications</a></div></div></header>
+</BaseLayout>

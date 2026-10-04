@@ -1,0 +1,101 @@
+---
+import { Picture } from 'astro:assets';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Link from '../../components/Link.astro';
+import { siteConfig } from '../../config/site';
+import neuroOutput from '../../assets/images/neurostimenv-output.png';
+import g2p2cArchitecture from '../../assets/images/g2p2c-architecture.png';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects', ({ data }) => data.status === 'public');
+  return projects.map((project) => ({ params: { slug: project.id }, props: { project } }));
+}
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const { data } = project;
+const links = [
+  ['Paper', data.links.paper],
+  ['Code', data.links.code],
+  ['CAPSML', data.links.demo],
+  ['G2P2C', data.links.g2p2c],
+  ['GluCoEnv', data.links.glucoenv],
+  ['RL4T1D', data.links.rl4t1d],
+  ['NeurIPS 2026', siteConfig.neurips.enabled ? data.links.neurips : undefined],
+].filter((link): link is [string, string] => Boolean(link[1]));
+const secondaryVisual = project.id === 'neurostimenv'
+  ? { src: neuroOutput, alt: 'Example NeuroStimEnv output with simulated EEG, stimulation and neural-circuit response panels' }
+  : project.id === 'capsml'
+    ? { src: g2p2cArchitecture, alt: 'G2P2C architecture showing policy optimization, model learning and planning phases' }
+    : null;
+const projectJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareSourceCode',
+  name: data.title,
+  description: data.summary,
+  author: { '@type': 'Person', name: 'Chirath Hettiarachchi' },
+  codeRepository: data.links.code ?? data.links.glucoenv ?? data.links.rl4t1d,
+  applicationCategory: 'Research software',
+};
+---
+
+<BaseLayout title={`${data.title} — Chirath Hettiarachchi`} description={data.summary} jsonLd={projectJsonLd}>
+  <header class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Research system</span>
+      <h1>{data.title}</h1>
+      <p class="page-lead"><strong>{data.subtitle}.</strong> {data.summary}</p>
+      <div class="tag-list" aria-label="Technologies and topics">
+        {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+      <div class="button-row">
+        {links.map(([label, href], index) => (
+          <Link class:list={['button', { primary: index === 0 }]} href={href}>{label}</Link>
+        ))}
+      </div>
+      <figure class="project-detail-visual">
+        <Picture
+          src={data.thumbnail}
+          alt={data.thumbnailAlt}
+          widths={[720, 1120, 1600]}
+          sizes="(max-width: 760px) calc(100vw - 2rem), 1120px"
+          formats={['avif', 'webp']}
+          fallbackFormat="png"
+          loading="eager"
+        />
+      </figure>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container project-detail-grid">
+      <article class="prose">
+        <Content />
+        {secondaryVisual && (
+          <figure class="project-detail-visual">
+            <Picture
+              src={secondaryVisual.src}
+              alt={secondaryVisual.alt}
+              widths={[680, 1000]}
+              sizes="(max-width: 760px) calc(100vw - 2rem), 720px"
+              formats={['avif', 'webp']}
+              fallbackFormat="png"
+              loading="lazy"
+            />
+          </figure>
+        )}
+      </article>
+      <aside class="side-panel" aria-labelledby="highlights-title">
+        <h2 id="highlights-title">Technical highlights</h2>
+        <ul class="highlight-list">
+          {data.technicalHighlights.map((highlight) => <li>{highlight}</li>)}
+        </ul>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>
