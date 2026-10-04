@@ -11,6 +11,9 @@ Push/merge performed: no
 - Template features outside the portfolio's scope—blogging, teaching, page transitions, analytics, LaTeX packages, third-party fonts and the JavaScript theme switcher—were intentionally not imported.
 - The homepage now uses a sticky profile rail, compact navigation, a readable central column, project summaries and simple typographic dividers. Featured projects expose their system overview and concrete technical points directly on the homepage, followed by explanatory figures where available. On mobile, the profile becomes a short masthead and all primary navigation remains visible without JavaScript.
 - License attribution is recorded in `THIRD_PARTY_NOTICES.md`.
+- At the owner's request, About, Background and experience, and Selected papers were removed from the homepage. The publications, CV and About compatibility pages remain available; no publication content or paper PDFs were deleted.
+- External HTTP/HTTPS links now open in a new tab with `noopener noreferrer` and an accessible notice. A shared Astro link component handles templates, and a build-time Markdown transformation handles project prose. Internal routes, anchors, email actions and local downloads are unchanged; no client script was added for link behavior.
+- Homepage/link validation on 4 October 2026: all 25 generated pages were checked for broken internal links and safe new-tab behavior on all 153 external anchors. All 51 desktop/mobile browser tests passed (one mobile-only test is intentionally skipped on desktop), including a real new-tab click, Markdown links, accessibility, navigation, animation and CV-download regression checks. Lighthouse meets all four 95-point targets on `/`, `/neurips-2026/` and `/cv/` across two runs per page. Updated homepage screenshots are in the gitignored `artifacts/review-screenshots/` directory.
 
 ## Verified publication and system claims
 

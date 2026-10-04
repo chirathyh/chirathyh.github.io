@@ -62,6 +62,10 @@ Playwright uses the installed Chrome browser and saves desktop/mobile review scr
 
 Project, publication and CV schemas are defined in `src/content.config.ts`.
 
+The homepage keeps the research overview, featured work, capabilities and contact. Publications and professional history live on their dedicated Papers and CV pages.
+
+External HTTP/HTTPS links open in a new tab with `rel="noopener noreferrer"` and a screen-reader notice. Use `src/components/Link.astro` for template links; the matching Markdown transformation is configured in `astro.config.mjs`. This policy is applied during static generation and requires no client JavaScript. Internal links, email links and local downloads keep their normal behavior.
+
 Projects may include an optional `homepageVisual` with an image, descriptive alt text and caption. Adding `video.mp4` and `video.webm` provides a native video player with the image as its poster. Animations autoplay silently and loop when visible, pause offscreen or in a hidden tab, and respect a visitor's manual pause. Reduced-motion preferences disable autoplay; native controls still allow optional playback. Without JavaScript or when autoplay is blocked, the poster and manual playback controls remain available.
 
 ## CV

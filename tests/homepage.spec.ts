@@ -1,5 +1,17 @@
 import { expect, test } from '@playwright/test';
 
+test('homepage stays focused on projects, capabilities and contact', async ({ page }) => {
+  await page.goto('/');
+  for (const title of ['About', 'Background and experience', 'Selected papers']) {
+    await expect(page.locator('main').getByRole('heading', { name: title, exact: true })).toHaveCount(0);
+  }
+  for (const title of ['Featured work', 'What I build', 'Contact']) {
+    await expect(page.locator('main').getByRole('heading', { name: title, exact: true })).toBeVisible();
+  }
+  await expect(page.locator('.primary-nav').getByRole('link', { name: 'Papers', exact: true })).toHaveAttribute('href', '/publications/');
+  await expect(page.locator('.primary-nav').getByRole('link', { name: 'CV', exact: true })).toHaveAttribute('href', '/cv/');
+});
+
 test('homepage copy, heading sizes and Featured work dividers match the requested edits', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator('.profile-role')).toHaveText('Researcher | Engineer');
@@ -77,6 +89,8 @@ test('without JavaScript, the poster and native video controls remain available'
     await expect(video).toHaveAttribute('poster', /\.webp$/);
     await expect(video).toHaveJSProperty('controls', true);
     await expect(video).toHaveJSProperty('paused', true);
+    await expect(page.locator('.intro .button-row a[href="https://github.com/chirathyh"]')).toHaveAttribute('target', '_blank');
+    await expect(page.locator('.primary-nav a[href="/publications/"]')).not.toHaveAttribute('target', '_blank');
   } finally {
     await context.close();
   }

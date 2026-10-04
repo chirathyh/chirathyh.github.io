@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import Link from './Link.astro';
 
 interface Props {
   publications: CollectionEntry<'publications'>[];
@@ -24,9 +25,9 @@ const { publications } = Astro.props;
         </div>
       </div>
       <div class="paper-actions">
-        {data.paper && <a class="small-link" href={data.paper}>Paper</a>}
-        {data.doi && <a class="small-link" href={`https://doi.org/${data.doi}`}>DOI</a>}
-        {data.localPdf && <a class="small-link" href={data.localPdf}>PDF</a>}
+        {data.paper && <Link class="small-link" href={data.paper}>Paper</Link>}
+        {data.doi && <Link class="small-link" href={`https://doi.org/${data.doi}`}>DOI</Link>}
+        {data.localPdf && <Link class="small-link" href={data.localPdf}>PDF</Link>}
       </div>
     </article>
   ))}

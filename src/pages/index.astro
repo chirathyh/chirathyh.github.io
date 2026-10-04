@@ -3,17 +3,14 @@ import { Picture } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import researchOverview from '../assets/images/research-overview.png';
 import ButtonLink from '../components/ButtonLink.astro';
+import Link from '../components/Link.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-import PublicationList from '../components/PublicationList.astro';
 import { capabilities, siteConfig } from '../config/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const projects = (await getCollection('projects', ({ data }) => data.featured && data.status === 'public')).sort(
   (a, b) => a.data.order - b.data.order,
 );
-const publications = (await getCollection('publications', ({ data }) => data.featured))
-  .sort((a, b) => a.data.order - b.data.order)
-  .slice(0, 5);
 ---
 
 <BaseLayout>
@@ -78,33 +75,6 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
     </div>
   </section>
 
-  <section class="section" id="papers" aria-labelledby="papers-title">
-    <div class="container">
-      <div class="section-heading">
-        <h2 id="papers-title">Selected papers</h2>
-        <p>A short selection emphasizing sequential decision-making, computational modelling and adaptive biomedical systems.</p>
-      </div>
-      <PublicationList publications={publications} />
-      <p class="more-link"><a href={siteConfig.scholar}>View all publications on Google Scholar →</a></p>
-    </div>
-  </section>
-
-  <section class="section compact" aria-labelledby="about-title">
-    <div class="container about-grid">
-      <div>
-        <h2 id="about-title">About</h2>
-        <p>
-          I am a machine-learning researcher interested in sequential decision-making and computational methods for complex biological systems. My work spans reinforcement learning, scientific simulation, generative modelling and biomedical applications, with an emphasis on building reproducible systems that connect methodological research with real scientific problems.
-        </p>
-      </div>
-      <div class="contact-panel">
-        <h3>Background and experience</h3>
-        <p>Employment and education history are kept in the concise CV page.</p>
-        <a href="/cv/">View CV →</a>
-      </div>
-    </div>
-  </section>
-
   <section class="section compact" id="contact" aria-labelledby="contact-title">
     <div class="container contact-grid">
       <div>
@@ -114,8 +84,8 @@ const publications = (await getCollection('publications', ({ data }) => data.fea
       <div class="contact-panel">
         <h3>Get in touch</h3>
         <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-        <a href={siteConfig.github}>GitHub</a>
-        <a href={siteConfig.scholar}>Google Scholar</a>
+        <Link href={siteConfig.github}>GitHub</Link>
+        <Link href={siteConfig.scholar}>Google Scholar</Link>
       </div>
     </div>
   </section>

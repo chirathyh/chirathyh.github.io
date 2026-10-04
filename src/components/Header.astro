@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from '../config/site';
+import Link from './Link.astro';
 
 const currentPath = Astro.url.pathname;
 ---
@@ -13,7 +14,7 @@ const currentPath = Astro.url.pathname;
         : item.href.startsWith('/#') || item.href.startsWith('http')
           ? false
           : Boolean(path && currentPath.startsWith(path));
-      return <a class:list={{ active }} href={item.href} aria-current={active ? 'page' : undefined}>{item.label}</a>;
+      return <Link class:list={{ active }} href={item.href} aria-current={active ? 'page' : undefined}>{item.label}</Link>;
     })}
   </nav>
 </header>
