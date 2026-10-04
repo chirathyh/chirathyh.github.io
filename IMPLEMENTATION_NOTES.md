@@ -27,9 +27,9 @@ Push/merge performed: no
 
 - No NeuroStimFlow/scientific-generative-modelling project is public because no public-safe repository, preprint, released figure or explicit publication evidence was found. It was replaced by the requested open-source research systems feature.
 - No unpublished figures, numerical generative-modelling results, or inferred publication titles were used.
-- No CAPSML usage, user, institution, or country counts are shown because no verified current source was supplied.
+- No CAPSML usage, user, institution, or country counts or citation metrics are added to the HTML pages. These vary between the supplied CV versions and were not independently verified; the owner-selected industry PDF retains its supplied wording and metrics.
 - No clinical efficacy, patient outcome, or clinical-validation claim is made for NeuroStimEnv, G2P2C, CAPSML, GluCoEnv or RL4T1D.
-- No employment or education chronology was reconstructed from stale biography text. The CV page remains a concise research summary until a current CV is supplied.
+- No employment or education chronology was reconstructed from stale biography text. The CV summary now uses the owner's October 2026 Overleaf resources, with the industry CV as the primary source.
 - The NeurIPS workshop-paper title was not inferred from the public preprint. The status is described only as “NeurIPS 2026 workshop presenter,” based on the owner's supplied requirement.
 
 ## Image provenance and handling
@@ -47,7 +47,7 @@ Push/merge performed: no
 
 ## Links requiring owner confirmation
 
-- Public contact email: `chirathyh@hotmail.com` (taken from the prior site configuration). Confirm that this is the preferred recruiting/conference contact.
+- Public contact email: `chirathyh@hotmail.com`, explicitly confirmed by the owner on 4 October 2026. The supplied industry CV uses Gmail; that document's contact was not silently changed.
 - LinkedIn path: `https://www.linkedin.com/in/chirathyh/`.
 - NeurIPS workshop name, event/session date and time, workshop-paper URL, poster PDF URL, and whether the public NeuroStimEnv code is the correct code button for the workshop landing page.
 - Confirm the latest Google Scholar and ORCID profiles remain preferred.
@@ -55,9 +55,14 @@ Push/merge performed: no
 
 ## CV
 
-- Final path: `public/files/chirath-hettiarachchi-cv.pdf`
-- Placeholder instructions: `public/files/PUT_CURRENT_CV_HERE.txt`
-- Enable the button by setting `cvAvailable: true` in `src/config/site.ts` after the PDF is reviewed.
+- Download path: `public/files/Industry-CV-2026.pdf`, enabled in `src/config/site.ts`. The native download filename is `Industry-CV-2026.pdf`.
+- Source: `Industry-CV-2026.zip/main.tex` inside the owner's supplied `Overleaf Projects (3 items).zip`, exported 3 October 2026. Industry archive SHA-256: `0ff81430032e4f751ecc9a7429756e06829ade6ff592842ed0bd9e3daa496453`.
+- The two-page PDF was compiled using pdfLaTeX with shell escape disabled. Only the missing `datetime` package/`monthyeardate` definition and PDF title/author metadata were added; substantive source text and the chosen CV's Gmail address are unchanged. Both pages were rendered and visually checked.
+- HTML content: `src/content/cv/profile.md`, validated through an Astro content collection. It includes selected employment, three research/engineering degrees, technical strengths and three awards. Dates and qualifications were cross-checked against the supplied academic versions, not inferred from old site copy.
+- Detailed student supervision records, referees, personal phone numbers, unpublished titles, grant/citation statistics, usage counts, long training lists and template/example CVs were not copied into the HTML summary or deployed as source files. Earlier roles and CIMA remain in the full industry PDF.
+- The SMP ECR award year differs between the industry (2024) and academic (2025) versions, so it is omitted from the HTML summary. Confirm that date and the PDF's owner-supplied usage metrics before public launch.
+- The obsolete `PUT_CURRENT_CV_HERE.txt` placeholder was removed. Existing paper and talk PDFs were preserved.
+- Validation: production build and all internal links pass; 27 desktop/mobile browser tests pass (one desktop-only mobile-navigation test is intentionally skipped). The industry download is checked byte-for-byte against the selected PDF. Lighthouse scores 100 for performance, accessibility, best practices and SEO on `/`, `/neurips-2026/` and `/cv/`. CV screenshots are saved in the gitignored `artifacts/review-screenshots/` directory. The CV page ships no client JavaScript.
 
 ## NeurIPS 2026 placeholders
 
@@ -86,7 +91,7 @@ All 19 existing PDF files were moved to `public/files/` so their `/files/...` UR
 ## Before merging to main
 
 1. Review the desktop and mobile screenshots in `artifacts/review-screenshots/`.
-2. Supply and enable the current CV PDF.
+2. Review the supplied industry CV's wording, usage metrics and differing SMP ECR award year before launch; confirm whether its Gmail contact should remain in the downloadable PDF.
 3. Replace the NeurIPS title/paper/poster placeholders and confirm workshop wording.
 4. Confirm contact email, social links, vCard fields, publication list and author spelling.
 5. Decide whether to replace the current CAPSML simulation image with an approved fresh UI screenshot.

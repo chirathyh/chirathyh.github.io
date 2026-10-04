@@ -1,7 +1,17 @@
 ---
+import { getEntry, render } from 'astro:content';
 import ButtonLink from '../../components/ButtonLink.astro';
-import { capabilities, siteConfig } from '../../config/site';
+import { siteConfig } from '../../config/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const profile = await getEntry('cv', 'profile');
+if (!profile) throw new Error('The CV profile content is missing.');
+const { Content } = await render(profile);
+const updatedLabel = new Intl.DateTimeFormat('en-AU', {
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+}).format(new Date(`${profile.data.updated}T00:00:00Z`));
 ---
 
 <BaseLayout
@@ -12,33 +22,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <div class="container">
       <span class="eyebrow">Curriculum vitae</span>
       <h1>CV</h1>
-      <p class="page-lead">Machine-learning researcher working across sequential decision-making, scientific simulation, computational neuroscience and adaptive biomedical systems.</p>
+      <p class="page-lead">{profile.data.summary}</p>
       <div class="button-row">
         <ButtonLink
           href={siteConfig.cvAvailable ? siteConfig.cvPath : null}
           label={siteConfig.cvAvailable ? 'Download CV' : 'Download CV — PDF pending'}
+          download={siteConfig.cvPath.split('/').pop()}
           primary
         />
         <ButtonLink href={`mailto:${siteConfig.email}`} label="Email" />
       </div>
+      {siteConfig.cvAvailable && <p class="cv-download-note">Industry CV · 2 pages · PDF</p>}
     </div>
   </header>
 
   <section class="section compact">
-    <div class="container project-detail-grid">
-      <div class="prose">
-        <h2>Research profile</h2>
-        <p>I design learning methods and research software for complex dynamical systems, with current public work spanning reinforcement learning for virtual glucose control and simulation-based closed-loop neuromodulation.</p>
-        <h2>Methods and engineering</h2>
-        <ul>
-          {capabilities.map((capability) => <li><strong>{capability.title}:</strong> {capability.body}</li>)}
-        </ul>
-        <h2>Research outputs</h2>
-        <p>See the <a href="/publications/">publications page</a>, <a href="/#work">featured systems</a> and <a href={siteConfig.github}>public code</a>.</p>
-      </div>
-      <div class="side-panel" role="note" aria-labelledby="cv-pdf-status">
-        <h2 id="cv-pdf-status">PDF status</h2>
-        <p class="secondary">A verified current CV PDF was not present in the repository. Before launch, place it at <code>public/files/chirath-hettiarachchi-cv.pdf</code> and enable the download in <code>src/config/site.ts</code>.</p>
+    <div class="container">
+      <div class="prose cv-summary">
+        <Content />
+        <p class="cv-resources">See <a href="/publications/">publications</a> and <a href="/#work">research software</a> for papers, code and project details.</p>
+        <p class="cv-updated">Updated <time datetime={profile.data.updated}>{updatedLabel}</time>.</p>
       </div>
     </div>
   </section>

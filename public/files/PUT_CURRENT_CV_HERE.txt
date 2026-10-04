@@ -1,5 +1,0 @@
-Before launch, place the verified current CV PDF at:
-
-public/files/chirath-hettiarachchi-cv.pdf
-
-Then set cvAvailable to true in src/config/site.ts.

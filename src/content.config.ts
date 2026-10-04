@@ -58,4 +58,12 @@ const publications = defineCollection({
   }),
 });
 
-export const collections = { projects, publications };
+const cv = defineCollection({
+  loader: glob({ base: './src/content/cv', pattern: '**/*.md' }),
+  schema: z.object({
+    summary: z.string(),
+    updated: z.iso.date(),
+  }),
+});
+
+export const collections = { projects, publications, cv };

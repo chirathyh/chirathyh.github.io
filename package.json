@@ -14,7 +14,7 @@
     "check": "astro check",
     "test:links": "node scripts/check-links.mjs",
     "test:a11y": "playwright test tests/accessibility.spec.ts",
-    "test:visual": "playwright test tests/visual.spec.ts tests/homepage.spec.ts",
+    "test:visual": "playwright test tests/visual.spec.ts tests/homepage.spec.ts tests/cv.spec.ts",
     "test:lighthouse": "npx --yes @lhci/cli@0.15.1 autorun --config=./lighthouserc.json"
   },
   "dependencies": {
