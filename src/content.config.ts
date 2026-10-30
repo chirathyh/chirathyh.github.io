@@ -66,4 +66,19 @@ const cv = defineCollection({
   }),
 });
 
-export const collections = { projects, publications, cv };
+// Only reviewed exports belong here. Private drafts live in a separate repository.
+const notes = defineCollection({
+  loader: glob({ base: './src/content/notes', pattern: '*.md' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    type: z.enum(['paper', 'technical', 'engineering']),
+    date: z.iso.date(),
+    updated: z.iso.date(),
+    tags: z.array(z.string()),
+    related: z.array(z.string()),
+    sources: z.array(z.url()),
+  }).strict(),
+});
+
+export const collections = { projects, publications, cv, notes };

@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const notes = (await getCollection('notes')).sort((a,b) => b.data.date.localeCompare(a.data.date));
+const categories = [
+  { type: 'paper', title: 'Paper summaries', description: 'What a paper contributes, what supports it, and what remains open.' },
+  { type: 'technical', title: 'Technical notes', description: 'Ideas and derivations that connect papers, growing as the reading continues.' },
+  { type: 'engineering', title: 'Engineering notes', description: 'Implementations, experiments and practical lessons from making things work.' },
+];
+---
+<BaseLayout title="Short notes — Chirath Hettiarachchi" description="Paper summaries, evolving technical explanations and engineering notes.">
+  <header class="page-hero"><div class="container">
+    <span class="eyebrow">Reading & building</span><h1>Short notes</h1>
+    <p class="page-lead">A growing notebook of papers, ideas and experiments. Concise explanations, useful connections and questions to follow.</p>
+    <nav aria-label="Note categories" class="note-categories">
+      {categories.map(c => <a href={`#${c.type}`}>{c.title}</a>)}
+    </nav>
+  </div></header>
+  <div class="container notes-index">
+    {categories.map(c => <section id={c.type} aria-labelledby={`${c.type}-heading`}>
+      <h2 id={`${c.type}-heading`}>{c.title}</h2><p>{c.description}</p>
+      {notes.filter(n => n.data.type === c.type).length === 0 ? <p class="notes-empty">Notes will appear here as they are ready to share.</p> :
+        <ul class="note-list">{notes.filter(n => n.data.type === c.type).map(n => <li>
+          <time datetime={n.data.date}>{n.data.date}</time>
+          <h3><a href={`/short-notes/${n.id}/`}>{n.data.title}</a></h3>
+          <p>{n.data.description}</p>
+          <p class="note-tags">{n.data.tags.join(' · ')}</p>
+        </li>)}</ul>}
+    </section>)}
+  </div>
+</BaseLayout>
+<style>
+  .note-categories{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin-top:1.5rem}
+  .notes-index{padding-inline:clamp(1.5rem,5vw,3rem);padding-bottom:3rem}.notes-index section{padding:2rem 0;border-bottom:1px solid var(--line);scroll-margin-top:2rem}
+  .notes-empty,.note-tags,time{color:var(--muted);font-size:.9rem}.notes-empty{padding:1rem 0}
+  .note-list{list-style:none;padding:0}.note-list li{padding:1.5rem 0}.note-list h3{margin:.3rem 0}.note-list p{margin:.4rem 0}
+</style>
