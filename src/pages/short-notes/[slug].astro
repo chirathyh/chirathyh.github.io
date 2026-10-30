@@ -1,0 +1,47 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+export async function getStaticPaths() {
+  return (await getCollection('notes')).map(note => ({params:{slug:note.id},props:{note}}));
+}
+interface Props { note: CollectionEntry<'notes'> }
+const { note } = Astro.props;
+const { Content } = await render(note);
+const labels = {paper:'Paper summary', technical:'Technical note', engineering:'Engineering note'};
+const allNotes = await getCollection('notes');
+const related = allNotes.filter(n => note.data.related.includes(n.id) || n.data.related.includes(note.id));
+---
+<BaseLayout title={`${note.data.title} — Short notes`} description={note.data.description}>
+  <article class="container short-note">
+    <a href="/short-notes/">← Short notes</a>
+    <header><span class="eyebrow">{labels[note.data.type]}</span>
+      <h1>{note.data.title}</h1>
+      <p class="note-description">{note.data.description}</p>
+      <p class="note-meta">Chirath Hettiarachchi · <time datetime={note.data.date}>{note.data.date}</time>
+        {note.data.updated !== note.data.date && <> · Updated <time datetime={note.data.updated}>{note.data.updated}</time></>}
+      </p><p class="note-meta">{note.data.tags.join(' · ')}</p>
+    </header>
+    <div class="note-prose"><Content /></div>
+    {note.data.sources.length > 0 && <section class="note-sources"><h2>Sources</h2><ul>{note.data.sources.map((url,i) => <li><a href={url} target="_blank" rel="noopener noreferrer">Source {i+1}: {new URL(url).hostname}</a></li>)}</ul></section>}
+    {related.length > 0 && <aside aria-label="Related notes"><h2>Related notes</h2><ul>{related.map(n => <li><a href={`/short-notes/${n.id}/`}>{n.data.title}</a></li>)}</ul></aside>}
+  </article>
+</BaseLayout>
+<style>
+  .short-note{max-width:84ch;padding-inline:clamp(1.5rem,5vw,3rem);padding-top:2rem;padding-bottom:4rem;overflow-wrap:anywhere}
+  header{margin:2rem 0}.short-note h1{font-size:clamp(2rem,4vw,3rem);line-height:1.15}
+  .note-description{font-size:1.15rem;color:var(--muted)}.note-meta{font-size:.85rem;color:var(--muted)}
+  .note-prose{font-size:1.04rem;line-height:1.8}
+  .note-prose :global(h2){font-size:1.4rem;margin:2.5rem 0 .8rem;line-height:1.3}
+  .note-prose :global(h3){margin-top:2rem}.note-prose :global(p){margin:1rem 0}
+  .note-prose :global(blockquote){margin:1.5rem 0;padding:.75rem 1.2rem;border-left:3px solid var(--accent);background:var(--surface)}
+  .note-prose :global(mark){background:#fff0b8;color:var(--ink);padding:.1em .2em}
+  .note-prose :global(pre){overflow:auto;padding:1rem;background:var(--surface);font-size:.85rem;line-height:1.6}
+  .note-prose :global(img){height:auto;border-radius:.4rem;margin:1.5rem auto}
+  .note-prose :global(figcaption){font-size:.85rem;color:var(--muted)}
+  .note-prose :global(details){margin:1.5rem 0;padding:1rem;border:1px solid var(--line);border-radius:.4rem}
+  .note-prose :global(summary){cursor:pointer;font-weight:600}
+  .note-prose :global(.footnotes){font-size:.9rem;border-top:1px solid var(--line);margin-top:2rem}
+  .note-prose :global(table){display:block;overflow:auto;max-width:100%}
+  .note-prose :global(td),.note-prose :global(th){padding:.5rem;border-bottom:1px solid var(--line)}
+  .note-sources,aside{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem}
+</style>
