@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:06.000
+Three actions have utilities zero, one and two. Each initially has probability one third.
+
+00:06.000 --> 00:12.000
+Conditioning on utility one with Gaussian label noise of standard deviation one favors the middle action.
+
+00:12.000 --> 00:17.000
+Utilities zero and two are equally far from the requested value. Both receive probability 0.274.
+
+00:17.000 --> 00:23.000
+Contrast conditions one and zero, with guidance weight one and label noise standard deviation one.
+
+00:23.000 --> 00:28.000
+The resulting target weights are proportional to exp(A): approximately 0.090, 0.245 and 0.665.
+
+00:28.000 --> 00:33.000
+Expected utility rises from 1 to 1.575. This illustrates exact normalized weights, not a neural sampler or benchmark.

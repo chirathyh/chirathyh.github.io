@@ -21,8 +21,19 @@ const related = allNotes.filter(n => note.data.related.includes(n.id) || n.data.
         {note.data.updated !== note.data.date && <> · Updated <time datetime={note.data.updated}>{note.data.updated}</time></>}
       </p><p class="note-meta">{note.data.tags.join(' · ')}</p>
     </header>
+    {note.data.companions && <section class="note-companions" aria-labelledby="companion-heading">
+      <h2 id="companion-heading">Worked visual example and derivation</h2>
+      <p>Exact three-action probabilities for intuition; not learned-sampler or benchmark evidence.</p>
+      <p><a class="companion-button" href={note.data.companions.pdf}>Read the derivation PDF</a> <a class="companion-button" href={note.data.companions.video} download>Download the animation</a></p>
+      <video controls playsinline preload="metadata" poster={note.data.companions.poster} aria-label="Matching versus improvement: three-action probability illustration">
+        <source src={note.data.companions.video} type="video/mp4" />
+        <track kind="captions" src={note.data.companions.captions} srclang="en" label="English" default />
+        Your browser cannot play this video. Read the transcript below.
+      </video>
+      <details><summary>Read the animation transcript</summary><p>{note.data.companions.transcript}</p></details>
+    </section>}
     <div class="note-prose"><Content /></div>
-    {note.data.sources.length > 0 && <section class="note-sources"><h2>Sources</h2><ul>{note.data.sources.map((url,i) => <li><a href={url} target="_blank" rel="noopener noreferrer">Source {i+1}: {new URL(url).hostname}</a></li>)}</ul></section>}
+    {note.data.sources.length > 0 && <section class="note-sources"><h2>Sources</h2><ul>{note.data.sources.map((url,i) => <li><a href={url} target="_blank" rel="noopener noreferrer">Source {i+1}: {new URL(url).hostname}<span class="sr-only"> (opens in a new tab)</span></a></li>)}</ul></section>}
     {related.length > 0 && <aside aria-label="Related notes"><h2>Related notes</h2><ul>{related.map(n => <li><a href={`/short-notes/${n.id}/`}>{n.data.title}</a></li>)}</ul></aside>}
   </article>
 </BaseLayout>
@@ -44,4 +55,11 @@ const related = allNotes.filter(n => note.data.related.includes(n.id) || n.data.
   .note-prose :global(table){display:block;overflow:auto;max-width:100%}
   .note-prose :global(td),.note-prose :global(th){padding:.5rem;border-bottom:1px solid var(--line)}
   .note-sources,aside{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem}
+  .note-prose :global(.math-block){overflow-x:auto;max-width:100%;padding:.5rem 0}
+  .note-prose :global(.math-block math){min-width:max-content}
+  .note-prose :global(math){font-size:1.02em}
+  .note-companions{margin:2rem 0;padding:1rem;border:1px solid var(--line);border-radius:.5rem}
+  .note-companions video{display:block;width:100%;height:auto;margin:1rem 0}
+  .note-companions summary{cursor:pointer;font-weight:600}
+  .companion-button{display:inline-block;padding:.6rem .9rem;margin:.3rem .3rem .3rem 0;border:1px solid currentColor;border-radius:.3rem}
 </style>

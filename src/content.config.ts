@@ -78,6 +78,13 @@ const notes = defineCollection({
     tags: z.array(z.string()),
     related: z.array(z.string()),
     sources: z.array(z.url()),
+    companions: z.object({
+      pdf: z.string().regex(/^\/notes-assets\/[a-z0-9-]+\/[a-z0-9-]+\.pdf$/),
+      video: z.string().regex(/^\/notes-assets\/[a-z0-9-]+\/[a-z0-9-]+\.mp4$/),
+      poster: z.string().regex(/^\/notes-assets\/[a-z0-9-]+\/[a-z0-9-]+\.png$/),
+      captions: z.string().regex(/^\/notes-assets\/[a-z0-9-]+\/[a-z0-9-]+\.vtt$/),
+      transcript: z.string().min(1).max(12000),
+    }).strict().optional(),
   }).strict(),
 });
 
