@@ -1,0 +1,55 @@
+---
+import { Picture } from 'astro:assets';
+import overview from '../assets/images/neurostimflow-overview.png';
+
+// Overview figure and wording approved by the owner for publication on 2 November 2026.
+// No paper/code URL is asserted: the preprint is not yet public.
+---
+
+<article class="project-card" aria-labelledby="neurostimflow-title">
+  <header class="project-card-header">
+    <div>
+      <h3 id="neurostimflow-title">NeuroStimFlow</h3>
+      <p class="subtitle">Conditional flow matching for simulated EEG dynamics</p>
+    </div>
+  </header>
+
+  <div class="project-summary-grid">
+    <div class="project-overview">
+      <p class="project-summary">A conditional generative emulator that learns EEG transitions from biophysical neural-circuit simulations, exploring a surrogate for costly simulation runs.</p>
+      <p class="secondary">A disorder-conditioned flow-matching backbone models shared EEG dynamics; lightweight residual adapters model stimulation-conditioned changes. Evaluated on simulated signals, with therapeutic outcome prediction remaining an open challenge.</p>
+    </div>
+    <div class="project-evidence">
+      <p class="project-evidence-label">Technical summary</p>
+      <ul>
+        <li>Conditional flow matching for one-step EEG transitions</li>
+        <li>Residual and low-rank adapters for stimulation conditioning</li>
+        <li>Evaluation of spectral realism, disorder-related structure and stimulation-response fidelity</li>
+      </ul>
+    </div>
+  </div>
+
+  <figure class="project-home-visual neurostimflow-overview">
+    <a class="project-figure-link" href={overview.src} aria-label="View the NeuroStimFlow overview figure at full size">
+      <Picture
+        src={overview}
+        alt="NeuroStimFlow overview: biological neural circuits are modelled with biophysical simulations of EEG and brain stimulation, then emulated with a flow-matching neural surrogate."
+        widths={[480, 800, 1440]}
+        sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) calc(100vw - 6rem), (max-width: 1184px) calc(100vw - 22rem), 800px"
+        formats={['avif', 'webp']}
+        fallbackFormat="webp"
+        loading="lazy"
+        decoding="async"
+      />
+    </a>
+    <figcaption>From biophysical neural-circuit simulations to a conditional flow-matching EEG emulator. <a href={overview.src}>View full-size figure</a>.</figcaption>
+  </figure>
+  <div class="tag-list" aria-label="Technologies and topics">
+    <span class="tag">Flow Matching</span>
+    <span class="tag">Generative Modelling</span>
+    <span class="tag">Scientific ML</span>
+    <span class="tag">EEG</span>
+    <span class="tag">Surrogate Modelling</span>
+  </div>
+  <p class="secondary">Preprint forthcoming. Public paper and code links are not yet available here.</p>
+</article>

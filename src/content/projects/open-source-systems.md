@@ -4,7 +4,7 @@ shortTitle: "Open-source systems"
 subtitle: "Reusable infrastructure for simulation and sequential decision-making"
 summary: "A set of public research systems for virtual Type 1 Diabetes experiments, reinforcement-learning benchmarks and interactive analysis."
 secondary: "GluCoEnv, RL4T1D and CAPSML make physiological simulation, algorithm comparison and result inspection available beyond a single paper implementation."
-featured: true
+featured: false
 order: 3
 status: "public"
 tags:

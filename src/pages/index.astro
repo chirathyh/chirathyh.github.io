@@ -5,6 +5,7 @@ import researchOverview from '../assets/images/research-overview.png';
 import ButtonLink from '../components/ButtonLink.astro';
 import Link from '../components/Link.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import NeuroStimFlowCard from '../components/NeuroStimFlowCard.astro';
 import { capabilities, siteConfig } from '../config/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -20,7 +21,7 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
       {siteConfig.neurips.enabled && (
         <a class="conference-link" href="/neurips-2026/">NeurIPS 2026 · Sydney · Workshop presenter <span>→</span></a>
       )}
-      <h1>Machine learning for adaptive biomedical systems.</h1>
+      <h1>Research engineering and scientific machine learning for adaptive biomedical systems.</h1>
       <p class="intro-summary">
         I build sequential decision-making, generative modelling and simulation methods for complex biological systems—from closed-loop insulin delivery to neuromodulation.
       </p>
@@ -28,8 +29,14 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
         {siteConfig.researchTags.map((tag) => <span class="tag">{tag}</span>)}
       </div>
       <div class="button-row">
-        <ButtonLink href="#work" label="Featured work" primary />
-        <ButtonLink href="/cv/" label="CV" />
+        <ButtonLink
+          href={siteConfig.cvAvailable ? siteConfig.cvPath : null}
+          label="Download industry CV"
+          download={siteConfig.cvPath.split('/').pop()}
+          primary
+        />
+        <ButtonLink href="#work" label="Selected work" />
+        <ButtonLink href={`mailto:${siteConfig.email}`} label="Email" />
         <ButtonLink href={siteConfig.github} label="GitHub" />
       </div>
       <figure class="research-overview">
@@ -57,6 +64,7 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
       </div>
       <div class="project-grid">
         {projects.map((project) => <ProjectCard project={project} />)}
+        <NeuroStimFlowCard />
       </div>
     </div>
   </section>

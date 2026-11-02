@@ -32,7 +32,7 @@ links:
 technicalHighlights:
   - "A POMDP formulation for insulin dosing without meal announcements"
   - "Policy optimization augmented with learned glucose dynamics and short-horizon planning"
-  - "Interactive inspection of virtual glucose-control experiments in CAPSML"
+  - "Reusable simulation and RL infrastructure in GluCoEnv and RL4T1D, with interactive analysis in CAPSML"
   - "Reusable PyTorch simulation and RL research infrastructure"
 ---
 
