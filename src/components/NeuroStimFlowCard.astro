@@ -28,7 +28,7 @@ const highlights = [
   </div>
 
   <figure class="project-home-visual neurostimflow-overview">
-    <a class="project-figure-link" href={overview.src} aria-label="View the NeuroStimFlow overview figure at full size">
+    <div class="project-figure-link">
       <Picture
         src={overview}
         alt="NeuroStimFlow overview: biological neural circuits are modelled with biophysical simulations of EEG and brain stimulation, then emulated with a flow-matching neural surrogate."
@@ -39,8 +39,8 @@ const highlights = [
         loading="lazy"
         decoding="async"
       />
-    </a>
-    <figcaption>From biophysical neural-circuit simulations to a conditional flow-matching EEG emulator. <a href={overview.src}>View full-size figure</a>.</figcaption>
+    </div>
+    <figcaption>From biophysical neural-circuit simulations to a conditional flow-matching EEG emulator.</figcaption>
   </figure>
   <ProjectTechnicalSummary highlights={highlights} />
 
