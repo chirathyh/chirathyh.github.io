@@ -15,13 +15,13 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
 ---
 
 <BaseLayout>
-  <section class="intro">
+  <section class="intro home-intro">
     <div class="container">
       {/* Conference announcement is disabled until closer to NeurIPS. */}
       {siteConfig.neurips.enabled && (
         <a class="conference-link" href="/neurips-2026/">NeurIPS 2026 · Sydney · Workshop presenter <span>→</span></a>
       )}
-      <h1>Research engineering and scientific machine learning for adaptive biomedical systems.</h1>
+      <h1>Scientific machine learning and research engineering for adaptive biomedical systems.</h1>
       <p class="intro-summary">
         I build sequential decision-making, generative modelling and simulation methods for complex biological systems—from closed-loop insulin delivery to neuromodulation.
       </p>
@@ -44,7 +44,7 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
           src={researchOverview}
           alt="Two closed-loop research systems: glucose measurements guide a reinforcement-learning algorithm that selects insulin doses, while EEG observations guide an algorithm that selects transcranial alternating-current stimulation."
           widths={[480, 800, 1600]}
-          sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) calc(100vw - 6rem), (max-width: 1184px) calc(100vw - 22rem), 800px"
+          sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) 81vw, (max-width: 960px) calc(70.2vw - 12.48rem), (max-width: 1184px) calc(78vw - 17.16rem), 624px"
           formats={['avif', 'webp']}
           fallbackFormat="webp"
           loading="eager"
@@ -101,3 +101,32 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .home-intro {
+    padding-top: clamp(1.25rem, 2.4vw, 2rem);
+  }
+
+  .home-intro h1 {
+    margin-top: 0.4rem;
+  }
+
+  .research-overview {
+    width: 78%;
+    max-width: 39rem;
+    margin-inline: auto;
+  }
+
+  @media (max-width: 880px) {
+    .research-overview {
+      width: 90%;
+      max-width: 45rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .research-overview {
+      width: 100%;
+    }
+  }
+</style>
