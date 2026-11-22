@@ -1,9 +1,15 @@
 ---
 import { Picture } from 'astro:assets';
 import Link from './Link.astro';
+import ProjectTechnicalSummary from './ProjectTechnicalSummary.astro';
 import overview from '../assets/images/neurostimflow-overview.png';
 
 // Overview figure and wording approved by the owner for publication on 2 November 2026.
+const highlights = [
+  'Conditional flow matching for one-step EEG transitions',
+  'Residual and low-rank adapters for stimulation conditioning',
+  'Evaluation of spectral realism, disorder-related structure and stimulation-response fidelity',
+];
 ---
 
 <article class="project-card" aria-labelledby="neurostimflow-title">
@@ -14,18 +20,10 @@ import overview from '../assets/images/neurostimflow-overview.png';
     </div>
   </header>
 
-  <div class="project-summary-grid">
+  <div class="project-description">
     <div class="project-overview">
       <p class="project-summary">A conditional generative emulator that learns EEG transitions from biophysical neural-circuit simulations, exploring a surrogate for costly simulation runs.</p>
       <p class="secondary">A disorder-conditioned flow-matching backbone models shared EEG dynamics; lightweight residual adapters model stimulation-conditioned changes. Evaluated on simulated signals, with therapeutic outcome prediction remaining an open challenge.</p>
-    </div>
-    <div class="project-evidence">
-      <p class="project-evidence-label">Technical summary</p>
-      <ul>
-        <li>Conditional flow matching for one-step EEG transitions</li>
-        <li>Residual and low-rank adapters for stimulation conditioning</li>
-        <li>Evaluation of spectral realism, disorder-related structure and stimulation-response fidelity</li>
-      </ul>
     </div>
   </div>
 
@@ -44,6 +42,8 @@ import overview from '../assets/images/neurostimflow-overview.png';
     </a>
     <figcaption>From biophysical neural-circuit simulations to a conditional flow-matching EEG emulator. <a href={overview.src}>View full-size figure</a>.</figcaption>
   </figure>
+  <ProjectTechnicalSummary highlights={highlights} />
+
   <div class="tag-list" aria-label="Technologies and topics">
     <span class="tag">Flow Matching</span>
     <span class="tag">Generative Modelling</span>

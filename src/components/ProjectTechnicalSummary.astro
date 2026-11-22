@@ -1,0 +1,14 @@
+---
+interface Props {
+  highlights: string[];
+}
+
+const { highlights } = Astro.props;
+---
+
+<div class="project-evidence">
+  <p class="project-evidence-label">Technical summary</p>
+  <ul>
+    {highlights.map((highlight) => <li>{highlight}</li>)}
+  </ul>
+</div>

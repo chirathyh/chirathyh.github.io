@@ -64,7 +64,7 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
       </div>
       <div class="project-grid">
         <NeuroStimFlowCard />
-        {projects.map((project) => <ProjectCard project={project} />)}
+        {projects.map((project) => <ProjectCard project={project} stacked />)}
       </div>
     </div>
   </section>
@@ -114,6 +114,11 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
   .research-overview {
     width: 78%;
     max-width: 39rem;
+  }
+
+  #work :global(.project-description),
+  #work :global(.project-card > .project-evidence) {
+    margin-top: 0.9rem;
   }
 
   @media (max-width: 880px) {

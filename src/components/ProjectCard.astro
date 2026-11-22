@@ -2,15 +2,18 @@
 import { getImage, Picture } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import Link from './Link.astro';
+import ProjectTechnicalSummary from './ProjectTechnicalSummary.astro';
 import { siteConfig } from '../config/site';
 
 interface Props {
   project: CollectionEntry<'projects'>;
+  stacked?: boolean;
 }
 
-const { project } = Astro.props;
+const { project, stacked = false } = Astro.props;
 const { data } = project;
 const visual = data.homepageVisual;
+const highlights = data.technicalHighlights.slice(0, 3);
 const poster = visual?.video
   ? await getImage({ src: visual.image, width: 1080, format: 'webp' })
   : null;
@@ -35,18 +38,13 @@ const externalLinks = [
     <a class="project-detail-link" href={route}>Full project →</a>
   </header>
 
-  <div class="project-summary-grid">
+  <div class={stacked ? 'project-description' : 'project-summary-grid'}>
     <div class="project-overview">
       <p class="project-summary">{data.summary}</p>
       <p class="secondary">{data.secondary}</p>
     </div>
 
-    <div class="project-evidence">
-      <p class="project-evidence-label">Technical summary</p>
-      <ul>
-        {data.technicalHighlights.slice(0, 3).map((highlight) => <li>{highlight}</li>)}
-      </ul>
-    </div>
+    {!stacked && <ProjectTechnicalSummary highlights={highlights} />}
   </div>
 
   {visual && (
@@ -86,6 +84,8 @@ const externalLinks = [
       <figcaption id={`${project.id}-visual-caption`}>{visual.caption}</figcaption>
     </figure>
   )}
+
+  {stacked && <ProjectTechnicalSummary highlights={highlights} />}
 
   <div class="tag-list" aria-label="Technologies and topics">
     {data.tags.slice(0, 6).map((tag) => <span class="tag">{tag}</span>)}
