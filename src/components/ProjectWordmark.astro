@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const wordmarks = {
+  NeuroStimFlow: [['Neuro', 'navy'], ['Stim', 'teal'], ['Flow', 'coral']],
+  NeuroStimEnv: [['Neuro', 'navy'], ['Stim', 'teal'], ['Env', 'coral']],
+  'CAPSML / G2P2C': [['CAPS', 'coral'], ['ML', 'teal'], [' / G2P2C']],
+} satisfies Record<string, [string, string?][]>;
+const parts = wordmarks[title as keyof typeof wordmarks];
+---
+
+{parts ? parts.map(([text, color]) => color ? <span class={color}>{text}</span> : text) : title}
+
+<style>
+  /* Wordmark hues are darkened as needed for legibility on a white canvas. */
+  .navy { color: #214266; }
+  .teal { color: #00786f; }
+  .coral { color: #ba3f4c; }
+</style>

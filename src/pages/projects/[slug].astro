@@ -1,4 +1,5 @@
 ---
+import ProjectWordmark from '../../components/ProjectWordmark.astro';
 import { Picture } from 'astro:assets';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -47,7 +48,7 @@ const projectJsonLd = {
   <header class="page-hero">
     <div class="container">
       <span class="eyebrow">Research system</span>
-      <h1>{data.title}</h1>
+      <h1><ProjectWordmark title={data.title} /></h1>
       <p class="page-lead"><strong>{data.subtitle}.</strong> {data.summary}</p>
       <div class="tag-list" aria-label="Technologies and topics">
         {data.tags.map((tag) => <span class="tag">{tag}</span>)}
