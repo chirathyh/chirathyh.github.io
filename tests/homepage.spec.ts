@@ -32,7 +32,7 @@ test('homepage stays focused on projects, capabilities and contact', async ({ pa
 
 test('homepage copy, heading sizes and Featured work dividers match the requested edits', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('.profile-role')).toHaveText('Researcher | Engineer');
+  await expect(page.locator('.profile-role')).toHaveText('Research Scientist | Engineer');
   await expect(page.getByText('Towards fully closed-loop artificial pancreas systems', { exact: true })).toBeVisible();
   const overview = page.locator('.research-overview img');
   await expect(overview).toHaveAttribute('width', '2218');
