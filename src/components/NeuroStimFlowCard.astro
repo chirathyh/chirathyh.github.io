@@ -1,9 +1,9 @@
 ---
 import { Picture } from 'astro:assets';
+import Link from './Link.astro';
 import overview from '../assets/images/neurostimflow-overview.png';
 
 // Overview figure and wording approved by the owner for publication on 2 November 2026.
-// No paper/code URL is asserted: the preprint is not yet public.
 ---
 
 <article class="project-card" aria-labelledby="neurostimflow-title">
@@ -51,5 +51,9 @@ import overview from '../assets/images/neurostimflow-overview.png';
     <span class="tag">EEG</span>
     <span class="tag">Surrogate Modelling</span>
   </div>
-  <p class="secondary">Preprint forthcoming. Public paper and code links are not yet available here.</p>
+  <p class="secondary">NeurIPS 2026 workshop paper · Foundation Models for the Brain and Body</p>
+  <div class="link-row">
+    <Link class="text-link" href="https://openreview.net/forum?id=t1VarRyYPK">Paper (OpenReview)</Link>
+    <Link class="text-link" href="https://github.com/chirathyh/neurostimflow">Code (GitHub)</Link>
+  </div>
 </article>

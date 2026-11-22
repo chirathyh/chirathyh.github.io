@@ -53,6 +53,7 @@ const publications = defineCollection({
     topics: z.array(z.string()),
     doi: z.string().optional(),
     paper: z.url().optional(),
+    code: z.url().optional(),
     localPdf: z.string().optional(),
     note: z.string().optional(),
   }),

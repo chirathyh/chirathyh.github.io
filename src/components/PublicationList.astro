@@ -27,6 +27,7 @@ const { publications } = Astro.props;
       <div class="paper-actions">
         {data.paper && <Link class="small-link" href={data.paper}>Paper</Link>}
         {data.doi && <Link class="small-link" href={`https://doi.org/${data.doi}`}>DOI</Link>}
+        {data.code && <Link class="small-link" href={data.code}>Code</Link>}
         {data.localPdf && <Link class="small-link" href={data.localPdf}>PDF</Link>}
       </div>
     </article>
