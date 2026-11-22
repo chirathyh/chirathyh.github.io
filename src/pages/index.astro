@@ -63,8 +63,8 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
         <h2 id="work-title">Featured work</h2>
       </div>
       <div class="project-grid">
-        {projects.map((project) => <ProjectCard project={project} />)}
         <NeuroStimFlowCard />
+        {projects.map((project) => <ProjectCard project={project} />)}
       </div>
     </div>
   </section>
