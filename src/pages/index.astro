@@ -154,6 +154,28 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
     margin-top: 0.4rem;
   }
 
+  @media (width > 640px) {
+    #work :global(.project-card-header-wide-subtitle) {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      row-gap: 0;
+    }
+
+    #work :global(.project-card-header-wide-subtitle > div) {
+      display: contents;
+    }
+
+    #work :global(.project-card-header-wide-subtitle > div > .subtitle) {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+
+    #work :global(.project-card-header-wide-subtitle > .project-detail-link) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+
   @media (max-width: 880px) {
     .home-content-width {
       width: 90%;

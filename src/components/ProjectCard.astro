@@ -31,7 +31,7 @@ const externalLinks = [
 ---
 
 <article class="project-card">
-  <header class="project-card-header">
+  <header class:list={['project-card-header', { 'project-card-header-wide-subtitle': stacked && project.id === 'neurostimenv' }]}>
     <div>
       <h3><a href={route}><ProjectWordmark title={data.title} /></a></h3>
       <p class="subtitle">{data.subtitle}</p>
