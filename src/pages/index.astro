@@ -121,6 +121,11 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
     margin-top: 0.9rem;
   }
 
+  #work :global(.project-evidence > ul) {
+    list-style: disc outside;
+    padding-inline-start: 1.25rem;
+  }
+
   @media (max-width: 880px) {
     .home-content-width {
       width: 90%;
