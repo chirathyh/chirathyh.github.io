@@ -39,7 +39,7 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
         <ButtonLink href={`mailto:${siteConfig.email}`} label="Email" />
         <ButtonLink href={siteConfig.github} label="GitHub" />
       </div>
-      <figure class="research-overview">
+      <figure class="research-overview home-content-width">
         <Picture
           src={researchOverview}
           alt="Two closed-loop research systems: glucose measurements guide a reinforcement-learning algorithm that selects insulin doses, while EEG observations guide an algorithm that selects transcranial alternating-current stimulation."
@@ -62,7 +62,7 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
       <div class="section-heading">
         <h2 id="work-title">Featured work</h2>
       </div>
-      <div class="project-grid">
+      <div class="project-grid home-content-width">
         <NeuroStimFlowCard />
         {projects.map((project) => <ProjectCard project={project} stacked />)}
       </div>
@@ -111,7 +111,7 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
     margin-top: 0.4rem;
   }
 
-  .research-overview {
+  .home-content-width {
     width: 78%;
     max-width: 39rem;
   }
@@ -122,14 +122,14 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
   }
 
   @media (max-width: 880px) {
-    .research-overview {
+    .home-content-width {
       width: 90%;
       max-width: 45rem;
     }
   }
 
   @media (max-width: 640px) {
-    .research-overview {
+    .home-content-width {
       width: 100%;
     }
   }
