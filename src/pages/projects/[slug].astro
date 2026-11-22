@@ -28,11 +28,10 @@ const links = [
   ['RL4T1D', data.links.rl4t1d],
   ['NeurIPS 2026', siteConfig.neurips.enabled ? data.links.neurips : undefined],
 ].filter((link): link is [string, string] => Boolean(link[1]));
-const secondaryVisual = project.id === 'neurostimenv'
-  ? { src: neuroOutput, alt: 'Example NeuroStimEnv output with simulated EEG, stimulation and neural-circuit response panels' }
-  : project.id === 'capsml'
-    ? { src: g2p2cArchitecture, alt: 'G2P2C architecture showing policy optimization, model learning and planning phases' }
-    : null;
+const isNeuroStimEnv = project.id === 'neurostimenv';
+const secondaryVisual = project.id === 'capsml'
+  ? { src: g2p2cArchitecture, alt: 'G2P2C architecture showing policy optimization, model learning and planning phases' }
+  : null;
 const projectJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareSourceCode',
@@ -73,7 +72,7 @@ const projectJsonLd = {
   </header>
 
   <section class="section">
-    <div class="container project-detail-grid">
+    <div class:list={['container project-detail-grid', { 'neurostimenv-detail-grid': isNeuroStimEnv }]}>
       <article class="prose">
         <Content />
         {secondaryVisual && (
@@ -90,6 +89,19 @@ const projectJsonLd = {
           </figure>
         )}
       </article>
+      {isNeuroStimEnv && (
+        <figure class="project-detail-visual neurostimenv-output">
+          <Picture
+            src={neuroOutput}
+            alt="Example NeuroStimEnv output with simulated EEG, stimulation and neural-circuit response panels"
+            widths={[680, 1000]}
+            sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 880px) 90vw, (max-width: 960px) calc(90vw - 16rem), (max-width: 1184px) calc(100vw - 22rem), 832px"
+            formats={['avif', 'webp']}
+            fallbackFormat="png"
+            loading="lazy"
+          />
+        </figure>
+      )}
       <aside class="side-panel" aria-labelledby="highlights-title">
         <h2 id="highlights-title">Technical highlights</h2>
         <ul class="highlight-list">
@@ -99,3 +111,20 @@ const projectJsonLd = {
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  .neurostimenv-output {
+    grid-column: 1 / -1;
+  }
+
+  @media (width > 640px) {
+    .neurostimenv-detail-grid {
+      row-gap: 0;
+    }
+
+    .neurostimenv-detail-grid > .side-panel {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+</style>
