@@ -31,12 +31,14 @@ const projects = (await getCollection('projects', ({ data }) => data.featured &&
       <div class="button-row">
         <ButtonLink
           href={siteConfig.cvAvailable ? siteConfig.cvPath : null}
-          label="Download industry CV"
+          label="Download CV"
           download={siteConfig.cvPath.split('/').pop()}
           primary
         />
         <ButtonLink href="#work" label="Selected work" />
-        <ButtonLink href={`mailto:${siteConfig.email}`} label="Email" />
+        <Link class="button intro-email-button" href={`mailto:${siteConfig.email}`} target="_blank" rel="noopener noreferrer">
+          Email<span class="sr-only"> (opens in a new tab)</span>
+        </Link>
         <ButtonLink href={siteConfig.github} label="GitHub" />
       </div>
       <figure class="research-overview home-content-width">

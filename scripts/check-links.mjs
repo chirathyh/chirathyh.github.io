@@ -51,9 +51,11 @@ for (const file of htmlFiles) {
     const destination = new URL(attributes.href, siteOrigin);
     const isExternal = ['http:', 'https:'].includes(destination.protocol) && destination.origin !== siteOrigin;
     const label = `${path.relative(root, file)} -> ${attributes.href}`;
-    const isProfileEmail = destination.protocol === 'mailto:'
-      && (attributes.class?.split(/\s+/) ?? []).includes('profile-icon-link');
-    if (isExternal || isProfileEmail) {
+    const classes = attributes.class?.split(/\s+/) ?? [];
+    const isNewTabEmail = destination.protocol === 'mailto:'
+      && (classes.includes('profile-icon-link')
+        || (file === path.join(root, 'index.html') && classes.includes('intro-email-button')));
+    if (isExternal || isNewTabEmail) {
       if (isExternal) externalAnchorCount += 1;
       const relations = attributes.rel?.split(/\s+/) ?? [];
       if (attributes.target !== '_blank' || !relations.includes('noopener') || !relations.includes('noreferrer')) {

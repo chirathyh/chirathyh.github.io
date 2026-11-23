@@ -113,3 +113,18 @@ test('without JavaScript, the poster and native video controls remain available'
     await context.close();
   }
 });
+
+
+test('the homepage actions preserve the download and scope new-tab email behavior', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.primary-nav a[href="/short-notes/"]')).toHaveCount(0);
+  const buttons = page.locator('.intro .button-row');
+  const cv = buttons.getByRole('link', { name: 'Download CV', exact: true });
+  await expect(cv).toHaveAttribute('href', siteConfig.cvPath);
+  await expect(cv).toHaveAttribute('download', siteConfig.cvPath.split('/').pop()!);
+  const email = buttons.getByRole('link', { name: 'Email (opens in a new tab)', exact: true });
+  await expect(email).toHaveAttribute('href', `mailto:${siteConfig.email}`);
+  await expect(email).toHaveAttribute('target', '_blank');
+  await expect(email).toHaveAttribute('rel', 'noopener noreferrer');
+  await expect(page.locator('#contact a[href^="mailto:"]')).not.toHaveAttribute('target', '_blank');
+});

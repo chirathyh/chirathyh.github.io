@@ -15,7 +15,6 @@ export const siteConfig = {
   nav: [
     { label: 'Work', href: '/#work' },
     { label: 'Papers', href: '/publications/' },
-    { label: 'Short notes', href: '/short-notes/' },
     { label: 'CV', href: '/cv/' },
     { label: 'GitHub', href: 'https://github.com/chirathyh', external: true },
     { label: 'Contact', href: '/#contact' },
