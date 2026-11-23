@@ -51,15 +51,17 @@ for (const file of htmlFiles) {
     const destination = new URL(attributes.href, siteOrigin);
     const isExternal = ['http:', 'https:'].includes(destination.protocol) && destination.origin !== siteOrigin;
     const label = `${path.relative(root, file)} -> ${attributes.href}`;
-    if (isExternal) {
-      externalAnchorCount += 1;
+    const isProfileEmail = destination.protocol === 'mailto:'
+      && (attributes.class?.split(/\s+/) ?? []).includes('profile-icon-link');
+    if (isExternal || isProfileEmail) {
+      if (isExternal) externalAnchorCount += 1;
       const relations = attributes.rel?.split(/\s+/) ?? [];
       if (attributes.target !== '_blank' || !relations.includes('noopener') || !relations.includes('noreferrer')) {
         navigationFailures.push(`${label}: missing safe new-tab attributes`);
       }
       if (!match[2].includes('(opens in a new tab)')) navigationFailures.push(`${label}: missing accessible notice`);
     } else if (attributes.target === '_blank') {
-      navigationFailures.push(`${label}: internal/email/download navigation should remain in the current tab`);
+      navigationFailures.push(`${label}: internal/other email/download navigation should remain in the current tab`);
     }
   }
 }
